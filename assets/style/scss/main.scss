@@ -1,0 +1,24 @@
+@import "../../vendors/bootstrap-5.0.2-dist/css/bootstrap.min.css";
+
+
+
+//Variables
+
+@import "./variables/colors";
+
+//Components
+
+@import "./components/header";
+@import "./components/navbar";
+@import "./components/footer";
+@import "./components/button";
+
+//Pages
+
+@import "./pages/index";
+@import "./pages/topic";
+
+
+//Defaults
+
+@import "./defaults";
