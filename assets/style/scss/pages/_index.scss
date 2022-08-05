@@ -127,7 +127,6 @@ main {
                 margin-bottom: 2rem;
                 border-radius: .375rem;
                 box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-                position: relative;
 
                 i {
                     margin-right: .6rem;
@@ -141,19 +140,6 @@ main {
                     &:hover {
                         color: #24292f;
                     }
-                }
-
-                &::before {
-                    content: '';
-                    position: absolute;
-                    left: 0;
-                    height: 1.25rem;
-                    width: 3px;
-                    top: 50%;
-                    transform: translateY(-50%);
-                    border-radius: 2px;
-                    background-color: #ff4500;
-                    opacity: .4;
                 }
             }
 
@@ -232,6 +218,9 @@ footer {
     border-radius: .375rem;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     padding: 2rem;
+    position: sticky;
+    top: 5rem;
+    z-index: 0;
 
     p {
         margin-bottom: 1rem;

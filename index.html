@@ -35,6 +35,23 @@
     </div>
 
     <div class="header-right">
+      <div class="search-header">
+        <button class="search-btn" id="searchBtn"><i class="fa-solid fa-magnifying-glass"></i></button>
+        <div class="search-area" id="searchArea">
+          <form action="">
+            <select>
+              <option value="topic">Topic</option>
+              <option value="member">Member</option>
+              <option value="community">Community</option>
+            </select>
+            <div class="search-box">
+                <input type="text" placeholder="Search">
+                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+          </form>
+        </div>
+      </div>
+      
       <a href="#" class="header-user" id="headerUser">
         <img src="https://picsum.photos/300/600" alt="">
         <span>Ramal014</span>
@@ -271,7 +288,7 @@
         </div>
 
         <div class="col-lg-4">
-          <div class="sidebar position-sticky">
+          <div class="sidebar">
             <div class="sidebar-item">
               <div class="sidebar-item-header">
                 <a href="#"><i class="fa-solid fa-ranking-star"></i> Popular communities</a>
@@ -312,36 +329,37 @@
                 </div>
               </div>
             </div>
-            <footer>
-              <div class="row">
-                <div class="col-6">
-                  <p>Useful links</p>
-                  <ul>
-                    <li><a href="#"><i class="fa-solid fa-angle-right"></i> Categories</a></li>
-                    <li><a href="#"><i class="fa-solid fa-angle-right"></i> Communities</a></li>
-                    <li><a href="#"><i class="fa-solid fa-angle-right"></i> Members</a></li>
-                    <li><a href="#"><i class="fa-solid fa-angle-right"></i> Rules</a></li>
-                  </ul>
-                </div>
-                <div class="col-6">
-                  <p>Popular categories</p>
-                  <ul>
-                    <li><a href="#"><i class="fa-solid fa-angle-right"></i> Technology</a></li>
-                    <li><a href="#"><i class="fa-solid fa-angle-right"></i> Internet</a></li>
-                    <li><a href="#"><i class="fa-solid fa-angle-right"></i> Cars</a></li>
-                    <li><a href="#"><i class="fa-solid fa-angle-right"></i> Operation systems</a></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-12">
-                  <p class="copyright">
-                    Forum Inc © 2022. All rights reserved
-                  </p>
-                </div>
-              </div>
-            </footer>
+            
           </div>
+          <footer>
+            <div class="row">
+              <div class="col-6">
+                <p>Useful links</p>
+                <ul>
+                  <li><a href="#"><i class="fa-solid fa-angle-right"></i> Categories</a></li>
+                  <li><a href="#"><i class="fa-solid fa-angle-right"></i> Communities</a></li>
+                  <li><a href="#"><i class="fa-solid fa-angle-right"></i> Members</a></li>
+                  <li><a href="#"><i class="fa-solid fa-angle-right"></i> Rules</a></li>
+                </ul>
+              </div>
+              <div class="col-6">
+                <p>Popular categories</p>
+                <ul>
+                  <li><a href="#"><i class="fa-solid fa-angle-right"></i> Technology</a></li>
+                  <li><a href="#"><i class="fa-solid fa-angle-right"></i> Internet</a></li>
+                  <li><a href="#"><i class="fa-solid fa-angle-right"></i> Cars</a></li>
+                  <li><a href="#"><i class="fa-solid fa-angle-right"></i> Operation systems</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <p class="copyright">
+                  Forum Inc © 2022. All rights reserved
+                </p>
+              </div>
+            </div>
+          </footer>
         </div>
 
 
@@ -352,6 +370,7 @@
   </main>
 
   <script src="./assets/script/hamburger.js"></script>
+  <script src="./assets/script/search.js"></script>
 </body>
 
 </html>
