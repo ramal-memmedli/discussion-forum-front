@@ -4,7 +4,7 @@ main {
         .topic {
             background-color: #FFFFFF;
             border-radius: .375rem;
-            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            box-shadow: 0 3px 6px rgba(140,149,159,0.15);
             padding: 2rem;
 
             margin-bottom: 2rem;
@@ -126,7 +126,7 @@ main {
                 padding: 1rem 1.5rem;
                 margin-bottom: 2rem;
                 border-radius: .375rem;
-                box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+                box-shadow: 0 3px 6px rgba(140,149,159,0.15);
 
                 i {
                     margin-right: .6rem;
@@ -170,7 +170,7 @@ main {
                         }
                     }
 
-                    .follow-member {
+                    .member-level {
                         padding: .6rem 1.2rem;
                         background-color: #ff4500;
                         color: #FFF;
@@ -190,7 +190,7 @@ main {
                 padding: 1.2rem 1.2rem;
                 font-size: 1.25rem;
                 background-color: #FFFFFF;
-                box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+                box-shadow: 0 3px 6px rgba(140,149,159,0.15);
 
                 a {
                     color: #6e7781;
@@ -213,14 +213,12 @@ main {
     }
 }
 
+
 footer {
     background-color: #FFF;
     border-radius: .375rem;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    box-shadow: 0 3px 6px rgba(140,149,159,0.15);
     padding: 2rem;
-    position: sticky;
-    top: 5rem;
-    z-index: 0;
 
     p {
         margin-bottom: 1rem;

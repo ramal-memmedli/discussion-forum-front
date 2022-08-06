@@ -24,7 +24,6 @@
       <nav id="headerNavbar">
         <ul>
           <li><a href="#">Home</a></li>
-          <li><a href="#">Categories</a></li>
           <li><a href="#">Communities</a></li>
           <li><a href="#">Members</a></li>
           <li><a href="#">Rules</a></li>
@@ -37,27 +36,20 @@
     <div class="header-right">
       <div class="search-header">
         <button class="search-btn" id="searchBtn"><i class="fa-solid fa-magnifying-glass"></i></button>
-        <div class="search-area" id="searchArea">
-          <form action="">
-            <select>
-              <option value="topic">Topic</option>
-              <option value="member">Member</option>
-              <option value="community">Community</option>
-            </select>
-            <div class="search-box">
-                <input type="text" placeholder="Search">
-                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-            </div>
-          </form>
-        </div>
+        
+      </div>
+
+      <div class="header-user-box">
+        <a class="header-user" id="headerUser">
+          <img src="https://picsum.photos/300/600" alt="">
+          <span>Ramal014</span>
+          <i class="fa-solid fa-chevron-down"></i>
+          
+        </a>
+        
       </div>
       
-      <a href="#" class="header-user" id="headerUser">
-        <img src="https://picsum.photos/300/600" alt="">
-        <span>Ramal014</span>
-        <i class="fa-solid fa-chevron-down"></i>
-      </a>
-      <a href="#" class="hamburgerMenuBtn" id="hamburgerMenuBtn">
+      <a class="hamburgerMenuBtn" id="hamburgerMenuBtn">
         <span class="hamburgerSpan"> </span>
         <span class="hamburgerSpan"> </span>
         <span class="hamburgerSpan"> </span>
@@ -65,19 +57,44 @@
     </div>
 
   </header>
+  <div class="search-area" id="searchArea">
+    <form action="">
+      <select>
+        <option value="topic">Topic</option>
+        <option value="member">Member</option>
+        <option value="community">Community</option>
+      </select>
+      <div class="search-box">
+        <input type="text" placeholder="Search">
+        <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+      </div>
+    </form>
+  </div>
+  <div class="user-nav" id="userNav">
+    <ul>
+      <li><a href="#"><i class="fa-solid fa-user"></i> Your profile</a></li>
+      <li><a href="#"><i class="fa-solid fa-users"></i> Your communities</a></li>
+      <li><a href="#"><i class="fa-solid fa-bookmark"></i> Your bookmarks</a></li>
+      <li><a href="#"><i class="fa-solid fa-message"></i> Your topics</a></li>
+      <li><a href="#"><i class="fa-solid fa-comment-dots"></i> Your answers</a></li>
+      <li><a href="#"><i class="fa-solid fa-comments"></i> Your comments</a></li>
+      <li><a href="#"><i class="fa-solid fa-square-check"></i> Your votes</a></li>
+      <hr>
+      <li><a href="#"><i class="fa-solid fa-right-from-bracket"></i> Sign out</a></li>
+    </ul>
+  </div>
 
   <nav id="mobileNavbar">
     <div class="mobile-links">
       <ul>
         <li><a href="#">Home</a></li>
-        <li><a href="#">Categories</a></li>
         <li><a href="#">Communities</a></li>
         <li><a href="#">Members</a></li>
         <li><a href="#">Rules</a></li>
       </ul>
     </div>
     <div class="mobile-user-bar">
-      <a href="#" class="mobile-user">
+      <a class="mobile-user header-user">
         <img src="https://picsum.photos/300/600" alt="">
         <span>Ramal014</span>
         <i class="fa-solid fa-chevron-down"></i>
@@ -92,7 +109,7 @@
         <div class="col-lg-8">
           <div class="main-flow">
             <div class="topic">
-              <div class="topic-header mb-0">
+              <div class="topic-header mb-0 ask-question-card">
                 <a href="#" class="topic-author">
                   <img class="author-image" src="./assets/images/logo.svg" alt="">
                   Ramal Memmedli
@@ -291,12 +308,12 @@
           <div class="sidebar">
             <div class="sidebar-item">
               <div class="sidebar-item-header">
-                <a href="#"><i class="fa-solid fa-ranking-star"></i> Popular communities</a>
+                <a href="#"><i class="fa-solid fa-ranking-star"></i> Top communities</a>
               </div>
             </div>
             <div class="sidebar-item">
               <div class="sidebar-item-header">
-                <a href="#"><i class="fa-solid fa-users"></i> Popular Members</a>
+                <a href="#"><i class="fa-solid fa-users"></i> Top Members</a>
               </div>
               <div class="sidebar-item-body">
                 <div class="popular-member">
@@ -304,39 +321,38 @@
                     <img src="https://picsum.photos/200/200" alt="">
                     <a href="#">Ilkin Qurbanli</a>
                   </div>
-                  <a class="follow-member" href="#">Follow</a>
+                  <p class="member-level">23 level</p>
+                </div>
+                <div class="popular-member">
+                  <div class="sidebar-member">
+                    <img src="https://picsum.photos/200/200" alt="">
+                    <a href="#">Adil Velizade</a>
+                  </div>
+                  <p class="member-level">12 level</p>
                 </div>
                 <div class="popular-member">
                   <div class="sidebar-member">
                     <img src="https://picsum.photos/200/200" alt="">
                     <a href="#">Ceyhun Memizade</a>
                   </div>
-                  <a class="follow-member" href="#">Follow</a>
+                  <p class="member-level">18 level</p>
                 </div>
                 <div class="popular-member">
                   <div class="sidebar-member">
                     <img src="https://picsum.photos/200/200" alt="">
-                    <a href="#">Adil Valizade</a>
+                    <a href="#">Ali Amikishi</a>
                   </div>
-                  <a class="follow-member" href="#">Follow</a>
-                </div>
-                <div class="popular-member">
-                  <div class="sidebar-member">
-                    <img src="https://picsum.photos/200/200" alt="">
-                    <a href="#">Eli Amikishi</a>
-                  </div>
-                  <a class="follow-member" href="#">Follow</a>
+                  <p class="member-level">3 level</p>
                 </div>
               </div>
             </div>
-            
+
           </div>
           <footer>
             <div class="row">
               <div class="col-6">
                 <p>Useful links</p>
                 <ul>
-                  <li><a href="#"><i class="fa-solid fa-angle-right"></i> Categories</a></li>
                   <li><a href="#"><i class="fa-solid fa-angle-right"></i> Communities</a></li>
                   <li><a href="#"><i class="fa-solid fa-angle-right"></i> Members</a></li>
                   <li><a href="#"><i class="fa-solid fa-angle-right"></i> Rules</a></li>
@@ -371,6 +387,7 @@
 
   <script src="./assets/script/hamburger.js"></script>
   <script src="./assets/script/search.js"></script>
+  <script src="./assets/script/userNav.js"></script>
 </body>
 
 </html>
