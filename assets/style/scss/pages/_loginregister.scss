@@ -16,8 +16,13 @@ main.login-main {
         display: flex;
         flex-direction: column;
 
+        h2 {
+            color: #24292f;
+        }
+
         p {
             margin-bottom: 1rem;
+            color: #24292f;
         }
 
         form {
@@ -35,6 +40,7 @@ main.login-main {
 
             label {
                 position: relative;
+                color: #24292f;
 
                 input {
                     width: 100%;
@@ -42,9 +48,11 @@ main.login-main {
                     margin-top: 1rem;
                     outline: none;
                     border-bottom: 1px solid #ddd;
+                    color: #24292f;
 
                     &::placeholder {
                         opacity: 0;
+                        color: #24292f;
                     }
                 }
 
@@ -72,6 +80,7 @@ main.login-main {
             p.register-text {
                 text-align: center;
                 margin-bottom: 0;
+                color: #24292f;
 
                 a {
                     cursor: pointer;
@@ -82,6 +91,7 @@ main.login-main {
             p.or-separator {
                 text-align: center;
                 margin-bottom: 0;
+                color: #24292f;
             }
 
             a.forgot-password {
@@ -100,4 +110,63 @@ main.login-main {
 #isPersistentLabel {
     margin-top: 1rem;
     user-select: none;
+}
+
+html.dark-mode {
+    main.login-main {
+        .login-box {
+            background-color: #161b22;
+            box-shadow: none;
+    
+            h2 {
+                color: #c9d1d9;
+            }
+    
+            p {
+                color: #c9d1d9;
+            }
+    
+            form {
+                label:focus-within>span,
+                input:not(:placeholder-shown)+span {
+                    color: #ff4500;
+                }
+    
+                label {
+                    color: #c9d1d9;
+    
+                    input {
+                        border-bottom: 1px solid #21262d;
+                        color: #c9d1d9;
+                        background-color: transparent;
+    
+                        &::placeholder {
+                            color: #c9d1d9;
+                        }
+                    }
+                }
+    
+                button {
+                    background-color: #ff4500;
+                    color: #FFF;
+                }
+    
+                p.register-text {
+                    color: #c9d1d9;
+    
+                    a {
+                        color: #ff4500;
+                    }
+                }
+    
+                p.or-separator {
+                    color: #c9d1d9;
+                }
+    
+                a.forgot-password {
+                    color: #ff4500;
+                }
+            }
+        }
+    }
 }

@@ -53,3 +53,30 @@
         }
     }
 }
+
+html.dark-mode {
+    .user-card {
+        background-color: #161b22;
+        box-shadow: none;
+    
+        .user-card-left {
+            a {
+                color: #c9d1d9;
+
+                &:hover {
+                    color: #FFF;
+                }
+            }
+        }
+    
+        .user-card-right {
+            .count-title {
+                color: #c9d1d9;
+            }
+    
+            .count {
+                color: #FFF;
+            }
+        }
+    }
+}

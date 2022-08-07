@@ -301,3 +301,172 @@ footer {
         }
     }
 }
+
+html.dark-mode {
+    main {
+        .main-flow {
+            .topic {
+                background-color: #161b22;
+                box-shadow: none;
+    
+                .topic-header {
+                    .topic-author {
+                        color: #c9d1d9;
+    
+                        .author-level {
+                            color: #ffffff;
+                            background-color: #ff4500;
+                        }
+    
+                        &:hover {
+                            color: #FFF;
+                        }
+                    }
+    
+                    .topic-create-date {
+                        color: #c9d1d9;
+                    }
+                }
+    
+                .topic-body {
+    
+                    a {
+                        color: #FFF;
+                    }
+    
+                    p {
+                        color: #c9d1d9;
+                    }
+    
+    
+                    ul {
+                        li {
+                            a {
+                                color: #FFF;
+                                background-color: #ff4500;
+                            }
+                        }
+                    }
+                }
+    
+                .topic-footer {
+                    .topic-footer-left {
+                        .topic-view-count {
+                            color: #c9d1d9;
+                        }
+    
+                        .topic-answer-count {
+                            color: #c9d1d9;
+                        }
+                    }
+    
+                    .topic-footer-right {
+                        a {
+                            color: #c9d1d9;
+    
+                            &:hover {
+                                color: #FFF;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    
+        .sidebar {
+            .sidebar-item {
+                .sidebar-item-header {
+                    background-color: #161b22;
+                    box-shadow: none;
+    
+                    a {
+                        color: #c9d1d9;
+    
+                        &:hover {
+                            color: #FFF;
+                        }
+                    }
+                }
+    
+                .sidebar-item-body {
+                    .popular-member {
+                        .sidebar-member {
+                            a {
+                                color: #c9d1d9;
+    
+                                &:hover {
+                                    color: #FFF;
+                                }
+                            }
+                        }
+    
+                        .member-level {
+                            background-color: #ff4500;
+                            color: #FFF;
+    
+                            &:hover {
+                                color: #FFF;
+                            }
+                        }
+                    }
+                }
+    
+                .top-communities {
+                    .sidebar-community {
+                        a {
+                            background-color: rgba(255, 69, 0, .75);
+                        }
+    
+                        &:hover {
+                            box-shadow: none;
+                        }
+    
+                    }
+                }
+            }
+        }
+    }
+    
+    
+    footer {
+        background-color: #161b22;
+        box-shadow: none;
+
+        p {
+            color: #c9d1d9;
+        }
+    
+        ul {
+            li {
+                a {
+                    color: #c9d1d9;
+    
+                    &:hover {
+                        color: #FFF;
+                    }
+    
+                    i {
+                        color: #ff4500;
+                    }
+                }
+            }
+        }
+    }
+    
+    .ask-a-question-main {
+        background-color: #ff4500;
+        color: #FFFFFF;
+    
+        &:hover {
+            color: #FFFFFF;
+        }
+    }
+    
+    .load-more {
+        color: #c9d1d9;
+    
+        &:hover {
+            color: #FFF;
+        }
+    }
+}

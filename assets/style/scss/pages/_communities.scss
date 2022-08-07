@@ -43,3 +43,28 @@
         }
     }
 }
+
+html.dark-mode {
+    .communities-header {
+        h3 {
+            color: #c9d1d9;
+        }
+    
+        form {
+            input {
+                background-color: #161b22;
+                box-shadow: none;
+                color: #c9d1d9;
+
+                &::placeholder {
+                    color: #c9d1d9;
+                }
+            }
+            
+            button {
+                color: #FFF;
+                background-color: #ff4500;
+            }
+        }
+    }
+}

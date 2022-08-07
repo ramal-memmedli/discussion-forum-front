@@ -45,3 +45,32 @@
         }
     }
 }
+
+html.dark-mode {
+    .community-card {
+        background-color: #161b22;
+        box-shadow: none;
+    
+        .community-card-header {
+            .community-image-and-name {
+                a {
+                    color: #c9d1d9;
+    
+                    &:hover {
+                        color: #FFF;
+                    }
+                }
+            }
+        }
+    
+        .community-card-body {
+            .count-title {
+                color: #c9d1d9;
+            }
+    
+            .count {
+                color: #FFF;
+            }
+        }
+    }
+}

@@ -401,3 +401,168 @@ nav#mobileNavbar {
         }
     }
 }
+
+
+html.dark-mode {
+    header {
+        background-color: #0d1117;
+        box-shadow: none;
+    
+        .header-left {
+            nav#headerNavbar {
+                ul {
+                    li {
+                        a {
+                            color: #c9d1d9;
+    
+                            &::after {
+                                background-color: #FFF;
+                            }
+    
+                            &:hover {
+                                color: #FFF;
+                                background-color: rgba(255, 69, 0, .8);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    
+        .header-right {
+            .search-header {
+                .search-btn {
+                    color: #c9d1d9;
+    
+                    &:hover {
+                        color: #FFF;
+                    }
+                }
+            }
+    
+    
+            .header-user-box {
+                .header-user {
+                    span {
+                        color: #c9d1d9;
+                    }
+    
+                    i {
+                        color: #c9d1d9;
+                    }
+    
+                    &:hover {
+                        span {
+                            color: #FFF;
+                        }
+    
+                        i {
+                            color: #FFF;
+                        }
+                    }
+                }
+            }
+    
+    
+            .hamburgerMenuBtn {
+                .hamburgerSpan {
+                    background-color: #c9d1d9;
+                }
+    
+                &:hover {
+                    .hamburgerSpan {
+                        background-color: #FFF;
+    
+                    }
+                }
+            }
+        }
+    }
+    
+    
+    .search-area {
+        background-color: #0d1117;
+        box-shadow: none;
+    
+        form {
+            select {
+                background-color: #161b22;
+                color: #FFF;
+            }
+            .search-box {
+                input {
+                    background-color: #161b22;
+                    color: #FFF;
+
+                    &::placeholder {
+                        color: #FFF;
+                    }
+                }
+    
+                button {
+                    color: #c9d1d9;
+                    background-color: #ff4500;
+                }
+
+                
+            }
+        }
+    }
+    
+    .user-nav {
+        background-color: #0d1117;
+        box-shadow: none;
+    
+        ul {
+            li {
+                a {
+                    color: #c9d1d9;
+    
+                    &:hover {
+                        color: #FFF;
+                        background-color: rgba(255, 69, 0, .8);
+                    }
+                }
+            }
+        }
+    }
+    
+    nav#mobileNavbar {
+        background-color: #0d1117;
+    
+        ul {
+            li {
+                a {
+                    color: #c9d1d9;
+    
+                    &:hover {
+    
+                        color: #FFF;
+                        background-color: rgba(255, 69, 0, .8);
+                    }
+                }
+            }
+        }
+    
+        .mobile-user {
+    
+            span {
+                color: #c9d1d9;
+            }
+    
+            i {
+                color: #c9d1d9;
+            }
+    
+            &:hover {
+                span {
+                    color: #FFF;
+                }
+    
+                i {
+                    color: #FFF;
+                }
+            }
+        }
+    }
+}

@@ -50,6 +50,7 @@
             margin-bottom: 2rem;
 
             a {
+                color: #24292f;
                 font-size: 1.5rem;
                 font-weight: 500;
             }
@@ -383,6 +384,215 @@ margin-bottom: 2rem;
         }
     
         a {
+        }
+    }
+}
+
+
+html.dark-mode {
+    .topic-content {
+        background-color: #161b22;
+        box-shadow: none;
+    
+        .topic-header {
+            .topic-author {
+                a {
+                    color: #c9d1d9;
+    
+                    &:hover {
+                        color: #FFF;
+                    }
+                }
+    
+                .author-level {
+                    background-color: #ff4500;
+                    color: #FFF;
+                }
+            }
+    
+            .topic-create-date {
+                color: #c9d1d9;
+            }
+        }
+    
+        .topic-body {
+            .topic-title {
+                a {
+                    color: #FFF;
+                }
+            }
+
+            .topic-context {
+                p {
+                    color: #c9d1d9;
+                }
+            }
+    
+            .topic-categories {
+                ul {
+                    li {
+                        a {
+                            color: #FFF;
+                            background-color: #ff4500;
+                        }
+                    }
+                }
+            }
+        }
+    
+        .topic-statistics {
+            .statistics-left {
+                p {
+                    color: #c9d1d9;
+                }
+            }
+    
+            .statistics-right {
+                a {
+                    color: #c9d1d9;
+    
+                    &:hover {
+                        color: #FFF;
+                    }
+                }
+            }
+        }
+    }
+    
+    .topic-answers {
+        h4 {
+            color: #c9d1d9;
+        }
+    
+        .topic-answer {
+            background-color: #161b22;
+            box-shadow: none;
+    
+            .vote-actions {
+                a {
+                    color: #c9d1d9;
+    
+                    &:hover {
+                        color: #FFF;
+                    }
+                }
+    
+                .votecount {
+                    color: #c9d1d9;
+                }
+            }
+    
+            .selected-answer {
+                i {
+                    color: #2da44e;
+                }
+            }
+    
+            .answer-header {
+                .answer-author {
+                    a {
+                        color: #c9d1d9;
+    
+                        &:hover {
+                            color: #FFF;
+                        }
+                    }
+    
+                    .author-level {
+                        color: #FFF;
+                        background-color: #ff4500;
+                    }
+                }
+    
+                .answer-date {
+                    color: #c9d1d9;
+                }
+            }
+    
+            .answer-body {
+                .answer-context {
+                    color: #c9d1d9;
+                }
+            }
+    
+            .answer-actions {
+                a {
+                    color: #c9d1d9;
+    
+                    &:hover {
+                        color: #FFF;
+                    }
+                }
+            }
+    
+    
+            .answer-comments {
+                background-color: #0d1117;
+    
+                h6 {
+                    color: #c9d1d9;
+                }
+    
+                .comment {
+                    border-top: 1px solid #21262d;
+    
+                    .comment-header {
+                        .comment-author {
+                            a {
+                                color: #c9d1d9;
+
+                                &:hover {
+                                    color: #FFF;
+                                }
+                            }
+                        }
+                        .comment-date {
+                            color: #c9d1d9;
+                        }
+                    }
+    
+                    .comment-body {
+                        color: #c9d1d9;
+                    }
+                    
+                }
+            }
+        }
+    }
+    
+    .add-answer {
+        background-color: #161b22;
+        box-shadow: none;
+    
+        form {
+            button {
+                background-color: #ff4500;
+                color: #FFF;
+            }
+        }
+    }
+    
+    .add-comment-box {
+        background-color: #0d1117;
+        box-shadow: none;
+
+        input {
+            background-color: transparent;
+            color: #FFF;
+
+            &::placeholder {
+                color: #c9d1d9;
+            }
+        }
+    
+        a {
+            background-color: #ff4500;
+            color: #FFF;
+    
+            &#closeCommentBox {
+                background-color: transparent;
+                color: #cf222e;
+            }
         }
     }
 }
