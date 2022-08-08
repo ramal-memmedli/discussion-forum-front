@@ -35,14 +35,12 @@ html {
     font-family: 'Source Sans Pro', sans-serif;
 }
 
-html.dark-mode {
-    body {
-        background-color: #010409;
-    }
-}
-
 body {
     background-color: #f6f8fa;
+
+    &.dark-mode {
+        background-color: #010409;
+    }
 }
 
 .dark-layer {
