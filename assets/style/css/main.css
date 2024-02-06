@@ -1,5 +1,11 @@
-@import "../../vendors/bootstrap-5.0.2-dist/css/bootstrap.min.css"; /*light theme*/
+@import "../../vendors/bootstrap-5.0.2-dist/css/bootstrap.min.css";
+/*light theme*/
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap");
+.hero {
+  height: 100vh;
+  width: 100%;
+}
+
 header {
   background-color: #ffffff;
   display: flex;
@@ -8,6 +14,7 @@ header {
   height: 4rem;
   padding: 0 2rem;
   box-shadow: 0 3px 6px rgba(140, 149, 159, 0.15);
+  z-index: 50;
 }
 header .header-left {
   display: flex;
@@ -76,10 +83,7 @@ header .header-right .search-header .search-btn:hover {
 }
 header .header-right .header-user-box .header-user {
   cursor: pointer;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  user-select: none;
 }
 header .header-right .header-user-box .header-user img {
   width: 2rem;
@@ -254,10 +258,7 @@ nav#mobileNavbar ul li a:hover {
 }
 nav#mobileNavbar .mobile-user {
   cursor: pointer;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  user-select: none;
 }
 nav#mobileNavbar .mobile-user img {
   width: 2rem;
@@ -358,12 +359,6 @@ body.dark-mode .search-area form .search-box input {
   background-color: #161b22;
   color: #FFF;
 }
-body.dark-mode .search-area form .search-box input::-moz-placeholder {
-  color: #FFF;
-}
-body.dark-mode .search-area form .search-box input:-ms-input-placeholder {
-  color: #FFF;
-}
 body.dark-mode .search-area form .search-box input::placeholder {
   color: #FFF;
 }
@@ -418,8 +413,7 @@ body.dark-mode nav#mobileNavbar .mobile-user:hover i {
 .community-card .community-card-header .community-card-banner-img {
   width: 100%;
   height: 4rem;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 0.375rem;
   margin-bottom: 1rem;
 }
@@ -463,51 +457,59 @@ body.dark-mode .community-card .community-card-body .count {
 }
 
 .community-header {
-  margin-top: 2rem;
-  border-radius: 0.375rem;
   box-shadow: 0 3px 6px rgba(140, 149, 159, 0.15);
-  height: 20rem;
-  padding: 2rem;
-  background-image: url("https://picsum.photos/1920/1080");
   background-position: center;
   background-size: cover;
   display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-}
-.community-header .community-name {
-  background-color: rgba(255, 255, 255, 0.9);
-  box-shadow: 0 8px 24px rgba(140, 149, 159, 0.2);
-  border-radius: 0.375rem;
-  padding: 1rem;
-  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
+.community-header .profile-banner-image {
+  height: 14rem;
+  width: 100%;
+  object-fit: cover;
+}
+.community-header .community-name {
+  border-radius: 0.375rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
 .community-header .community-name img {
-  width: 3rem;
-  height: 3rem;
+  position: absolute;
+  top: -4rem;
+  width: 8rem;
+  height: 8rem;
   border-radius: 50%;
-  margin-right: 1rem;
+  border: 0.4rem solid #f6f8fa;
+  z-index: 1;
 }
 .community-header .community-name a {
+  margin-top: 4rem;
   font-size: 1.5rem;
   color: #24292f;
   font-weight: 500;
 }
+.community-header .community-actions {
+  width: 100%;
+}
 .community-header .community-actions ul {
   display: flex;
-  align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
-}
-.community-header .community-actions ul li {
-  margin-right: 1rem;
+  height: 3rem;
+  background-color: #24292f;
+  width: 100%;
 }
 .community-header .community-actions ul li a {
-  background-color: #ff4500;
   color: #FFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
   padding: 0.3rem 0.6rem;
-  border-radius: 0.375rem;
+  transition: all 150ms ease-in-out;
 }
 .community-header .community-actions ul li a i {
   margin-right: 0.5rem;
@@ -525,16 +527,18 @@ body.dark-mode .community-card .community-card-body .count {
 body.dark-mode .community-header {
   box-shadow: none;
 }
-body.dark-mode .community-header .community-name {
-  background-color: rgba(0, 0, 0, 0.9);
-  box-shadow: 0 8px 24px rgba(140, 149, 159, 0.2);
+body.dark-mode .community-header .community-name img {
+  border-color: #010409;
 }
 body.dark-mode .community-header .community-name a {
   color: #FFF;
+  text-shadow: #24292f;
 }
 body.dark-mode .community-header .community-actions ul li a {
-  background-color: #ff4500;
   color: #FFF;
+}
+body.dark-mode .community-header .community-actions ul li a:hover {
+  background-color: #ff4500;
 }
 
 .user-card {
@@ -677,10 +681,8 @@ main .main-flow {
 }
 main .main-flow .topic {
   background-color: #FFFFFF;
-  border-radius: 0.375rem;
   box-shadow: 0 3px 6px rgba(140, 149, 159, 0.15);
   padding: 2rem;
-  margin-bottom: 2rem;
 }
 main .main-flow .topic .topic-header {
   display: flex;
@@ -859,7 +861,6 @@ main .sidebar .sidebar-item .top-communities .sidebar-community:hover {
 
 footer {
   background-color: #FFF;
-  border-radius: 0.375rem;
   box-shadow: 0 3px 6px rgba(140, 149, 159, 0.15);
   padding: 2rem;
 }
@@ -910,8 +911,11 @@ footer .copyright {
   }
 }
 body.dark-mode main .main-flow .topic {
-  background-color: #161b22;
+  background-color: rgba(255, 255, 255, 0.03);
   box-shadow: none;
+}
+body.dark-mode main .main-flow .topic:hover {
+  background-color: rgba(255, 255, 255, 0.08);
 }
 body.dark-mode main .main-flow .topic .topic-header .topic-author {
   color: #c9d1d9;
@@ -978,7 +982,7 @@ body.dark-mode main .sidebar .sidebar-item .top-communities .sidebar-community:h
   box-shadow: none;
 }
 body.dark-mode footer {
-  background-color: #161b22;
+  background-color: rgba(255, 255, 255, 0.03);
   box-shadow: none;
 }
 body.dark-mode footer p {
@@ -1433,12 +1437,6 @@ body.dark-mode .add-comment-box input {
   background-color: transparent;
   color: #FFF;
 }
-body.dark-mode .add-comment-box input::-moz-placeholder {
-  color: #c9d1d9;
-}
-body.dark-mode .add-comment-box input:-ms-input-placeholder {
-  color: #c9d1d9;
-}
 body.dark-mode .add-comment-box input::placeholder {
   color: #c9d1d9;
 }
@@ -1482,14 +1480,6 @@ main.login-main .login-box form {
   flex-direction: column;
   border-radius: 5px;
 }
-main.login-main .login-box form input:not(:-moz-placeholder-shown) + span {
-  color: #ff4500;
-  transform: translateY(0px);
-}
-main.login-main .login-box form input:not(:-ms-input-placeholder) + span {
-  color: #ff4500;
-  transform: translateY(0px);
-}
 main.login-main .login-box form label:focus-within > span,
 main.login-main .login-box form input:not(:placeholder-shown) + span {
   color: #ff4500;
@@ -1505,14 +1495,6 @@ main.login-main .login-box form label input {
   margin-top: 1rem;
   outline: none;
   border-bottom: 1px solid #ddd;
-  color: #24292f;
-}
-main.login-main .login-box form label input::-moz-placeholder {
-  opacity: 0;
-  color: #24292f;
-}
-main.login-main .login-box form label input:-ms-input-placeholder {
-  opacity: 0;
   color: #24292f;
 }
 main.login-main .login-box form label input::placeholder {
@@ -1562,10 +1544,7 @@ main.login-main .login-box form a.forgot-password {
 
 #isPersistentLabel {
   margin-top: 1rem;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  user-select: none;
 }
 
 body.dark-mode main.login-main .login-box {
@@ -1578,12 +1557,6 @@ body.dark-mode main.login-main .login-box h2 {
 body.dark-mode main.login-main .login-box p {
   color: #c9d1d9;
 }
-body.dark-mode main.login-main .login-box form input:not(:-moz-placeholder-shown) + span {
-  color: #ff4500;
-}
-body.dark-mode main.login-main .login-box form input:not(:-ms-input-placeholder) + span {
-  color: #ff4500;
-}
 body.dark-mode main.login-main .login-box form label:focus-within > span,
 body.dark-mode main.login-main .login-box form input:not(:placeholder-shown) + span {
   color: #ff4500;
@@ -1595,12 +1568,6 @@ body.dark-mode main.login-main .login-box form label input {
   border-bottom: 1px solid #21262d;
   color: #c9d1d9;
   background-color: transparent;
-}
-body.dark-mode main.login-main .login-box form label input::-moz-placeholder {
-  color: #c9d1d9;
-}
-body.dark-mode main.login-main .login-box form label input:-ms-input-placeholder {
-  color: #c9d1d9;
 }
 body.dark-mode main.login-main .login-box form label input::placeholder {
   color: #c9d1d9;
@@ -1668,12 +1635,6 @@ body.dark-mode .communities-header form input {
   box-shadow: none;
   color: #c9d1d9;
 }
-body.dark-mode .communities-header form input::-moz-placeholder {
-  color: #c9d1d9;
-}
-body.dark-mode .communities-header form input:-ms-input-placeholder {
-  color: #c9d1d9;
-}
 body.dark-mode .communities-header form input::placeholder {
   color: #c9d1d9;
 }
@@ -1728,12 +1689,6 @@ body.dark-mode .users-header form input {
   box-shadow: none;
   color: #c9d1d9;
 }
-body.dark-mode .users-header form input::-moz-placeholder {
-  color: #c9d1d9;
-}
-body.dark-mode .users-header form input:-ms-input-placeholder {
-  color: #c9d1d9;
-}
 body.dark-mode .users-header form input::placeholder {
   color: #c9d1d9;
 }
@@ -1778,6 +1733,122 @@ body.dark-mode .login-register-btn-box a.register-btn {
     display: none;
   }
 }
+.user-profile-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: calc(80vh - 4rem);
+  position: relative;
+}
+.user-profile-header .profile-banner-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+.user-profile-header .profile-banner-image-color-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgb(1, 4, 9);
+  background: linear-gradient(0deg, rgb(1, 4, 9) 0%, rgba(1, 4, 9, 0.95) 47%, rgba(1, 4, 9, 0.8) 100%);
+  z-index: 2;
+  backdrop-filter: blur(10px);
+}
+.user-profile-header .profile-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+}
+.user-profile-header .profile-details .profile-image {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.user-profile-header .profile-details .profile-name-section {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+}
+.user-profile-header .profile-details .profile-name-section .profile-fullname {
+  font-size: 2rem;
+  color: #FFF;
+}
+.user-profile-header .profile-details .profile-name-section .verified-profile {
+  background-color: #3498db;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0.5rem;
+}
+.user-profile-header .profile-details .profile-name-section .verified-profile i {
+  color: #FFF;
+}
+.user-profile-header .profile-details .follow-user-button {
+  background-color: #efe71d;
+  margin-left: 1rem;
+  padding: 0.6rem 1.2rem;
+  border-radius: 2rem;
+  color: #010409;
+  transition: all 150ms ease-in-out;
+}
+.user-profile-header .profile-details .follow-user-button:hover {
+  background-color: #c4be21;
+}
+.user-profile-header .profile-details .follow-user-button i {
+  margin-right: 0.5rem;
+}
+.user-profile-header .profile-actions {
+  z-index: 3;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.03);
+  height: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 992px) {
+  .community-header {
+    flex-direction: column;
+    align-items: center;
+  }
+  .community-actions ul li {
+    margin-bottom: 1rem;
+  }
+}
+body.dark-mode .community-header {
+  box-shadow: none;
+}
+body.dark-mode .community-header .community-name img {
+  border-color: #010409;
+}
+body.dark-mode .community-header .community-name a {
+  color: #FFF;
+  text-shadow: #24292f;
+}
+body.dark-mode .community-header .community-actions ul li a {
+  color: #FFF;
+}
+body.dark-mode .community-header .community-actions ul li a:hover {
+  background-color: #ff4500;
+}
+
 *,
 *::after,
 *::before {
@@ -1839,4 +1910,7 @@ body.dark-mode {
   html {
     font-size: 14px;
   }
+}
+.nopadding {
+  padding: 0 !important;
 }/*# sourceMappingURL=main.css.map */

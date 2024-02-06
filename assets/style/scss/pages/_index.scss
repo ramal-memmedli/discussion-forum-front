@@ -4,11 +4,8 @@ main {
 
         .topic {
             background-color: #FFFFFF;
-            border-radius: .375rem;
             box-shadow: 0 3px 6px rgba(140, 149, 159, 0.15);
             padding: 2rem;
-
-            margin-bottom: 2rem;
 
             .topic-header {
                 display: flex;
@@ -239,7 +236,6 @@ main {
 
 footer {
     background-color: #FFF;
-    border-radius: .375rem;
     box-shadow: 0 3px 6px rgba(140, 149, 159, 0.15);
     padding: 2rem;
 
@@ -306,9 +302,14 @@ body.dark-mode {
     main {
         .main-flow {
             .topic {
-                background-color: #161b22;
+                background-color: rgba(255, 255, 255, .03);
                 box-shadow: none;
     
+
+                &:hover{
+                    background-color: rgba(255, 255, 255, .08);
+                }
+
                 .topic-header {
                     .topic-author {
                         color: #c9d1d9;
@@ -429,7 +430,7 @@ body.dark-mode {
     
     
     footer {
-        background-color: #161b22;
+        background-color: rgba(255, 255, 255, .03);
         box-shadow: none;
 
         p {
