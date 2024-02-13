@@ -27,9 +27,9 @@ main {
             left: 0;
             bottom: 0;
             right: 0;
-            background: rgb(1, 4, 9);
-            background: linear-gradient(0deg, rgba(1, 4, 9, 1) 0%, rgba(1, 4, 9, 0.65) 50%, rgba(1, 4, 9, 0.45) 100%);
-            backdrop-filter: blur(10px);
+            background: $bg-default;
+            background: linear-gradient(0deg, $bg-default 0%, $bg-default-65 35%, $bg-default-45 100%);
+            backdrop-filter: blur(4px);
         }
     
         
@@ -253,37 +253,11 @@ main {
 }
 
 body.dark-mode {
-
-
-
-    .community-header {
-        box-shadow: none;
-
-        .community-name {
-
-
-            img {
-                border-color: #010409;
-            }
-
-            a {
-                color: #FFF;
-                text-shadow: #24292f;
-
-            }
-        }
-
-        .community-actions {
-            ul {
-                li {
-                    a {
-                        &:hover {
-                            background-color: #ff4500;
-                        }
-
-                        color: #FFF;
-                    }
-                }
+    main {
+        .user-profile-banner {
+            .profile-banner-image-color-layer {
+                background: $dark-bg-emphasis;
+                background: linear-gradient(0deg, $dark-bg-emphasis 0%, $dark-bg-emphasis-65 35%, $dark-bg-emphasis-45 100%);
             }
         }
     }

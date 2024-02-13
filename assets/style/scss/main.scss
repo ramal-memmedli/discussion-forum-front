@@ -11,13 +11,19 @@
 @import "./components/header";
 @import "./components/darkModeSwitch";
 @import "./components/searchBar";
+@import "./components/topic";
+@import "./components/footer";
+@import "./components/sidebar";
+@import "./components/hamburgerBtn";
+@import "./components/header_user";
+@import "./components/navbar";
+
 
 //Pages
 
 @import "./pages/index";
 @import "./pages/topic";
 @import "./pages/loginregister";
-@import "./pages/indexNoUser";
 @import "./pages/userProfile";
 
 

@@ -1,0 +1,209 @@
+.topic {
+    background-color: $bg-emphasis;
+    padding: 2rem;
+    border-radius: .5rem;
+    transition: $t-normal;
+    margin-bottom: 1rem;
+
+    &:hover {
+        box-shadow: $default-shadow;
+
+    }
+
+    .topic-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1rem;
+
+        .topic-author {
+            color: #6e7781;
+            transition: 150ms ease-in-out;
+
+            .author-image {
+                width: 2rem;
+                height: 2rem;
+                margin-right: 1rem;
+                border-radius: 50%;
+            }
+
+            .author-level {
+                padding: .1rem .4rem;
+                color: #ffffff;
+                background-color: #ff4500;
+                margin-left: 1rem;
+                border-radius: .375rem;
+            }
+
+            &:hover {
+                color: #24292f;
+            }
+        }
+
+        .topic-create-date {
+            color: #6e7781;
+        }
+    }
+
+    .topic-body {
+        margin-bottom: 1rem;
+
+        a {
+            font-size: 1.5rem;
+            display: flex;
+            margin-bottom: 1rem;
+            color: $fg-special;
+        }
+
+        p {
+            color: $fg-default;
+            cursor: default;
+            margin-bottom: 1rem;
+        }
+
+
+        ul {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+
+            li {
+                a {
+                    color: #FFF;
+                    background-color: $brand;
+                    border-radius: .375rem;
+                    font-size: .875rem;
+                    padding: .3rem .6rem;
+                    margin-right: .5rem;
+                }
+            }
+        }
+    }
+
+    .topic-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .topic-footer-left {
+            display: flex;
+            align-items: center;
+
+            .topic-view-count {
+                padding: .3rem .6rem;
+                border-radius: .375rem;
+                margin-right: 1rem;
+                color: $fg-muted;
+
+                i {
+                    margin-right: .3rem;
+                }
+            }
+
+            .topic-answer-count {
+                border-radius: .375rem;
+                padding: .3rem .6rem;
+                color: $fg-muted;
+
+                i {
+                    margin-right: .3rem;
+                }
+            }
+        }
+
+        .topic-footer-right {
+            a {
+                color: $fg-muted;
+                transition: 150ms ease-in-out;
+
+                &:hover {
+                    color: #24292f;
+                }
+            }
+        }
+    }
+}
+
+body.dark-mode {
+    .topic {
+        background-color: $dark-bg-default;
+        box-shadow: none;
+
+
+        &:hover {
+            background-color: $dark-bg-default-65;
+        }
+
+        .topic-header {
+            .topic-author {
+                color: #c9d1d9;
+
+                .author-level {
+                    color: #ffffff;
+                    background-color: #ff4500;
+                }
+
+                &:hover {
+                    color: #FFF;
+                }
+            }
+
+            .topic-create-date {
+                color: #c9d1d9;
+            }
+        }
+
+        .topic-body {
+
+            a {
+                color: #FFF;
+            }
+
+            p {
+                color: #c9d1d9;
+            }
+
+
+            ul {
+                li {
+                    a {
+                        color: #FFF;
+                        background-color: #ff4500;
+                    }
+                }
+            }
+        }
+
+        .topic-footer {
+            .topic-footer-left {
+                .topic-view-count {
+                    color: #c9d1d9;
+                }
+
+                .topic-answer-count {
+                    color: #c9d1d9;
+                }
+            }
+
+            .topic-footer-right {
+                a {
+                    color: #c9d1d9;
+
+                    &:hover {
+                        color: #FFF;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .topic-header {
+        flex-direction: column;
+
+        .topic-author {
+            margin-bottom: 1rem;
+        }
+    }
+}

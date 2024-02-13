@@ -39,12 +39,13 @@
         left: 0;
         right: 0;
         bottom: 0;
-        background-color: rgba(1, 4, 9, .38);
-        border: 1px solid rgba(255, 255, 255, .11);
+        background-color: $bg-emphasis-85;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        border: 1px solid transparent;
         backdrop-filter: blur(4px);
 
 
-        transition: 150ms;
+        transition: $t-normal;
 
         &.round {
             border-radius: .5rem;
@@ -65,10 +66,6 @@
             background-color: #FFF;
             transition: 150ms;
         }
-
-        &:hover {
-            background-color: rgba(255, 255, 255, .11);
-        }
     }
     
     input:checked+.slider:before {
@@ -78,13 +75,20 @@
 
 body.dark-mode {
     .fa-sun {
-        color: #FFF;
+        color: $dark-fg-default;
+    }
+
+    .fa-moon {
+        color: $dark-fg-default;
     }
 
     .switch {
         .slider {
+            background-color: $dark-bg-default-65;
+            border-color: rgba(255, 255, 255, .03);
+            box-shadow: none;
             &::before {
-                background-color: #f6f8fa;
+                background-color: rgba(255, 255, 255, .03);
             }
         }
     }

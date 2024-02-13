@@ -1,0 +1,61 @@
+footer {
+    background-color: $bg-emphasis;
+    box-shadow: 0 3px 6px rgba(140, 149, 159, 0.15);
+    padding: 2rem;
+
+    border-radius: .5rem;
+
+    p {
+        color: $fg-special;
+        margin-bottom: 1rem;
+    }
+
+    ul {
+        li {
+            a {
+                color: $fg-default;
+                transition: 150ms ease-in-out;
+
+                &:hover {
+                    color: #24292f;
+                }
+
+                i {
+                    color: $brand;
+                }
+            }
+        }
+    }
+
+    .copyright {
+        padding-top: 1rem;
+        margin-bottom: 0;
+    }
+}
+
+body.dark-mode {
+    footer {
+        background-color: $dark-bg-default;
+        box-shadow: none;
+
+        p {
+            color: $dark-fg-default;
+        }
+    
+        ul {
+            li {
+                a {
+                    color: $dark-fg-default;
+    
+                    &:hover {
+                        color: #FFF;
+                    }
+    
+                    i {
+                        color: $brand;
+                    }
+                }
+            }
+        }
+    }
+}

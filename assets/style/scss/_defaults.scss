@@ -36,35 +36,9 @@ html {
 }
 
 body {
-    background-color: #f6f8fa;
+    background-color: $bg-default;
 
     &.dark-mode {
-        background-color: #010409;
+        background-color: $dark-bg-emphasis;
     }
-}
-
-.dark-layer {
-    position: fixed;
-    left: 0;
-    top: 4rem;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, .75);
-    z-index: 9999;
-    display: none;
-}
-
-.dark-layer-opened {
-    display: block;
-}
-
-
-@media screen and (max-width: 1200px) {
-    html {
-        font-size: 14px;
-    }
-}
-
-.nopadding {
-    padding: 0 !important;
 }

@@ -1,43 +1,42 @@
-.header-center{
-    flex: 1;
-    margin: 0 1rem;
-    position: relative;
-    .search-form{
+    .search-form {
+        flex: 1;
+        margin-right: 1rem;
         position: relative;
-        .search-bar{
+
+        .search-bar {
             width: 100%;
             height: 3rem;
-            background-color: rgba(1, 4, 9, .38);
-            border: 1px solid rgba(255, 255, 255, .11);
-            color: #FFF;
+            background-color: $bg-emphasis-85;
+            color: $fg-default;
             padding: .75rem 1rem .75rem 3rem;
             font-size: .875rem;
             border-radius: .5rem;
-            backdrop-filter: blur(4px);
-            transition: 150ms ease-in-out;
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, .03);
+            transition: $t-normal;
 
-            &:focus{
-                background-color: rgba(255, 255, 255, .11);
+            &:focus {
+                box-shadow: $default-shadow;
             }
 
-            &:hover{
-                background-color: rgba(255, 255, 255, .11);
-
+            &:hover {
+                box-shadow: $default-shadow;
             }
         }
+
         .search-bar-icon {
             position: absolute;
-            color: #FFF;
+            color: $fg-default;
             left: 1rem;
             top: 1rem;
             width: 1rem;
             height: 1rem;
         }
     }
-    
+
     .search-area {
         display: none;
-        background-color: rgba(1, 4, 9, .38);
+        background-color: $bg-emphasis-85;
         border: 1px solid rgba(255, 255, 255, .11);
         backdrop-filter: blur(4px);
         border-radius: .5rem;
@@ -45,208 +44,49 @@
         flex-direction: column;
         position: absolute;
         top: 4rem;
-        left: 0;
-        width: 100%;
+        left: 4rem;
+        width: 57rem;
         z-index: 5;
 
         &.search-area-opened {
             display: block;
         }
-    
-        form {
-            .search-box {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-    
-                input {
-                    padding: .6rem .8rem;
-                    border-radius: .375rem;
-                    outline: none;
-                    transition: 150ms ease-in-out;
-                    background-color: #f6f8fa;
-                }
-    
-                button {
-                    width: 2.5rem;
-                    height: 2.5rem;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    border-radius: .375rem;
-                    transition: 150ms ease-in-out;
-                    color: #FFF;
-    
-                    background-color: #ff4500;
-                }
-            }
-    
-            select {
-                border: none;
-                outline: none;
-                border-radius: .375rem;
-                padding: .3rem;
-                margin-bottom: 1rem;
-            }
-    
-    
-        }
     }
 
 
+    @media screen and (max-width: 992px) {
+        .search-form {
+            margin-right: 0;
+        }
+    }
 
-    .topic {
-        padding: 2rem;
+    body.dark-mode {
 
-        .topic-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 1rem;
+        .search-form {
+            .search-bar {
+                background-color: $dark-bg-default-65;
 
-            .topic-author {
-                color: #6e7781;
-                transition: 150ms ease-in-out;
+                color: $dark-fg-default;
 
-                .author-image {
-                    width: 2rem;
-                    height: 2rem;
-                    margin-right: 1rem;
-                    border-radius: 50%;
-                }
+                &:focus {
+                    background-color: $dark-bg-default-25;
+                    box-shadow: none;
+                    border-color: rgba(255, 255, 255, .08);
 
-                .author-level {
-                    padding: .1rem .4rem;
-                    color: #ffffff;
-                    background-color: #ff4500;
-                    margin-left: 1rem;
-                    border-radius: .375rem;
                 }
 
                 &:hover {
-                    color: #24292f;
+                    background-color: $dark-bg-default-45;
+                    box-shadow: none;
                 }
             }
-
-            .topic-create-date {
-                color: #6e7781;
+            .search-bar-icon{
+                color: $dark-fg-default;
             }
         }
 
-        .topic-body {
-            margin-bottom: 1rem;
-
-            a {
-                font-size: 1.5rem;
-                display: flex;
-                margin-bottom: 1rem;
-                color: #24292f;
-            }
-
-            p {
-                color: #6e7781;
-                cursor: default;
-                margin-bottom: 1rem;
-            }
-
-
-            ul {
-                display: flex;
-                align-items: center;
-                flex-wrap: wrap;
-
-                li {
-                    a {
-                        color: #FFF;
-                        background-color: #24292f;
-                        border-radius: .375rem;
-                        font-size: .875rem;
-                        padding: .3rem .6rem;
-                        margin-right: .5rem;
-                    }
-                }
-            }
-        }
-
-        .topic-footer {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-
-            .topic-footer-left {
-                display: flex;
-                align-items: center;
-
-                .topic-view-count {
-                    padding: .3rem .6rem;
-                    border-radius: .375rem;
-                    margin-right: 1rem;
-                    color: #6e7781;
-
-                    i {
-                        margin-right: .3rem;
-                    }
-                }
-
-                .topic-answer-count {
-                    border-radius: .375rem;
-                    padding: .3rem .6rem;
-                    color: #6e7781;
-
-                    i {
-                        margin-right: .3rem;
-                    }
-                }
-            }
-
-            .topic-footer-right {
-                a {
-                    color: #6e7781;
-                    transition: 150ms ease-in-out;
-
-                    &:hover {
-                        color: #24292f;
-                    }
-                }
-            }
+        .search-area {
+            background-color: $dark-bg-default;
+            box-shadow: none;
         }
     }
-}
-
-@media screen and (max-width: 992px) {
-    .header-center {
-        margin-right: 0;
-    }
-}
-
-body.dark-mode{
-    .search-area {
-        background-color: rgba(1, 4, 9, .38);
-        box-shadow: none;
-
-        form {
-            select {
-                background-color: #161b22;
-                color: #FFF;
-            }
-
-            .search-box {
-                input {
-                    background-color: #161b22;
-                    color: #FFF;
-
-                    &::placeholder {
-                        color: #FFF;
-                    }
-                }
-
-                button {
-                    color: #c9d1d9;
-                    background-color: #ff4500;
-                }
-
-
-            }
-        }
-    }
-}

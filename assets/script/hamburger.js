@@ -1,6 +1,6 @@
 var hamburgerBtn = document.getElementById('hamburgerMenuBtn');
 var hamburgerSpan = document.getElementsByClassName('hamburgerSpan');
-var mobileNavbar = document.getElementById('mobileNavbar');
+var mobileNavbar = document.getElementById('navbar');
 // var darkLayer = document.getElementById('darkLayer');
 var searchArea = document.getElementById('searchArea');
 var userNav = document.getElementById('userNav');
