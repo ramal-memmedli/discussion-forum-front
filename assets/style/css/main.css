@@ -1611,8 +1611,50 @@ main .user-profile {
   top: 5rem;
   z-index: 0;
 }
+main .user-profile .user-profile-header.resposive-user-profile-header {
+  background-color: rgba(1, 4, 9, 0.38);
+  backdrop-filter: blur(20px);
+  border-radius: 0.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.11);
+  padding: 1rem;
+  position: fixed;
+  top: 5rem;
+  left: 5rem;
+  right: 1rem;
+  margin-top: 0;
+  display: flex;
+  justify-content: space-between;
+}
+main .user-profile .user-profile-header.resposive-user-profile-header .profile-details {
+  flex-direction: row;
+  justify-content: left;
+  margin-bottom: 0;
+}
+main .user-profile .user-profile-header.resposive-user-profile-header .profile-details .profile-image {
+  width: 2rem;
+  height: 2rem;
+}
+main .user-profile .user-profile-header.resposive-user-profile-header .profile-details .profile-name-section {
+  margin-top: 0;
+}
+main .user-profile .user-profile-header.resposive-user-profile-header .profile-details .profile-name-section .profile-fullname {
+  font-size: 0.875rem;
+  margin-left: 1rem;
+}
+main .user-profile .user-profile-header.resposive-user-profile-header .profile-details .follow-user-button {
+  font-size: 0.875rem;
+  padding: 0.3rem 0.6rem;
+}
+main .user-profile .user-profile-header.resposive-user-profile-header .profile-actions {
+  width: auto;
+  height: 2rem;
+}
+main .user-profile .user-profile-header.resposive-user-profile-header + .content-responsive {
+  margin-top: 13rem !important;
+}
 main .user-profile .user-profile-header {
   margin-top: 10rem;
+  transition: 150ms ease-in-out;
 }
 main .user-profile .user-profile-header .profile-details {
   display: flex;
@@ -1620,21 +1662,25 @@ main .user-profile .user-profile-header .profile-details {
   justify-content: center;
   align-items: center;
   margin-bottom: 5rem;
+  transition: 150ms ease-in-out;
 }
 main .user-profile .user-profile-header .profile-details .profile-image {
   width: 8rem;
   height: 8rem;
   border-radius: 50%;
   object-fit: cover;
+  transition: 150ms ease-in-out;
 }
 main .user-profile .user-profile-header .profile-details .profile-name-section {
   margin-top: 1rem;
   display: flex;
+  transition: 150ms ease-in-out;
   align-items: center;
 }
 main .user-profile .user-profile-header .profile-details .profile-name-section .profile-fullname {
   font-size: 2rem;
   color: #FFF;
+  transition: 150ms ease-in-out;
 }
 main .user-profile .user-profile-header .profile-details .profile-name-section .verified-profile {
   background-color: #3498db;
@@ -1645,9 +1691,11 @@ main .user-profile .user-profile-header .profile-details .profile-name-section .
   justify-content: center;
   align-items: center;
   margin-left: 0.5rem;
+  transition: 150ms ease-in-out;
 }
 main .user-profile .user-profile-header .profile-details .profile-name-section .verified-profile i {
   color: #FFF;
+  transition: 150ms ease-in-out;
 }
 main .user-profile .user-profile-header .profile-details .follow-user-button {
   background-color: #efe71d;
