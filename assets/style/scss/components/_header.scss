@@ -220,7 +220,7 @@ header {
 }
 
 nav#mobileNavbar {
-
+    overflow: hidden;
 
     background-color: #ffffff;
     backdrop-filter: blur(4px);
@@ -235,10 +235,10 @@ nav#mobileNavbar {
 
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
 
     transition: 150ms ease-in-out;
-    z-index: 99999;
 
 
     ul {
@@ -248,13 +248,13 @@ nav#mobileNavbar {
         li {
             a {
                 display: flex;
+                justify-content: center;
+                align-items: center;
                 color: #6e7781;
                 transition: 150ms ease-in-out;
-                width: 100%;
-                padding: .6rem 1.2rem;
-                border-radius: .375rem;
+                width: 3rem;
+                height: 3rem;
                 overflow: hidden;
-                margin-bottom: 1rem;
 
                 &:hover {
 
@@ -268,6 +268,7 @@ nav#mobileNavbar {
     .mobile-user {
         cursor: pointer;
         user-select: none;
+        display: none;
 
         img {
             width: 2rem;
@@ -303,9 +304,6 @@ nav#mobileNavbar {
 }
 
 @media screen and (max-width: 992px) {
-    header {
-        padding: 0 0 0 1rem;
-    }
 
     #headerNavbar {
         display: none;
@@ -321,11 +319,53 @@ nav#mobileNavbar {
 
     #userNav {
         left: 1rem;
-        top: -50rem;
+        top: auto;
+        left: 1rem;
+        bottom: -200vh;
+        width: calc(100vw - 2rem);
 
         &.user-nav-opened {
             top: auto;
-            bottom: 6rem;
+            bottom: 5rem;
+        }
+    }
+
+    header {
+        .header-left {
+            .hamburgerMenuBtn {
+                display: none;
+            }
+
+            .header-logo {
+                margin-left: .5rem;
+                margin-right: .5rem;
+            }
+        }
+    }
+
+    nav#mobileNavbar {
+        left: 1rem;
+        right: 1rem;
+        width: calc(100vw - 2rem);
+        height: 3rem;
+        top: auto;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        ul {
+            flex-direction: row;
+            align-items: center;
+            height: 100%;
+            li {
+                a {
+                margin-bottom: 0;
+
+                }
+            }
+        }
+
+        .mobile-user {
+            display: flex;
         }
     }
 }
@@ -437,6 +477,7 @@ body.dark-mode {
 
     nav#mobileNavbar {
         background-color: rgba(1, 4, 9, .38);
+        z-index: 1;
 
         ul {
             li {
@@ -446,7 +487,7 @@ body.dark-mode {
                     &:hover {
 
                         color: #FFF;
-                        background-color: rgba(255, 69, 0, .8);
+                        background-color: rgba(255, 255, 255, .11);
                     }
                 }
             }

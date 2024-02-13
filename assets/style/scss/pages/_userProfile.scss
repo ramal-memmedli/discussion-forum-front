@@ -1,132 +1,141 @@
-.user-profile-header {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: calc(80vh - 4rem);
-    position: relative;
-
-
-    .profile-banner-image {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-
-        z-index: 1;
-    }
-
-    .profile-banner-image-color-layer {
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        background: rgb(1, 4, 9);
-        background: linear-gradient(0deg, rgba(1, 4, 9, 1) 0%, rgba(1, 4, 9, 0.65) 50%, rgba(1, 4, 9, 0.45) 100%);
-        z-index: 2;
-        backdrop-filter: blur(10px);
-    }
-
-    
-}
-
-.page-content {
-    position: absolute;
-    left: 5rem;
-    right: 1rem;
-    bottom: 1rem;
-    top: 5rem;
-    z-index: 9;
-    .profile-details{
+main {
+    .user-profile-banner {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        z-index: 3;
-
-        .profile-image{
-            width: 8rem;
-            height: 8rem;
-            border-radius: 50%;
-            object-fit: cover;
-        }
-
-
-        .profile-name-section{
-            margin-top: 2rem;
-            margin-bottom: 1rem;
-
-            display: flex;
-            align-items: center;
-            .profile-fullname {
-                font-size: 2rem;
-                color: #FFF;
-            }
-    
-            .verified-profile{
-                background-color: #3498db;
-                width: 1.5rem;
-                height: 1.5rem;
-                border-radius: 50%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                margin-left: .5rem;
-
-                i{
-                    color: #FFF;
-                }
-            }
-        }
-
-        .follow-user-button{
-            background-color: #efe71d;
-            margin-left: 1rem;
-            padding: .6rem 1.2rem;
-            border-radius: 2rem;
-            color: #010409;
-            transition: all 150ms ease-in-out;
-
-
-            &:hover{
-                background-color: #c4be21;
-            }
-
-            i{
-                margin-right: .5rem;
-            }
-        }
-    }
-
-    .profile-actions {
-        z-index: 3;
-
-        width: 100%;
-        background-color: rgba(255,255,255, .03);
-        height: 4rem;
-
-        display: flex;
         justify-content: space-between;
         align-items: center;
+        width: 100%;
+        height: calc(80vh - 4rem);
+        position: relative;
+        z-index: -1;
+    
+        .profile-banner-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+    
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    
+        .profile-banner-image-color-layer {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background: rgb(1, 4, 9);
+            background: linear-gradient(0deg, rgba(1, 4, 9, 1) 0%, rgba(1, 4, 9, 0.65) 50%, rgba(1, 4, 9, 0.45) 100%);
+            backdrop-filter: blur(10px);
+        }
+    
+        
+    }
+    
+    .user-profile {
+        position: absolute;
+        left: 5rem;
+        right: 1rem;
+        bottom: 1rem;
+        top: 5rem;
+        z-index: 0;
 
-        nav{
-            ul {
-                li {
-                    a{
-                        
+        .user-profile-header {
+
+            margin-top: 10rem;
+
+            .profile-details{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                margin-bottom: 5rem;
+        
+                .profile-image{
+                    width: 8rem;
+                    height: 8rem;
+                    border-radius: 50%;
+                    object-fit: cover;
+                }
+        
+        
+                .profile-name-section{
+                    margin-top: 1rem;
+        
+                    display: flex;
+                    align-items: center;
+                    .profile-fullname {
+                        font-size: 2rem;
+                        color: #FFF;
+                    }
+            
+                    .verified-profile{
+                        background-color: #3498db;
+                        width: 1.5rem;
+                        height: 1.5rem;
+                        border-radius: 50%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin-left: .5rem;
+        
+                        i{
+                            color: #FFF;
+                        }
+                    }
+                }
+        
+                .follow-user-button{
+                    background-color: #efe71d;
+                    margin-left: 1rem;
+                    padding: .6rem 1.2rem;
+                    border-radius: 2rem;
+                    color: #010409;
+                    transition: all 150ms ease-in-out;
+        
+        
+                    &:hover{
+                        background-color: #c4be21;
+                    }
+        
+                    i{
+                        margin-right: .5rem;
+                    }
+                }
+            }
+        
+            .profile-actions {
+                width: 100%;
+                background-color: rgba(1, 4, 9, .38);
+                border-radius: .5rem;
+                border: 1px solid rgba(255, 255, 255, .11);
+                height: 4rem;
+        
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+        
+                nav{
+                    ul {
+                        li {
+                            a{
+                                
+                            }
+                        }
                     }
                 }
             }
         }
+
+        
     }
 }
+
+
 
 @media screen and (max-width: 992px) {
     .community-header {
@@ -139,6 +148,12 @@
             li {
                 margin-bottom: 1rem;
             }
+        }
+    }
+
+    main {
+        .user-profile {
+            left: 1rem;
         }
     }
 }

@@ -213,6 +213,12 @@
     }
 }
 
+@media screen and (max-width: 992px) {
+    .header-center {
+        margin-right: 0;
+    }
+}
+
 body.dark-mode{
     .search-area {
         background-color: rgba(1, 4, 9, .38);
