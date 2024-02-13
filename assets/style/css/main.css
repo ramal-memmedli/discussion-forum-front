@@ -1644,17 +1644,19 @@ main .user-profile .user-profile-header.resposive-user-profile-header .profile-d
 main .user-profile .user-profile-header.resposive-user-profile-header .profile-details .follow-user-button {
   font-size: 0.875rem;
   padding: 0.3rem 0.6rem;
+  margin-left: 1rem;
+  margin-top: 0;
 }
 main .user-profile .user-profile-header.resposive-user-profile-header .profile-actions {
   width: auto;
   height: 2rem;
 }
 main .user-profile .user-profile-header.resposive-user-profile-header + .content-responsive {
-  margin-top: 13rem !important;
+  margin-top: 14rem !important;
 }
 main .user-profile .user-profile-header {
-  margin-top: 10rem;
-  transition: 150ms ease-in-out;
+  margin-top: 5rem;
+  transition: 300ms ease-in-out;
 }
 main .user-profile .user-profile-header .profile-details {
   display: flex;
@@ -1662,25 +1664,25 @@ main .user-profile .user-profile-header .profile-details {
   justify-content: center;
   align-items: center;
   margin-bottom: 5rem;
-  transition: 150ms ease-in-out;
+  transition: 300ms ease-in-out;
 }
 main .user-profile .user-profile-header .profile-details .profile-image {
   width: 8rem;
   height: 8rem;
   border-radius: 50%;
   object-fit: cover;
-  transition: 150ms ease-in-out;
+  transition: 300ms ease-in-out;
 }
 main .user-profile .user-profile-header .profile-details .profile-name-section {
   margin-top: 1rem;
   display: flex;
-  transition: 150ms ease-in-out;
+  transition: 300ms ease-in-out;
   align-items: center;
 }
 main .user-profile .user-profile-header .profile-details .profile-name-section .profile-fullname {
   font-size: 2rem;
   color: #FFF;
-  transition: 150ms ease-in-out;
+  transition: 300ms ease-in-out;
 }
 main .user-profile .user-profile-header .profile-details .profile-name-section .verified-profile {
   background-color: #3498db;
@@ -1691,19 +1693,19 @@ main .user-profile .user-profile-header .profile-details .profile-name-section .
   justify-content: center;
   align-items: center;
   margin-left: 0.5rem;
-  transition: 150ms ease-in-out;
+  transition: 300ms ease-in-out;
 }
 main .user-profile .user-profile-header .profile-details .profile-name-section .verified-profile i {
   color: #FFF;
-  transition: 150ms ease-in-out;
+  transition: 300ms ease-in-out;
 }
 main .user-profile .user-profile-header .profile-details .follow-user-button {
   background-color: #efe71d;
-  margin-left: 1rem;
+  margin-top: 1rem;
   padding: 0.6rem 1.2rem;
   border-radius: 2rem;
   color: #010409;
-  transition: all 150ms ease-in-out;
+  transition: all 300ms ease-in-out;
 }
 main .user-profile .user-profile-header .profile-details .follow-user-button:hover {
   background-color: #c4be21;
@@ -1713,14 +1715,43 @@ main .user-profile .user-profile-header .profile-details .follow-user-button i {
 }
 main .user-profile .user-profile-header .profile-actions {
   width: 100%;
-  background-color: rgba(1, 4, 9, 0.38);
   border-radius: 0.5rem;
-  border: 1px solid rgba(255, 255, 255, 0.11);
   height: 4rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
+main .user-profile .user-profile-header .profile-actions nav ul {
+  display: flex;
+  align-items: center;
+}
+main .user-profile .user-profile-header .profile-actions nav ul li a {
+  display: flex;
+  align-items: center;
+  color: #FFF;
+  margin-right: 1rem;
+  transition: 300ms ease-in-out;
+  font-size: 1.5rem;
+  position: relative;
+}
+main .user-profile .user-profile-header .profile-actions nav ul li a i {
+  font-size: 1rem;
+  margin-right: 0.5rem;
+}
+main .user-profile .user-profile-header .profile-actions nav ul li a:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 100%;
+  bottom: -0.2rem;
+  height: 0.15rem;
+  background-color: #FFF;
+  transition: 300ms ease-in-out;
+}
+main .user-profile .user-profile-header .profile-actions nav ul li a:hover:before {
+  right: 0;
+}
+
 @media screen and (max-width: 992px) {
   .community-header {
     flex-direction: column;
@@ -1730,6 +1761,9 @@ main .user-profile .user-profile-header .profile-actions {
     margin-bottom: 1rem;
   }
   main .user-profile {
+    left: 1rem;
+  }
+  main .user-profile .user-profile-header.resposive-user-profile-header {
     left: 1rem;
   }
 }

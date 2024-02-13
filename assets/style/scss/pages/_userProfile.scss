@@ -77,6 +77,8 @@ main {
                 .follow-user-button {
                     font-size: .875rem;
                     padding: .3rem .6rem;
+                    margin-left: 1rem;
+                    margin-top: 0;
                 }
             }
 
@@ -86,13 +88,13 @@ main {
             }
 
             & + .content-responsive{
-                margin-top: 13rem !important;
+                margin-top: 14rem !important;
             }
         }
 
         .user-profile-header {
-            margin-top: 10rem;
-            transition: 150ms ease-in-out;
+            margin-top: 5rem;
+            transition: 300ms ease-in-out;
             .profile-details{
                 display: flex;
                 flex-direction: column;
@@ -100,14 +102,14 @@ main {
                 align-items: center;
 
                 margin-bottom: 5rem;
-                transition: 150ms ease-in-out;
+                transition: 300ms ease-in-out;
         
                 .profile-image{
                     width: 8rem;
                     height: 8rem;
                     border-radius: 50%;
                     object-fit: cover;
-            transition: 150ms ease-in-out;
+            transition: 300ms ease-in-out;
 
                 }
         
@@ -116,13 +118,13 @@ main {
                     margin-top: 1rem;
         
                     display: flex;
-            transition: 150ms ease-in-out;
+            transition: 300ms ease-in-out;
 
                     align-items: center;
                     .profile-fullname {
                         font-size: 2rem;
                         color: #FFF;
-            transition: 150ms ease-in-out;
+            transition: 300ms ease-in-out;
 
                     }
             
@@ -135,12 +137,12 @@ main {
                         justify-content: center;
                         align-items: center;
                         margin-left: .5rem;
-            transition: 150ms ease-in-out;
+            transition: 300ms ease-in-out;
 
         
                         i{
                             color: #FFF;
-            transition: 150ms ease-in-out;
+            transition: 300ms ease-in-out;
 
                         }
                     }
@@ -148,11 +150,12 @@ main {
         
                 .follow-user-button{
                     background-color: #efe71d;
-                    margin-left: 1rem;
+                    margin-top: 1rem;
+
                     padding: .6rem 1.2rem;
                     border-radius: 2rem;
                     color: #010409;
-                    transition: all 150ms ease-in-out;
+                    transition: all 300ms ease-in-out;
         
         
                     &:hover{
@@ -167,20 +170,49 @@ main {
         
             .profile-actions {
                 width: 100%;
-                background-color: rgba(1, 4, 9, .38);
                 border-radius: .5rem;
-                border: 1px solid rgba(255, 255, 255, .11);
                 height: 4rem;
         
                 display: flex;
-                justify-content: space-between;
+                justify-content: center;
                 align-items: center;
         
                 nav{
                     ul {
+                        display: flex;
+                        align-items: center;
                         li {
                             a{
-                                
+                                display: flex;
+                                align-items:center;
+                                color: #FFF;
+                                margin-right: 1rem;
+                                transition: 300ms ease-in-out;
+                                font-size: 1.5rem;
+                                position: relative;
+
+                                i {
+                                    font-size: 1rem;
+                                    margin-right: .5rem;
+                                }
+
+                                &:before {
+                                    content: '';
+                                    position: absolute;
+                                    left: 0;
+                                    right: 100%;
+                                    bottom: -.2rem;
+                                    height: .15rem;
+                                    background-color: #FFF;
+                                    transition: 300ms ease-in-out;
+                                }
+
+                                &:hover {
+
+                                    &:before {
+                                        right: 0;
+                                    }
+                                }
                             }
                         }
                     }
@@ -211,8 +243,13 @@ main {
     main {
         .user-profile {
             left: 1rem;
+
+            .user-profile-header.resposive-user-profile-header{
+                left: 1rem;
+            }
         }
     }
+
 }
 
 body.dark-mode {
