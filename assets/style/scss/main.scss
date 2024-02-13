@@ -1,6 +1,6 @@
+//Vendors
+
 @import "../../vendors/bootstrap-5.0.2-dist/css/bootstrap.min.css";
-
-
 
 //Variables
 
@@ -8,11 +8,7 @@
 
 //Components
 
-@import "./components/hero";
 @import "./components/header";
-@import "./components/communityCard";
-@import "./components/communityHeader";
-@import "./components/userCard";
 @import "./components/darkModeSwitch";
 @import "./components/searchBar";
 
@@ -21,9 +17,6 @@
 @import "./pages/index";
 @import "./pages/topic";
 @import "./pages/loginregister";
-@import "./pages/communities";
-@import "./pages/users";
-@import "./pages/community";
 @import "./pages/indexNoUser";
 @import "./pages/userProfile";
 

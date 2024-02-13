@@ -34,6 +34,16 @@
         backdrop-filter: blur(10px);
     }
 
+    
+}
+
+.page-content {
+    position: absolute;
+    left: 5rem;
+    right: 1rem;
+    bottom: 1rem;
+    top: 5rem;
+    z-index: 9;
     .profile-details{
         display: flex;
         flex-direction: column;
