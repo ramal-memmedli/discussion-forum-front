@@ -1,6 +1,6 @@
-var searchBtn = document.getElementById('searchBtn');
-var searchArea = document.getElementById('searchArea');
+var searchBtn = document.getElementById('searchBar');
+var searchArea = document.getElementById('searchResult');
 
-searchBtn.addEventListener("click", function(){
+searchBtn.addEventListener("focus", function(){
     searchArea.classList.toggle("search-area-opened");
 });
