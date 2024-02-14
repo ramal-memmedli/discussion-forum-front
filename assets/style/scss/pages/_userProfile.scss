@@ -43,23 +43,113 @@ main {
         top: 5rem;
         z-index: 0;
 
-        .user-profile-header.resposive-user-profile-header{
-            background-color: rgba(1, 4, 9, .38);
+
+        .user-profile-header, .resposive-user-profile-header{
+            .profile-details{
+                display: flex;
+                align-items: center;
+                transition: $t-normal;
+        
+                .profile-image{
+                    border-radius: 50%;
+                    object-fit: cover;
+                }
+
+                .profile-name-section{
+                    display: flex;
+                    align-items: center;
+
+                    .profile-fullname {
+                        color: $fg-default;
+                    }
+            
+                    .verified-profile{
+                        background-color: $brand;
+                        border-radius: 50%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin-left: .5rem;
+
+                        i{
+                            color: $fg-default;
+                        }
+                    }
+                }
+        
+                .follow-user-button{
+                    background-color: $brand;
+                    border-radius: 2rem;
+                    color: $fg-default;
+                    transition: $t-normal;
+        
+                    &:hover{
+                        background-color: $brand;
+                    }
+        
+                    i{
+                        margin-right: .5rem;
+                    }
+                }
+            }
+        
+            .profile-actions {
+                display: flex;
+                align-items: center;
+        
+                nav{
+                    ul {
+                        display: flex;
+                        align-items: center;
+                        li {
+                            a{
+                                display: flex;
+                                align-items:center;
+                                color: $fg-default;
+                                margin-right: 1rem;
+                                transition: $t-normal;
+                                position: relative;
+
+                                &:before {
+                                    content: '';
+                                    position: absolute;
+                                    left: 0;
+                                    right: 100%;
+                                    bottom: -.2rem;
+                                    height: .15rem;
+                                    background-color: $fg-default;
+                                    transition: $t-normal;
+                                }
+
+                                &:hover {
+                                    &:before {
+                                        right: 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .resposive-user-profile-header{
+            background-color: $bg-emphasis-85;
             backdrop-filter: blur(20px);
             border-radius: .5rem;
-            border: 1px solid rgba(255, 255, 255, .11);
+            border-color: rgba(255, 255, 255, .11);
             padding: 1rem;
+            margin-top: 0;
+            justify-content: space-between;
+            height: auto;
             position: fixed;
             top: 5rem;
             left: 5rem;
             right: 1rem;
-            margin-top: 0;
-            display: flex;
-            justify-content: space-between;
+
             .profile-details {
                 flex-direction: row;
                 justify-content: left;
-                margin-bottom: 0;
                 .profile-image {
                     width: 2rem;
                     height: 2rem;
@@ -94,124 +184,50 @@ main {
 
         .user-profile-header {
             margin-top: 5rem;
-            transition: 300ms ease-in-out;
             .profile-details{
-                display: flex;
                 flex-direction: column;
                 justify-content: center;
-                align-items: center;
-
                 margin-bottom: 5rem;
-                transition: 300ms ease-in-out;
         
                 .profile-image{
                     width: 8rem;
                     height: 8rem;
-                    border-radius: 50%;
-                    object-fit: cover;
-            transition: 300ms ease-in-out;
-
                 }
-        
         
                 .profile-name-section{
                     margin-top: 1rem;
-        
-                    display: flex;
-            transition: 300ms ease-in-out;
 
-                    align-items: center;
                     .profile-fullname {
                         font-size: 2rem;
-                        color: #FFF;
-            transition: 300ms ease-in-out;
-
                     }
             
                     .verified-profile{
-                        background-color: #3498db;
                         width: 1.5rem;
                         height: 1.5rem;
-                        border-radius: 50%;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        margin-left: .5rem;
-            transition: 300ms ease-in-out;
-
-        
-                        i{
-                            color: #FFF;
-            transition: 300ms ease-in-out;
-
-                        }
                     }
                 }
         
                 .follow-user-button{
-                    background-color: #efe71d;
                     margin-top: 1rem;
-
                     padding: .6rem 1.2rem;
-                    border-radius: 2rem;
-                    color: #010409;
-                    transition: all 300ms ease-in-out;
-        
-        
-                    &:hover{
-                        background-color: #c4be21;
-                    }
-        
-                    i{
-                        margin-right: .5rem;
-                    }
                 }
             }
         
             .profile-actions {
+                height: 4rem;
                 width: 100%;
                 border-radius: .5rem;
-                height: 4rem;
-        
-                display: flex;
                 justify-content: center;
-                align-items: center;
         
                 nav{
                     ul {
-                        display: flex;
-                        align-items: center;
                         li {
                             a{
-                                display: flex;
-                                align-items:center;
-                                color: #FFF;
-                                margin-right: 1rem;
-                                transition: 300ms ease-in-out;
                                 font-size: 1.5rem;
-                                position: relative;
 
                                 i {
                                     font-size: 1rem;
                                     margin-right: .5rem;
-                                }
-
-                                &:before {
-                                    content: '';
-                                    position: absolute;
-                                    left: 0;
-                                    right: 100%;
-                                    bottom: -.2rem;
-                                    height: .15rem;
-                                    background-color: #FFF;
-                                    transition: 300ms ease-in-out;
-                                }
-
-                                &:hover {
-
-                                    &:before {
-                                        right: 0;
-                                    }
                                 }
                             }
                         }
@@ -258,6 +274,46 @@ body.dark-mode {
             .profile-banner-image-color-layer {
                 background: $dark-bg-emphasis;
                 background: linear-gradient(0deg, $dark-bg-emphasis 0%, $dark-bg-emphasis-65 35%, $dark-bg-emphasis-45 100%);
+            }
+        }
+
+        .user-profile {
+            .resposive-user-profile-header{
+                background-color: $dark-bg-default-65;
+                border: 1px solid rgba(255, 255, 255, .03);
+
+
+                .profile-details {    
+                    .profile-name-section {
+                        .profile-fullname {
+                            color: $dark-fg-default;
+                        }
+                    }
+    
+                    .follow-user-button {
+                        color: $dark-fg-default;
+                    }
+                }
+    
+                .profile-actions {
+                    nav{
+                        ul {
+                            li {
+                                a{
+                                    color: $dark-fg-default;
+    
+                                    i {
+                                        color: $dark-fg-default;
+                                    }
+
+                                    &:before {
+                                        background-color: $dark-fg-default;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
     }

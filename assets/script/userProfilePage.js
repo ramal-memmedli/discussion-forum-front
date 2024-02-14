@@ -1,15 +1,25 @@
-var userProfileHeader = document.getElementById("userProfileHeader");
+var userProfileHeaderResponsive = $("#userProfileHeaderResponsive");
+var userProfileHeader = $("#userProfileHeader")
+
+userProfileHeaderResponsive.css("display", "flex")
+.hide();
 
 window.addEventListener("scroll", function(){
-    if(userProfileHeader.classList.contains("resposive-user-profile-header")){
-        if(this.document.documentElement.scrollTop <= 100){
-            userProfileHeader.classList.remove("resposive-user-profile-header")
-            console.log("cixarildi")
+
+        if(this.document.documentElement.scrollTop <= 360){
+            
+            userProfileHeaderResponsive.slideUp('fast');
+            userProfileHeader.css({
+                visibility: 'visible'
+            });
         }
-    }else {
-        if(this.document.documentElement.scrollTop > 100){
-            userProfileHeader.classList.add("resposive-user-profile-header")
-            console.log("elave olundu")
+
+        if(this.document.documentElement.scrollTop > 360){
+            userProfileHeader.css({
+                visibility: 'hidden'
+            });
+            userProfileHeaderResponsive.slideDown('fast');
         } 
-    }
+
 });
+
