@@ -13,90 +13,106 @@
 
 <body class="login-body">
   <header class="">
-    <div class="header-left">
-      <a class="hamburgerMenuBtn" id="hamburgerMenuBtn">
-        <span class="hamburgerSpan"> </span>
-        <span class="hamburgerSpan"> </span>
-        <span class="hamburgerSpan"> </span>
-      </a>
-      <a href="#" class="header-logo">
-        <img src="./assets/images/logo.svg" alt="">
-      </a>
-    </div>
+    <a class="hamburgerMenuBtn" id="hamburgerMenuBtn">
+      <span class="hamburgerSpan"> </span>
+      <span class="hamburgerSpan"> </span>
+      <span class="hamburgerSpan"> </span>
+    </a>
 
-    <div class="header-center">
-      <form class="search-form" action="/search">
-        <input type="text" placeholder="Search now" class="search-bar" id="searchBar">
-        <i class="search-bar-icon fa-solid fa-magnifying-glass"></i>
-      </form>
-      <div class="search-area" id="searchResult">
-        <div class="topic">
-          <div class="topic-header">
-            <a href="#" class="topic-author">
-              <img class="author-image" src="./assets/images/logo.svg" alt="">
-              Ramal Memmedli
-              <span class="author-level">10</span>
-            </a>
-            <p class="topic-create-date">
-              Asked: <span class="date">8/4/2022</span>
-            </p>
-          </div>
-          <div class="topic-body">
-            <a href="./topic.html">Ekran Kartıma göre en iyi DirectX sürümü hangisidir ?</a>
-            <p>Ekran kartım NVIDIA GeForce GT 620M buna en uyumlu DirectX sürümünü nasıl bulabilirim yardımcı olur
-              musunuz ?</p>
-            <ul>
-              <li><a href="#">Technology</a></li>
-              <li><a href="#">GPU</a></li>
-              <li><a href="#">Software</a></li>
-              <li><a href="#">Technology</a></li>
-              <li><a href="#">GPU</a></li>
-              <li><a href="#">Software</a></li>
-            </ul>
-          </div>
-          <div class="topic-footer">
-            <div class="topic-footer-left">
-              <div class="topic-view-count">
-                <i class="fa-solid fa-eye"></i> <span class="view-count"> 43 Views</span>
-              </div>
+    <form class="search-form" action="/search">
+      <input type="text" placeholder="Search now" class="search-bar" id="searchBar">
+      <i class="search-bar-icon fa-solid fa-magnifying-glass"></i>
+    </form>
+    <div class="search-area" id="searchResult">
+      <div class="topic">
+        <div class="topic-header">
+          <a href="#" class="topic-author">
+            <img class="author-image" src="./assets/images/logo.svg" alt="">
+            Ramal Memmedli
+            <span class="author-level">10</span>
+          </a>
+          <p class="topic-create-date">
+            Asked: <span class="date">8/4/2022</span>
+          </p>
+        </div>
+        <div class="topic-body">
+          <a href="./topic.html">Ekran Kartıma göre en iyi DirectX sürümü hangisidir ?</a>
+          <p>Ekran kartım NVIDIA GeForce GT 620M buna en uyumlu DirectX sürümünü nasıl bulabilirim yardımcı olur
+            musunuz ?</p>
+          <ul>
+            <li><a href="#">Technology</a></li>
+            <li><a href="#">GPU</a></li>
+            <li><a href="#">Software</a></li>
+            <li><a href="#">Technology</a></li>
+            <li><a href="#">GPU</a></li>
+            <li><a href="#">Software</a></li>
+          </ul>
+        </div>
+        <div class="topic-footer">
+          <div class="topic-footer-left">
+            <div class="topic-view-count">
+              <i class="fa-solid fa-eye"></i> <span class="view-count"> 43 Views</span>
+            </div>
 
-              <div class="topic-answer-count">
-                <i class="fa-solid fa-message"></i> <span class="answer-count"> 7 Answers</span>
-              </div>
+            <div class="topic-answer-count">
+              <i class="fa-solid fa-message"></i> <span class="answer-count"> 7 Answers</span>
             </div>
-            <div class="topic-footer-right">
-              <a href="#"><i class="fa-solid fa-bookmark"></i></a>
-            </div>
+          </div>
+          <div class="topic-footer-right">
+            <a href="#"><i class="fa-solid fa-bookmark"></i></a>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="header-right">
-      <div class="dark-mode-switch">
-        <label class="switch" id="switch">
-          <input type="checkbox">
-          <span class="slider round"></span>
-          <i class="fa-solid fa-sun"></i>
-          <i class="fa-solid fa-moon"></i>
-        </label>
-      </div>
-      
-
-      <div class="header-user-box">
-        <a class="header-user" id="headerUser">
-          <img src="https://picsum.photos/300/600" alt="">
-          <span>Ramal Memmedli</span>
-          <i class="fa-solid fa-chevron-down"></i>
-
-        </a>
-
-      </div>
-
-      
+    <div class="dark-mode-switch">
+      <label class="switch" id="switch">
+        <input type="checkbox">
+        <span class="slider round"></span>
+        <i class="fa-solid fa-sun"></i>
+        <i class="fa-solid fa-moon"></i>
+      </label>
     </div>
 
-  </header>
+    <div class="header-user-box">
+      <a class="header-user" id="headerUser">
+        <img src="https://picsum.photos/300/600" alt="">
+        <span>Ramal Memmedli</span>
+        <i class="fa-solid fa-chevron-down"></i>
+      </a>
+    </div>
+
+    
+
+</header>
+
+<div class="user-nav" id="userNav">
+  <ul>
+    <li><a href="#"><i class="fa-solid fa-user"></i> Your profile</a></li>
+    <li><a href="#"><i class="fa-solid fa-users"></i> Your communities</a></li>
+    <li><a href="#"><i class="fa-solid fa-bookmark"></i> Your bookmarks</a></li>
+    <li><a href="#"><i class="fa-solid fa-message"></i> Your topics</a></li>
+    <li><a href="#"><i class="fa-solid fa-comment-dots"></i> Your answers</a></li>
+    <li><a href="#"><i class="fa-solid fa-comments"></i> Your comments</a></li>
+    <li><a href="#"><i class="fa-solid fa-square-check"></i> Your votes</a></li>
+    <hr class="user-nav-separator">
+    <li><a class="sign-out-btn" href="#"><i class="fa-solid fa-right-from-bracket"></i> Sign out</a></li>
+  </ul>
+</div>
+
+<nav id="navbar">
+    <ul>
+      <li><a href="#" class="navbar-logo">
+        <img src="./assets/images/logo.svg" alt="">
+      </a></li>
+      <li><a href="#"><i class="fa-solid fa-hashtag"></i></a></li>
+      <li><a href="#"><i class="fa-solid fa-users"></i></a></li>
+      <li><a href="#"><i class="fa-solid fa-rss"></i></a></li>
+      <li><a class="mobile-user header-user">
+        <img src="https://picsum.photos/300/600" alt="">
+      </a></li>
+    </ul>
+</nav>
 
   <main class="login-main">
 

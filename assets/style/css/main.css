@@ -1653,4 +1653,10 @@ body {
 }
 body.dark-mode {
   background-color: rgb(0, 0, 0);
+}
+
+@media screen and (min-width: 1920px) {
+  html {
+    font-size: 32px;
+  }
 }/*# sourceMappingURL=main.css.map */
