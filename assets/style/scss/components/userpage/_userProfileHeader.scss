@@ -1,0 +1,250 @@
+main {    
+    .user-profile {
+        .user-profile-header, .resposive-user-profile-header{
+            .profile-details{
+                display: flex;
+                align-items: center;
+                transition: $t-normal;
+        
+                .profile-image{
+                    border-radius: 50%;
+                    object-fit: cover;
+                }
+
+                .profile-name-section{
+                    display: flex;
+                    align-items: center;
+
+                    .profile-fullname {
+                        color: $fg-default;
+                    }
+            
+                    .verified-profile{
+                        background-color: $brand;
+                        border-radius: 50%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin-left: .5rem;
+
+                        i{
+                            color: $fg-default;
+                        }
+                    }
+                }
+        
+                .follow-user-button{
+                    background-color: $brand;
+                    border-radius: 2rem;
+                    color: $fg-default;
+                    transition: $t-normal;
+        
+                    &:hover{
+                        background-color: $brand;
+                    }
+        
+                    i{
+                        margin-right: .5rem;
+                    }
+                }
+            }
+        
+            .profile-actions {
+                display: flex;
+                align-items: center;
+        
+                nav{
+                    ul {
+                        display: flex;
+                        align-items: center;
+                        li {
+                            a{
+                                display: flex;
+                                align-items:center;
+                                color: $fg-default;
+                                margin-right: 1rem;
+                                transition: $t-normal;
+                                position: relative;
+
+                                &:before {
+                                    content: '';
+                                    position: absolute;
+                                    left: 0;
+                                    right: 100%;
+                                    bottom: -.2rem;
+                                    height: .15rem;
+                                    background-color: $fg-default;
+                                    transition: $t-normal;
+                                }
+
+                                &:hover {
+                                    &:before {
+                                        right: 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .resposive-user-profile-header{
+            background-color: $bg-emphasis-85;
+            backdrop-filter: blur(20px);
+            border-radius: .5rem;
+            border: $dark-border;
+            padding: 1rem;
+            margin-top: 0;
+            justify-content: space-between;
+            height: auto;
+            position: fixed;
+            top: 3.5rem;
+            left: 3.5rem;
+            right: .25rem;
+            .profile-details {
+                flex-direction: row;
+                justify-content: left;
+                .profile-image {
+                    width: 2rem;
+                    height: 2rem;
+                }
+
+                .profile-name-section {
+                    margin-top: 0;
+
+                    .profile-fullname {
+                        font-size: .875rem;
+                        margin-left: 1rem;
+                    }
+                }
+
+                .follow-user-button {
+                    font-size: .875rem;
+                    padding: .3rem .6rem;
+                    margin-left: 1rem;
+                    margin-top: 0;
+                }
+            }
+
+            .profile-actions {
+                width: auto;
+                height: 2rem;
+            }
+
+            & + .content-responsive{
+                margin-top: 14rem !important;
+            }
+        }
+
+        .user-profile-header {
+            margin-top: 5rem;
+            .profile-details{
+                flex-direction: column;
+                justify-content: center;
+                margin-bottom: 5rem;
+        
+                .profile-image{
+                    width: 8rem;
+                    height: 8rem;
+                }
+        
+                .profile-name-section{
+                    margin-top: 1rem;
+
+                    .profile-fullname {
+                        font-size: 2rem;
+                    }
+            
+                    .verified-profile{
+                        width: 1.5rem;
+                        height: 1.5rem;
+                    }
+                }
+        
+                .follow-user-button{
+                    margin-top: 1rem;
+                    padding: .6rem 1.2rem;
+                }
+            }
+        
+            .profile-actions {
+                height: 4rem;
+                width: 100%;
+                border-radius: .5rem;
+                justify-content: center;
+        
+                nav{
+                    ul {
+                        li {
+                            a{
+                                font-size: 1.5rem;
+
+                                i {
+                                    font-size: 1rem;
+                                    margin-right: .5rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        } 
+    }
+}
+
+@media screen and (max-width: 992px) {
+    main {
+        .user-profile {
+            left: .25rem;
+
+            .user-profile-header.resposive-user-profile-header{
+                left: .25rem;
+            }
+        }
+    }
+}
+
+body.dark-mode {
+    main {
+        .user-profile {
+            .resposive-user-profile-header{
+                background-color: $dark-bg-default-65;
+                border: $dark-border;
+
+
+                .profile-details {    
+                    .profile-name-section {
+                        .profile-fullname {
+                            color: $dark-fg-default;
+                        }
+                    }
+    
+                    .follow-user-button {
+                        color: $dark-fg-default;
+                    }
+                }
+    
+                .profile-actions {
+                    nav{
+                        ul {
+                            li {
+                                a{
+                                    color: $dark-fg-default;
+    
+                                    i {
+                                        color: $dark-fg-default;
+                                    }
+
+                                    &:before {
+                                        background-color: $dark-fg-default;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

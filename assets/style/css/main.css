@@ -6,6 +6,7 @@
 /*Backgrounds*/
 /*Shadows*/
 /*dark theme*/
+/*Border*/
 /*Foregrounds*/
 /*Backgrounds*/
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap");
@@ -14,10 +15,407 @@ header {
   justify-content: space-between;
   align-items: center;
   position: fixed;
-  top: 1rem;
-  left: 1rem;
-  right: 1rem;
+  top: 0.25rem;
+  left: 0.25rem;
+  right: 0.25rem;
   z-index: 1;
+}
+
+.header-user-box .header-user {
+  background-color: rgb(253, 247, 246);
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.11);
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  transition: 150ms ease-in-out;
+  backdrop-filter: blur(20px);
+  height: 3rem;
+}
+.header-user-box .header-user img {
+  width: 1.5rem;
+  height: auto;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+.header-user-box .header-user span {
+  color: rgb(31, 31, 31);
+  font-size: 0.875rem;
+  transition: 150ms ease-in-out;
+}
+.header-user-box .header-user i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1rem;
+  height: 1rem;
+  color: rgb(31, 31, 31);
+  margin-left: 1rem;
+  font-weight: 600;
+  transition: 150ms ease-in-out;
+}
+.header-user-box .header-user:hover {
+  background-color: rgba(255, 255, 255, 0.11);
+}
+.header-user-box .header-user:hover span {
+  color: #24292f;
+}
+.header-user-box .header-user:hover i {
+  color: #24292f;
+}
+
+.user-nav {
+  border: 1px solid rgba(255, 255, 255, 0.11);
+  backdrop-filter: blur(20px);
+  overflow: hidden;
+  background-color: #FFF;
+  position: fixed;
+  top: 3.5rem;
+  right: 0.25rem;
+  width: 15rem;
+  display: none;
+  z-index: 1;
+  border-radius: 0.5rem;
+  box-shadow: 0 3px 6px rgba(140, 149, 159, 0.15);
+}
+.user-nav ul li a.sign-out-btn:hover {
+  background-color: rgba(212, 28, 28, 0.25);
+}
+.user-nav ul li a {
+  color: rgb(31, 31, 31);
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  transition: 150ms ease-in-out;
+  font-size: 0.875rem;
+}
+.user-nav ul li a i {
+  margin-right: 1rem;
+  width: 1rem;
+  height: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.user-nav ul li a:hover {
+  color: #24292f;
+  background-color: rgba(255, 69, 0, 0.08);
+}
+.user-nav .user-nav-separator {
+  height: 1px;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.45);
+}
+
+@media screen and (max-width: 992px) {
+  #headerUser {
+    display: none;
+  }
+  #userNav {
+    left: 0.5rem;
+    top: auto;
+    right: 0.5rem;
+    bottom: 6rem;
+    width: calc(100vw - 2rem);
+  }
+}
+body.dark-mode .header-user-box .header-user {
+  background-color: rgba(18, 18, 18, 0.65);
+}
+body.dark-mode .header-user-box .header-user span {
+  color: rgb(251, 234, 233);
+}
+body.dark-mode .header-user-box .header-user i {
+  color: rgb(251, 234, 233);
+}
+body.dark-mode .header-user-box .header-user:hover {
+  border-color: rgba(255, 255, 255, 0.11);
+  background-color: rgba(18, 18, 18, 0.45);
+}
+body.dark-mode .header-user-box .header-user:hover span {
+  color: #FFF;
+}
+body.dark-mode .header-user-box .header-user:hover i {
+  color: #FFF;
+}
+body.dark-mode .header-user-box .header-user:active {
+  background-color: rgba(18, 18, 18, 0.25);
+}
+body.dark-mode .user-nav {
+  background-color: rgba(18, 18, 18, 0.65);
+  box-shadow: none;
+}
+body.dark-mode .user-nav ul li a.sign-out-btn:hover {
+  background-color: rgba(212, 28, 28, 0.25);
+}
+body.dark-mode .user-nav ul li a {
+  color: #c9d1d9;
+}
+body.dark-mode .user-nav ul li a:hover {
+  color: #FFF;
+  background-color: rgba(255, 255, 255, 0.03);
+}
+
+.search-form {
+  flex: 1;
+  margin-right: 0.25rem;
+  position: relative;
+}
+.search-form .search-bar {
+  width: 100%;
+  height: 3rem;
+  background-color: rgba(253, 247, 246, 0.85);
+  color: rgb(31, 31, 31);
+  padding: 0.75rem 1rem 0.75rem 3rem;
+  font-size: 0.875rem;
+  border-radius: 0.5rem;
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.11);
+  transition: 300ms;
+}
+.search-form .search-bar:focus {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.search-form .search-bar:hover {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.search-form .search-bar-icon {
+  position: absolute;
+  color: rgb(31, 31, 31);
+  left: 1rem;
+  top: 1rem;
+  width: 1rem;
+  height: 1rem;
+}
+
+.search-area {
+  display: none;
+  background-color: rgba(253, 247, 246, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.11);
+  backdrop-filter: blur(4px);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  flex-direction: column;
+  position: absolute;
+  top: 4rem;
+  left: 4rem;
+  width: 57rem;
+  z-index: 1;
+}
+.search-area.search-area-opened {
+  display: block;
+}
+
+@media screen and (max-width: 992px) {
+  .search-form {
+    margin-right: 0;
+  }
+}
+body.dark-mode .search-form .search-bar {
+  background-color: rgba(18, 18, 18, 0.65);
+  color: rgb(251, 234, 233);
+}
+body.dark-mode .search-form .search-bar:focus {
+  background-color: rgba(18, 18, 18, 0.25);
+  box-shadow: none;
+  border-color: rgba(255, 255, 255, 0.08);
+}
+body.dark-mode .search-form .search-bar:hover {
+  background-color: rgba(18, 18, 18, 0.45);
+  box-shadow: none;
+}
+body.dark-mode .search-form .search-bar-icon {
+  color: rgb(251, 234, 233);
+}
+body.dark-mode .search-area {
+  background-color: rgb(18, 18, 18);
+  box-shadow: none;
+}
+
+.hamburgerMenuBtn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  margin-right: 0.25rem;
+  cursor: pointer;
+  transition: all 150ms ease-in-out;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.11);
+  background-color: rgba(253, 247, 246, 0.85);
+  border-radius: 0.5rem;
+}
+.hamburgerMenuBtn .hamburgerSpan {
+  width: 0.75rem;
+  height: 0.125rem;
+  border-radius: 1px;
+  background-color: rgb(31, 31, 31);
+  transition: 150ms all ease-in-out;
+}
+.hamburgerMenuBtn .hamburgerSpan.hamburgerSpanAnimated:first-child {
+  transform: translateY(250%) rotateZ(-45deg);
+}
+.hamburgerMenuBtn .hamburgerSpan.hamburgerSpanAnimated:last-child {
+  transform: translateY(-250%) rotateZ(45deg);
+}
+.hamburgerMenuBtn .hamburgerSpan.hamburgerSpanAnimated:nth-child(2) {
+  transform: translateX(50%);
+  opacity: 0;
+}
+.hamburgerMenuBtn .hamburgerSpan:not(:last-child) {
+  margin-bottom: 0.1875rem;
+}
+.hamburgerMenuBtn .hamburgerSpan:nth-child(odd) {
+  width: 1.25rem;
+}
+.hamburgerMenuBtn .hamburgerSpan:nth-child(even) {
+  margin-right: 0.5rem;
+}
+.hamburgerMenuBtn:hover {
+  background-color: rgb(251, 234, 233);
+}
+.hamburgerMenuBtn:hover .hamburgerSpan {
+  background-color: #24292f;
+}
+
+@media screen and (max-width: 992px) {
+  .hamburgerMenuBtn {
+    display: none;
+  }
+}
+body.dark-mode .hamburgerMenuBtn {
+  background-color: rgba(18, 18, 18, 0.65);
+  box-shadow: none;
+}
+body.dark-mode .hamburgerMenuBtn .hamburgerSpan {
+  background-color: rgb(251, 234, 233);
+}
+body.dark-mode .hamburgerMenuBtn:hover {
+  background-color: rgba(18, 18, 18, 0.45);
+  border-color: rgba(255, 255, 255, 0.08);
+}
+body.dark-mode .hamburgerMenuBtn:hover .hamburgerSpan {
+  background-color: #FFF;
+}
+body.dark-mode .hamburgerMenuBtn:active {
+  background-color: rgba(18, 18, 18, 0.25);
+}
+
+nav#navbar {
+  overflow: hidden;
+  background-color: rgba(253, 247, 246, 0.85);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.11);
+  border-radius: 0.5rem;
+  position: fixed;
+  left: 0.25rem;
+  top: 3.5rem;
+  bottom: 0.25rem;
+  width: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 300ms;
+  z-index: 1;
+}
+nav#navbar .navbar-logo img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+nav#navbar ul {
+  display: flex;
+  flex-direction: column;
+}
+nav#navbar ul li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(31, 31, 31);
+  transition: 150ms ease-in-out;
+  width: 3rem;
+  height: 3rem;
+  overflow: hidden;
+}
+nav#navbar ul li a:hover {
+  color: #24292f;
+  background-color: rgba(255, 69, 0, 0.08);
+}
+nav#navbar ul li a.mobile-user {
+  user-select: none;
+  display: none;
+}
+nav#navbar ul li a.mobile-user img {
+  width: 2rem;
+  height: auto;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+nav#navbar ul li a.mobile-user span {
+  color: rgb(31, 31, 31);
+}
+nav#navbar ul li a.mobile-user i {
+  color: rgb(31, 31, 31);
+  margin-left: 0.5rem;
+}
+nav#navbar ul li a.mobile-user:hover span {
+  color: #24292f;
+}
+nav#navbar ul li a.mobile-user:hover i {
+  color: #24292f;
+}
+nav#navbar.mobile-navbar-open {
+  width: 18rem;
+}
+
+@media screen and (max-width: 992px) {
+  nav#navbar {
+    left: 0.5rem;
+    right: 0.5rem;
+    width: calc(100vw - 2rem);
+    height: 5rem;
+    padding: 0 1rem;
+    top: auto;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  }
+  nav#navbar ul {
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  nav#navbar ul li a {
+    margin-bottom: 0;
+  }
+  nav#navbar ul li a.mobile-user {
+    display: flex;
+  }
+}
+body.dark-mode nav#navbar {
+  background-color: rgba(18, 18, 18, 0.65);
+}
+body.dark-mode nav#navbar ul li a {
+  color: rgb(251, 234, 233);
+}
+body.dark-mode nav#navbar ul li a:hover {
+  color: #FFF;
+  background-color: rgba(255, 255, 255, 0.03);
+}
+body.dark-mode nav#navbar .mobile-user span {
+  color: rgb(251, 234, 233);
+}
+body.dark-mode nav#navbar .mobile-user i {
+  color: rgb(251, 234, 233);
 }
 
 .switch {
@@ -25,7 +423,7 @@ header {
   display: inline-block;
   width: 5.5rem;
   height: 3rem;
-  margin-right: 1rem;
+  margin-right: 0.25rem;
 }
 .switch i {
   color: #FFF;
@@ -59,8 +457,8 @@ header {
   bottom: 0;
   background-color: rgba(253, 247, 246, 0.85);
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  border: 1px solid transparent;
-  backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.11);
+  backdrop-filter: blur(20px);
   transition: 300ms;
 }
 .switch .slider.round {
@@ -92,7 +490,6 @@ body.dark-mode .fa-moon {
 }
 body.dark-mode .switch .slider {
   background-color: rgba(18, 18, 18, 0.65);
-  border-color: rgba(255, 255, 255, 0.03);
   box-shadow: none;
 }
 body.dark-mode .switch .slider::before {
@@ -102,233 +499,6 @@ body.dark-mode .switch .slider::before {
 @media screen and (max-width: 992px) {
   .switch {
     display: none;
-  }
-}
-.search-form {
-  flex: 1;
-  margin-right: 1rem;
-  position: relative;
-}
-.search-form .search-bar {
-  width: 100%;
-  height: 3rem;
-  background-color: rgba(253, 247, 246, 0.85);
-  color: rgb(31, 31, 31);
-  padding: 0.75rem 1rem 0.75rem 3rem;
-  font-size: 0.875rem;
-  border-radius: 0.5rem;
-  backdrop-filter: blur(8px);
-  border: 1px solid rgba(255, 255, 255, 0.03);
-  transition: 300ms;
-}
-.search-form .search-bar:focus {
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-}
-.search-form .search-bar:hover {
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-}
-.search-form .search-bar-icon {
-  position: absolute;
-  color: rgb(31, 31, 31);
-  left: 1rem;
-  top: 1rem;
-  width: 1rem;
-  height: 1rem;
-}
-
-.search-area {
-  display: none;
-  background-color: rgba(253, 247, 246, 0.85);
-  border: 1px solid rgba(255, 255, 255, 0.11);
-  backdrop-filter: blur(4px);
-  border-radius: 0.5rem;
-  padding: 1rem;
-  flex-direction: column;
-  position: absolute;
-  top: 4rem;
-  left: 4rem;
-  width: 57rem;
-  z-index: 5;
-}
-.search-area.search-area-opened {
-  display: block;
-}
-
-@media screen and (max-width: 992px) {
-  .search-form {
-    margin-right: 0;
-  }
-}
-body.dark-mode .search-form .search-bar {
-  background-color: rgba(18, 18, 18, 0.65);
-  color: rgb(251, 234, 233);
-}
-body.dark-mode .search-form .search-bar:focus {
-  background-color: rgba(18, 18, 18, 0.25);
-  box-shadow: none;
-  border-color: rgba(255, 255, 255, 0.08);
-}
-body.dark-mode .search-form .search-bar:hover {
-  background-color: rgba(18, 18, 18, 0.45);
-  box-shadow: none;
-}
-body.dark-mode .search-form .search-bar-icon {
-  color: rgb(251, 234, 233);
-}
-body.dark-mode .search-area {
-  background-color: rgb(18, 18, 18);
-  box-shadow: none;
-}
-
-.topic {
-  background-color: rgb(253, 247, 246);
-  padding: 2rem;
-  border-radius: 0.5rem;
-  transition: 300ms;
-  margin-bottom: 1rem;
-}
-.topic:hover {
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-}
-.topic .topic-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 1rem;
-}
-.topic .topic-header .topic-author {
-  color: #6e7781;
-  transition: 150ms ease-in-out;
-}
-.topic .topic-header .topic-author .author-image {
-  width: 2rem;
-  height: 2rem;
-  margin-right: 1rem;
-  border-radius: 50%;
-}
-.topic .topic-header .topic-author .author-level {
-  padding: 0.1rem 0.4rem;
-  color: #ffffff;
-  background-color: #ff4500;
-  margin-left: 1rem;
-  border-radius: 0.375rem;
-}
-.topic .topic-header .topic-author:hover {
-  color: #24292f;
-}
-.topic .topic-header .topic-create-date {
-  color: #6e7781;
-}
-.topic .topic-body {
-  margin-bottom: 1rem;
-}
-.topic .topic-body a {
-  font-size: 1.5rem;
-  display: flex;
-  margin-bottom: 1rem;
-  color: rgb(61, 61, 61);
-}
-.topic .topic-body p {
-  color: rgb(31, 31, 31);
-  cursor: default;
-  margin-bottom: 1rem;
-}
-.topic .topic-body ul {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-}
-.topic .topic-body ul li a {
-  color: #FFF;
-  background-color: rgb(215, 46, 39);
-  border-radius: 0.375rem;
-  font-size: 0.875rem;
-  padding: 0.3rem 0.6rem;
-  margin-right: 0.5rem;
-}
-.topic .topic-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.topic .topic-footer .topic-footer-left {
-  display: flex;
-  align-items: center;
-}
-.topic .topic-footer .topic-footer-left .topic-view-count {
-  padding: 0.3rem 0.6rem;
-  border-radius: 0.375rem;
-  margin-right: 1rem;
-  color: rgb(194, 194, 194);
-}
-.topic .topic-footer .topic-footer-left .topic-view-count i {
-  margin-right: 0.3rem;
-}
-.topic .topic-footer .topic-footer-left .topic-answer-count {
-  border-radius: 0.375rem;
-  padding: 0.3rem 0.6rem;
-  color: rgb(194, 194, 194);
-}
-.topic .topic-footer .topic-footer-left .topic-answer-count i {
-  margin-right: 0.3rem;
-}
-.topic .topic-footer .topic-footer-right a {
-  color: rgb(194, 194, 194);
-  transition: 150ms ease-in-out;
-}
-.topic .topic-footer .topic-footer-right a:hover {
-  color: #24292f;
-}
-
-body.dark-mode .topic {
-  background-color: rgb(18, 18, 18);
-  box-shadow: none;
-}
-body.dark-mode .topic:hover {
-  background-color: rgba(18, 18, 18, 0.65);
-}
-body.dark-mode .topic .topic-header .topic-author {
-  color: #c9d1d9;
-}
-body.dark-mode .topic .topic-header .topic-author .author-level {
-  color: #ffffff;
-  background-color: #ff4500;
-}
-body.dark-mode .topic .topic-header .topic-author:hover {
-  color: #FFF;
-}
-body.dark-mode .topic .topic-header .topic-create-date {
-  color: #c9d1d9;
-}
-body.dark-mode .topic .topic-body a {
-  color: #FFF;
-}
-body.dark-mode .topic .topic-body p {
-  color: #c9d1d9;
-}
-body.dark-mode .topic .topic-body ul li a {
-  color: #FFF;
-  background-color: #ff4500;
-}
-body.dark-mode .topic .topic-footer .topic-footer-left .topic-view-count {
-  color: #c9d1d9;
-}
-body.dark-mode .topic .topic-footer .topic-footer-left .topic-answer-count {
-  color: #c9d1d9;
-}
-body.dark-mode .topic .topic-footer .topic-footer-right a {
-  color: #c9d1d9;
-}
-body.dark-mode .topic .topic-footer .topic-footer-right a:hover {
-  color: #FFF;
-}
-
-@media screen and (max-width: 500px) {
-  .topic-header {
-    flex-direction: column;
-  }
-  .topic-header .topic-author {
-    margin-bottom: 1rem;
   }
 }
 footer {
@@ -490,334 +660,369 @@ body.dark-mode .sidebar .sidebar-item .top-communities .sidebar-community:hover 
   box-shadow: none;
 }
 
-.hamburgerMenuBtn {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 3rem;
-  height: 3rem;
-  margin-right: 1rem;
-  cursor: pointer;
-  transition: all 150ms ease-in-out;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  backdrop-filter: blur(8px);
-  border: 1px solid rgba(255, 255, 255, 0.03);
-  background-color: rgba(253, 247, 246, 0.85);
+.topic {
+  background-color: rgb(253, 247, 246);
+  padding: 2rem;
   border-radius: 0.5rem;
+  transition: 300ms;
+  margin-bottom: 1rem;
 }
-.hamburgerMenuBtn .hamburgerSpan {
-  width: 0.75rem;
-  height: 0.125rem;
-  border-radius: 1px;
-  background-color: rgb(31, 31, 31);
-  transition: 150ms all ease-in-out;
+.topic:hover {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
-.hamburgerMenuBtn .hamburgerSpan.hamburgerSpanAnimated:first-child {
-  transform: translateY(250%) rotateZ(-45deg);
+.topic .topic-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
 }
-.hamburgerMenuBtn .hamburgerSpan.hamburgerSpanAnimated:last-child {
-  transform: translateY(-250%) rotateZ(45deg);
+.topic .topic-header .topic-author {
+  color: #6e7781;
+  transition: 150ms ease-in-out;
 }
-.hamburgerMenuBtn .hamburgerSpan.hamburgerSpanAnimated:nth-child(2) {
-  transform: translateX(50%);
-  opacity: 0;
+.topic .topic-header .topic-author .author-image {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 1rem;
+  border-radius: 50%;
 }
-.hamburgerMenuBtn .hamburgerSpan:not(:last-child) {
-  margin-bottom: 0.1875rem;
+.topic .topic-header .topic-author .author-level {
+  padding: 0.1rem 0.4rem;
+  color: #ffffff;
+  background-color: #ff4500;
+  margin-left: 1rem;
+  border-radius: 0.375rem;
 }
-.hamburgerMenuBtn .hamburgerSpan:nth-child(odd) {
-  width: 1.25rem;
+.topic .topic-header .topic-author:hover {
+  color: #24292f;
 }
-.hamburgerMenuBtn .hamburgerSpan:nth-child(even) {
+.topic .topic-header .topic-create-date {
+  color: #6e7781;
+}
+.topic .topic-body {
+  margin-bottom: 1rem;
+}
+.topic .topic-body a {
+  font-size: 1.5rem;
+  display: flex;
+  margin-bottom: 1rem;
+  color: rgb(61, 61, 61);
+}
+.topic .topic-body p {
+  color: rgb(31, 31, 31);
+  cursor: default;
+  margin-bottom: 1rem;
+}
+.topic .topic-body ul {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.topic .topic-body ul li a {
+  color: #FFF;
+  background-color: rgb(215, 46, 39);
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+  padding: 0.3rem 0.6rem;
   margin-right: 0.5rem;
 }
-.hamburgerMenuBtn:hover {
-  background-color: rgb(251, 234, 233);
+.topic .topic-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.hamburgerMenuBtn:hover .hamburgerSpan {
-  background-color: #24292f;
+.topic .topic-footer .topic-footer-left {
+  display: flex;
+  align-items: center;
+}
+.topic .topic-footer .topic-footer-left .topic-view-count {
+  padding: 0.3rem 0.6rem;
+  border-radius: 0.375rem;
+  margin-right: 1rem;
+  color: rgb(194, 194, 194);
+}
+.topic .topic-footer .topic-footer-left .topic-view-count i {
+  margin-right: 0.3rem;
+}
+.topic .topic-footer .topic-footer-left .topic-answer-count {
+  border-radius: 0.375rem;
+  padding: 0.3rem 0.6rem;
+  color: rgb(194, 194, 194);
+}
+.topic .topic-footer .topic-footer-left .topic-answer-count i {
+  margin-right: 0.3rem;
+}
+.topic .topic-footer .topic-footer-right a {
+  color: rgb(194, 194, 194);
+  transition: 150ms ease-in-out;
+}
+.topic .topic-footer .topic-footer-right a:hover {
+  color: #24292f;
 }
 
-@media screen and (max-width: 992px) {
-  .hamburgerMenuBtn {
-    display: none;
-  }
-}
-body.dark-mode .hamburgerMenuBtn {
-  background-color: rgba(18, 18, 18, 0.65);
+body.dark-mode .topic {
+  background-color: rgb(18, 18, 18);
   box-shadow: none;
 }
-body.dark-mode .hamburgerMenuBtn .hamburgerSpan {
-  background-color: rgb(251, 234, 233);
-}
-body.dark-mode .hamburgerMenuBtn:hover {
-  background-color: rgba(18, 18, 18, 0.45);
-  border-color: rgba(255, 255, 255, 0.08);
-}
-body.dark-mode .hamburgerMenuBtn:hover .hamburgerSpan {
-  background-color: #FFF;
-}
-body.dark-mode .hamburgerMenuBtn:active {
-  background-color: rgba(18, 18, 18, 0.25);
-}
-
-.header-user-box .header-user {
-  background-color: rgb(253, 247, 246);
-  padding: 0.75rem 1rem;
-  border-radius: 0.5rem;
-  border: 1px solid rgba(255, 255, 255, 0.03);
-  cursor: pointer;
-  user-select: none;
-  display: flex;
-  align-items: center;
-  transition: 150ms ease-in-out;
-  backdrop-filter: blur(4px);
-  height: 3rem;
-}
-.header-user-box .header-user img {
-  width: 1.5rem;
-  height: auto;
-  aspect-ratio: 1/1;
-  border-radius: 50%;
-  margin-right: 1rem;
-}
-.header-user-box .header-user span {
-  color: rgb(31, 31, 31);
-  font-size: 0.875rem;
-  transition: 150ms ease-in-out;
-}
-.header-user-box .header-user i {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 1rem;
-  height: 1rem;
-  color: rgb(31, 31, 31);
-  margin-left: 1rem;
-  font-weight: 600;
-  transition: 150ms ease-in-out;
-}
-.header-user-box .header-user:hover {
-  background-color: rgba(255, 255, 255, 0.11);
-}
-.header-user-box .header-user:hover span {
-  color: #24292f;
-}
-.header-user-box .header-user:hover i {
-  color: #24292f;
-}
-
-.user-nav {
-  border: 1px solid rgba(255, 255, 255, 0.03);
-  backdrop-filter: blur(8px);
-  overflow: hidden;
-  background-color: #FFF;
-  position: fixed;
-  top: -50rem;
-  right: 1rem;
-  width: 15rem;
-  display: block;
-  z-index: 99999;
-  border-radius: 0.5rem;
-  transition: 150ms ease-in-out;
-  box-shadow: 0 3px 6px rgba(140, 149, 159, 0.15);
-}
-.user-nav ul li a.sign-out-btn:hover {
-  background-color: rgba(212, 28, 28, 0.25);
-}
-.user-nav ul li a {
-  color: rgb(31, 31, 31);
-  padding: 1rem;
-  display: flex;
-  align-items: center;
-  transition: 150ms ease-in-out;
-  font-size: 0.875rem;
-}
-.user-nav ul li a i {
-  margin-right: 1rem;
-  width: 1rem;
-  height: 1rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.user-nav ul li a:hover {
-  color: #24292f;
-  background-color: rgba(255, 69, 0, 0.08);
-}
-.user-nav.user-nav-opened {
-  top: 5rem;
-}
-.user-nav .user-nav-separator {
-  height: 1px;
-  margin: 0;
-  color: rgba(255, 255, 255, 0.45);
-}
-
-@media screen and (max-width: 992px) {
-  #headerUser {
-    display: none;
-  }
-  #userNav {
-    left: 1rem;
-    top: auto;
-    left: 1rem;
-    bottom: -200vh;
-    width: calc(100vw - 2rem);
-  }
-  #userNav.user-nav-opened {
-    top: auto;
-    bottom: 5rem;
-  }
-}
-body.dark-mode .header-user-box .header-user {
+body.dark-mode .topic:hover {
   background-color: rgba(18, 18, 18, 0.65);
 }
-body.dark-mode .header-user-box .header-user span {
-  color: rgb(251, 234, 233);
-}
-body.dark-mode .header-user-box .header-user i {
-  color: rgb(251, 234, 233);
-}
-body.dark-mode .header-user-box .header-user:hover {
-  border-color: rgba(255, 255, 255, 0.11);
-  background-color: rgba(18, 18, 18, 0.45);
-}
-body.dark-mode .header-user-box .header-user:hover span {
-  color: #FFF;
-}
-body.dark-mode .header-user-box .header-user:hover i {
-  color: #FFF;
-}
-body.dark-mode .header-user-box .header-user:active {
-  background-color: rgba(18, 18, 18, 0.25);
-}
-body.dark-mode .user-nav {
-  background-color: rgba(18, 18, 18, 0.65);
-  box-shadow: none;
-}
-body.dark-mode .user-nav ul li a.sign-out-btn:hover {
-  background-color: rgba(212, 28, 28, 0.25);
-}
-body.dark-mode .user-nav ul li a {
+body.dark-mode .topic .topic-header .topic-author {
   color: #c9d1d9;
 }
-body.dark-mode .user-nav ul li a:hover {
+body.dark-mode .topic .topic-header .topic-author .author-level {
+  color: #ffffff;
+  background-color: #ff4500;
+}
+body.dark-mode .topic .topic-header .topic-author:hover {
   color: #FFF;
-  background-color: rgba(255, 255, 255, 0.03);
+}
+body.dark-mode .topic .topic-header .topic-create-date {
+  color: #c9d1d9;
+}
+body.dark-mode .topic .topic-body a {
+  color: #FFF;
+}
+body.dark-mode .topic .topic-body p {
+  color: #c9d1d9;
+}
+body.dark-mode .topic .topic-body ul li a {
+  color: #FFF;
+  background-color: #ff4500;
+}
+body.dark-mode .topic .topic-footer .topic-footer-left .topic-view-count {
+  color: #c9d1d9;
+}
+body.dark-mode .topic .topic-footer .topic-footer-left .topic-answer-count {
+  color: #c9d1d9;
+}
+body.dark-mode .topic .topic-footer .topic-footer-right a {
+  color: #c9d1d9;
+}
+body.dark-mode .topic .topic-footer .topic-footer-right a:hover {
+  color: #FFF;
 }
 
-nav#navbar {
-  overflow: hidden;
-  background-color: rgba(253, 247, 246, 0.85);
-  backdrop-filter: blur(4px);
-  border: 1px solid rgba(255, 255, 255, 0.03);
-  border-radius: 0.5rem;
-  position: fixed;
-  left: 1rem;
-  top: 5rem;
-  bottom: 1rem;
-  width: 3rem;
+@media screen and (max-width: 500px) {
+  .topic-header {
+    flex-direction: column;
+  }
+  .topic-header .topic-author {
+    margin-bottom: 1rem;
+  }
+}
+main .user-profile-banner {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: calc(80vh - 4rem);
+  position: relative;
+  z-index: -1;
+}
+main .user-profile-banner .profile-banner-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+main .user-profile-banner .profile-banner-image-color-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgb(251, 234, 233);
+  background: linear-gradient(0deg, rgb(251, 234, 233) 0%, rgba(251, 234, 233, 0.45) 35%, rgba(251, 234, 233, 0.25) 100%);
+  backdrop-filter: blur(4px);
+}
+
+body.dark-mode main .user-profile-banner .profile-banner-image-color-layer {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 35%, rgba(0, 0, 0, 0.45) 100%);
+}
+
+main .user-profile .user-profile-header .profile-details, main .user-profile .resposive-user-profile-header .profile-details {
+  display: flex;
   align-items: center;
   transition: 300ms;
-  z-index: 1;
 }
-nav#navbar .navbar-logo img {
+main .user-profile .user-profile-header .profile-details .profile-image, main .user-profile .resposive-user-profile-header .profile-details .profile-image {
+  border-radius: 50%;
+  object-fit: cover;
+}
+main .user-profile .user-profile-header .profile-details .profile-name-section, main .user-profile .resposive-user-profile-header .profile-details .profile-name-section {
+  display: flex;
+  align-items: center;
+}
+main .user-profile .user-profile-header .profile-details .profile-name-section .profile-fullname, main .user-profile .resposive-user-profile-header .profile-details .profile-name-section .profile-fullname {
+  color: rgb(31, 31, 31);
+}
+main .user-profile .user-profile-header .profile-details .profile-name-section .verified-profile, main .user-profile .resposive-user-profile-header .profile-details .profile-name-section .verified-profile {
+  background-color: rgb(215, 46, 39);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0.5rem;
+}
+main .user-profile .user-profile-header .profile-details .profile-name-section .verified-profile i, main .user-profile .resposive-user-profile-header .profile-details .profile-name-section .verified-profile i {
+  color: rgb(31, 31, 31);
+}
+main .user-profile .user-profile-header .profile-details .follow-user-button, main .user-profile .resposive-user-profile-header .profile-details .follow-user-button {
+  background-color: rgb(215, 46, 39);
+  border-radius: 2rem;
+  color: rgb(31, 31, 31);
+  transition: 300ms;
+}
+main .user-profile .user-profile-header .profile-details .follow-user-button:hover, main .user-profile .resposive-user-profile-header .profile-details .follow-user-button:hover {
+  background-color: rgb(215, 46, 39);
+}
+main .user-profile .user-profile-header .profile-details .follow-user-button i, main .user-profile .resposive-user-profile-header .profile-details .follow-user-button i {
+  margin-right: 0.5rem;
+}
+main .user-profile .user-profile-header .profile-actions, main .user-profile .resposive-user-profile-header .profile-actions {
+  display: flex;
+  align-items: center;
+}
+main .user-profile .user-profile-header .profile-actions nav ul, main .user-profile .resposive-user-profile-header .profile-actions nav ul {
+  display: flex;
+  align-items: center;
+}
+main .user-profile .user-profile-header .profile-actions nav ul li a, main .user-profile .resposive-user-profile-header .profile-actions nav ul li a {
+  display: flex;
+  align-items: center;
+  color: rgb(31, 31, 31);
+  margin-right: 1rem;
+  transition: 300ms;
+  position: relative;
+}
+main .user-profile .user-profile-header .profile-actions nav ul li a:before, main .user-profile .resposive-user-profile-header .profile-actions nav ul li a:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 100%;
+  bottom: -0.2rem;
+  height: 0.15rem;
+  background-color: rgb(31, 31, 31);
+  transition: 300ms;
+}
+main .user-profile .user-profile-header .profile-actions nav ul li a:hover:before, main .user-profile .resposive-user-profile-header .profile-actions nav ul li a:hover:before {
+  right: 0;
+}
+main .user-profile .resposive-user-profile-header {
+  background-color: rgba(253, 247, 246, 0.85);
+  backdrop-filter: blur(20px);
+  border-radius: 0.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.11);
+  padding: 1rem;
+  margin-top: 0;
+  justify-content: space-between;
+  height: auto;
+  position: fixed;
+  top: 3.5rem;
+  left: 3.5rem;
+  right: 0.25rem;
+}
+main .user-profile .resposive-user-profile-header .profile-details {
+  flex-direction: row;
+  justify-content: left;
+}
+main .user-profile .resposive-user-profile-header .profile-details .profile-image {
+  width: 2rem;
+  height: 2rem;
+}
+main .user-profile .resposive-user-profile-header .profile-details .profile-name-section {
+  margin-top: 0;
+}
+main .user-profile .resposive-user-profile-header .profile-details .profile-name-section .profile-fullname {
+  font-size: 0.875rem;
+  margin-left: 1rem;
+}
+main .user-profile .resposive-user-profile-header .profile-details .follow-user-button {
+  font-size: 0.875rem;
+  padding: 0.3rem 0.6rem;
+  margin-left: 1rem;
+  margin-top: 0;
+}
+main .user-profile .resposive-user-profile-header .profile-actions {
+  width: auto;
+  height: 2rem;
+}
+main .user-profile .resposive-user-profile-header + .content-responsive {
+  margin-top: 14rem !important;
+}
+main .user-profile .user-profile-header {
+  margin-top: 5rem;
+}
+main .user-profile .user-profile-header .profile-details {
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+main .user-profile .user-profile-header .profile-details .profile-image {
+  width: 8rem;
+  height: 8rem;
+}
+main .user-profile .user-profile-header .profile-details .profile-name-section {
+  margin-top: 1rem;
+}
+main .user-profile .user-profile-header .profile-details .profile-name-section .profile-fullname {
+  font-size: 2rem;
+}
+main .user-profile .user-profile-header .profile-details .profile-name-section .verified-profile {
   width: 1.5rem;
   height: 1.5rem;
 }
-nav#navbar ul {
-  display: flex;
-  flex-direction: column;
+main .user-profile .user-profile-header .profile-details .follow-user-button {
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
 }
-nav#navbar ul li a {
-  display: flex;
+main .user-profile .user-profile-header .profile-actions {
+  height: 4rem;
+  width: 100%;
+  border-radius: 0.5rem;
   justify-content: center;
-  align-items: center;
-  color: rgb(31, 31, 31);
-  transition: 150ms ease-in-out;
-  width: 3rem;
-  height: 3rem;
-  overflow: hidden;
 }
-nav#navbar ul li a:hover {
-  color: #24292f;
-  background-color: rgba(255, 69, 0, 0.08);
+main .user-profile .user-profile-header .profile-actions nav ul li a {
+  font-size: 1.5rem;
 }
-nav#navbar ul li a.mobile-user {
-  user-select: none;
-  display: none;
-}
-nav#navbar ul li a.mobile-user img {
-  width: 2rem;
-  height: auto;
-  aspect-ratio: 1/1;
-  border-radius: 50%;
+main .user-profile .user-profile-header .profile-actions nav ul li a i {
+  font-size: 1rem;
   margin-right: 0.5rem;
-}
-nav#navbar ul li a.mobile-user span {
-  color: rgb(31, 31, 31);
-}
-nav#navbar ul li a.mobile-user i {
-  color: rgb(31, 31, 31);
-  margin-left: 0.5rem;
-}
-nav#navbar ul li a.mobile-user:hover span {
-  color: #24292f;
-}
-nav#navbar ul li a.mobile-user:hover i {
-  color: #24292f;
-}
-nav#navbar.mobile-navbar-open {
-  width: 18rem;
 }
 
 @media screen and (max-width: 992px) {
-  nav#navbar {
-    left: 1rem;
-    right: 1rem;
-    width: calc(100vw - 2rem);
-    height: 5rem;
-    padding: 0 1rem;
-    top: auto;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  main .user-profile {
+    left: 0.25rem;
   }
-  nav#navbar ul {
-    width: 100%;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-  }
-  nav#navbar ul li a {
-    margin-bottom: 0;
-  }
-  nav#navbar ul li a.mobile-user {
-    display: flex;
+  main .user-profile .user-profile-header.resposive-user-profile-header {
+    left: 0.25rem;
   }
 }
-body.dark-mode nav#navbar {
+body.dark-mode main .user-profile .resposive-user-profile-header {
   background-color: rgba(18, 18, 18, 0.65);
-  z-index: 1;
+  border: 1px solid rgba(255, 255, 255, 0.11);
 }
-body.dark-mode nav#navbar ul li a {
+body.dark-mode main .user-profile .resposive-user-profile-header .profile-details .profile-name-section .profile-fullname {
   color: rgb(251, 234, 233);
 }
-body.dark-mode nav#navbar ul li a:hover {
-  color: #FFF;
-  background-color: rgba(255, 255, 255, 0.03);
-}
-body.dark-mode nav#navbar .mobile-user span {
+body.dark-mode main .user-profile .resposive-user-profile-header .profile-details .follow-user-button {
   color: rgb(251, 234, 233);
 }
-body.dark-mode nav#navbar .mobile-user i {
+body.dark-mode main .user-profile .resposive-user-profile-header .profile-actions nav ul li a {
   color: rgb(251, 234, 233);
+}
+body.dark-mode main .user-profile .resposive-user-profile-header .profile-actions nav ul li a i {
+  color: rgb(251, 234, 233);
+}
+body.dark-mode main .user-profile .resposive-user-profile-header .profile-actions nav ul li a:before {
+  background-color: rgb(251, 234, 233);
 }
 
 main .index-page {
@@ -1414,36 +1619,6 @@ body.dark-mode main.login-main .login-box form a.forgot-password {
   color: #ff4500;
 }
 
-main .user-profile-banner {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  height: calc(80vh - 4rem);
-  position: relative;
-  z-index: -1;
-}
-main .user-profile-banner .profile-banner-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-main .user-profile-banner .profile-banner-image-color-layer {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background: rgb(251, 234, 233);
-  background: linear-gradient(0deg, rgb(251, 234, 233) 0%, rgba(251, 234, 233, 0.45) 35%, rgba(251, 234, 233, 0.25) 100%);
-  backdrop-filter: blur(4px);
-}
 main .user-profile {
   position: absolute;
   left: 5rem;
@@ -1452,168 +1627,9 @@ main .user-profile {
   top: 5rem;
   z-index: 0;
 }
-main .user-profile .user-profile-header .profile-details, main .user-profile .resposive-user-profile-header .profile-details {
-  display: flex;
-  align-items: center;
-  transition: 300ms;
-}
-main .user-profile .user-profile-header .profile-details .profile-image, main .user-profile .resposive-user-profile-header .profile-details .profile-image {
-  border-radius: 50%;
-  object-fit: cover;
-}
-main .user-profile .user-profile-header .profile-details .profile-name-section, main .user-profile .resposive-user-profile-header .profile-details .profile-name-section {
-  display: flex;
-  align-items: center;
-}
-main .user-profile .user-profile-header .profile-details .profile-name-section .profile-fullname, main .user-profile .resposive-user-profile-header .profile-details .profile-name-section .profile-fullname {
-  color: rgb(31, 31, 31);
-}
-main .user-profile .user-profile-header .profile-details .profile-name-section .verified-profile, main .user-profile .resposive-user-profile-header .profile-details .profile-name-section .verified-profile {
-  background-color: rgb(215, 46, 39);
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 0.5rem;
-}
-main .user-profile .user-profile-header .profile-details .profile-name-section .verified-profile i, main .user-profile .resposive-user-profile-header .profile-details .profile-name-section .verified-profile i {
-  color: rgb(31, 31, 31);
-}
-main .user-profile .user-profile-header .profile-details .follow-user-button, main .user-profile .resposive-user-profile-header .profile-details .follow-user-button {
-  background-color: rgb(215, 46, 39);
-  border-radius: 2rem;
-  color: rgb(31, 31, 31);
-  transition: 300ms;
-}
-main .user-profile .user-profile-header .profile-details .follow-user-button:hover, main .user-profile .resposive-user-profile-header .profile-details .follow-user-button:hover {
-  background-color: rgb(215, 46, 39);
-}
-main .user-profile .user-profile-header .profile-details .follow-user-button i, main .user-profile .resposive-user-profile-header .profile-details .follow-user-button i {
-  margin-right: 0.5rem;
-}
-main .user-profile .user-profile-header .profile-actions, main .user-profile .resposive-user-profile-header .profile-actions {
-  display: flex;
-  align-items: center;
-}
-main .user-profile .user-profile-header .profile-actions nav ul, main .user-profile .resposive-user-profile-header .profile-actions nav ul {
-  display: flex;
-  align-items: center;
-}
-main .user-profile .user-profile-header .profile-actions nav ul li a, main .user-profile .resposive-user-profile-header .profile-actions nav ul li a {
-  display: flex;
-  align-items: center;
-  color: rgb(31, 31, 31);
-  margin-right: 1rem;
-  transition: 300ms;
-  position: relative;
-}
-main .user-profile .user-profile-header .profile-actions nav ul li a:before, main .user-profile .resposive-user-profile-header .profile-actions nav ul li a:before {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 100%;
-  bottom: -0.2rem;
-  height: 0.15rem;
-  background-color: rgb(31, 31, 31);
-  transition: 300ms;
-}
-main .user-profile .user-profile-header .profile-actions nav ul li a:hover:before, main .user-profile .resposive-user-profile-header .profile-actions nav ul li a:hover:before {
-  right: 0;
-}
-main .user-profile .resposive-user-profile-header {
-  background-color: rgba(253, 247, 246, 0.85);
-  backdrop-filter: blur(20px);
-  border-radius: 0.5rem;
-  border-color: rgba(255, 255, 255, 0.11);
-  padding: 1rem;
-  margin-top: 0;
-  justify-content: space-between;
-  height: auto;
-  position: fixed;
-  top: 5rem;
-  left: 5rem;
-  right: 1rem;
-}
-main .user-profile .resposive-user-profile-header .profile-details {
-  flex-direction: row;
-  justify-content: left;
-}
-main .user-profile .resposive-user-profile-header .profile-details .profile-image {
-  width: 2rem;
-  height: 2rem;
-}
-main .user-profile .resposive-user-profile-header .profile-details .profile-name-section {
-  margin-top: 0;
-}
-main .user-profile .resposive-user-profile-header .profile-details .profile-name-section .profile-fullname {
-  font-size: 0.875rem;
-  margin-left: 1rem;
-}
-main .user-profile .resposive-user-profile-header .profile-details .follow-user-button {
-  font-size: 0.875rem;
-  padding: 0.3rem 0.6rem;
-  margin-left: 1rem;
-  margin-top: 0;
-}
-main .user-profile .resposive-user-profile-header .profile-actions {
-  width: auto;
-  height: 2rem;
-}
-main .user-profile .resposive-user-profile-header + .content-responsive {
-  margin-top: 14rem !important;
-}
-main .user-profile .user-profile-header {
-  margin-top: 5rem;
-}
-main .user-profile .user-profile-header .profile-details {
-  flex-direction: column;
-  justify-content: center;
-  margin-bottom: 5rem;
-}
-main .user-profile .user-profile-header .profile-details .profile-image {
-  width: 8rem;
-  height: 8rem;
-}
-main .user-profile .user-profile-header .profile-details .profile-name-section {
-  margin-top: 1rem;
-}
-main .user-profile .user-profile-header .profile-details .profile-name-section .profile-fullname {
-  font-size: 2rem;
-}
-main .user-profile .user-profile-header .profile-details .profile-name-section .verified-profile {
-  width: 1.5rem;
-  height: 1.5rem;
-}
-main .user-profile .user-profile-header .profile-details .follow-user-button {
-  margin-top: 1rem;
-  padding: 0.6rem 1.2rem;
-}
-main .user-profile .user-profile-header .profile-actions {
-  height: 4rem;
-  width: 100%;
-  border-radius: 0.5rem;
-  justify-content: center;
-}
-main .user-profile .user-profile-header .profile-actions nav ul li a {
-  font-size: 1.5rem;
-}
-main .user-profile .user-profile-header .profile-actions nav ul li a i {
-  font-size: 1rem;
-  margin-right: 0.5rem;
-}
 
 @media screen and (max-width: 992px) {
-  .community-header {
-    flex-direction: column;
-    align-items: center;
-  }
-  .community-actions ul li {
-    margin-bottom: 1rem;
-  }
   main .user-profile {
-    left: 1rem;
-  }
-  main .user-profile .user-profile-header.resposive-user-profile-header {
     left: 1rem;
   }
 }
@@ -1621,26 +1637,6 @@ body.dark-mode main .user-profile-banner .profile-banner-image-color-layer {
   background: rgb(0, 0, 0);
   background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 35%, rgba(0, 0, 0, 0.45) 100%);
 }
-body.dark-mode main .user-profile .resposive-user-profile-header {
-  background-color: rgba(18, 18, 18, 0.65);
-  border: 1px solid rgba(255, 255, 255, 0.03);
-}
-body.dark-mode main .user-profile .resposive-user-profile-header .profile-details .profile-name-section .profile-fullname {
-  color: rgb(251, 234, 233);
-}
-body.dark-mode main .user-profile .resposive-user-profile-header .profile-details .follow-user-button {
-  color: rgb(251, 234, 233);
-}
-body.dark-mode main .user-profile .resposive-user-profile-header .profile-actions nav ul li a {
-  color: rgb(251, 234, 233);
-}
-body.dark-mode main .user-profile .resposive-user-profile-header .profile-actions nav ul li a i {
-  color: rgb(251, 234, 233);
-}
-body.dark-mode main .user-profile .resposive-user-profile-header .profile-actions nav ul li a:before {
-  background-color: rgb(251, 234, 233);
-}
-
 *,
 *::after,
 *::before {

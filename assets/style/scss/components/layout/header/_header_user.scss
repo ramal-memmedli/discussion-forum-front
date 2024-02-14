@@ -4,13 +4,13 @@
         background-color: $bg-emphasis;
         padding: .75rem 1rem;
         border-radius: .5rem;
-        border: 1px solid rgba(255, 255, 255, .03);
+        border: $dark-border;
         cursor: pointer;
         user-select: none;
         display: flex;
         align-items: center;
         transition: 150ms ease-in-out;
-        backdrop-filter: blur(4px);
+        backdrop-filter: blur(20px);
         height: 3rem;
 
         img {
@@ -61,18 +61,17 @@
 
 .user-nav {
     
-    border: 1px solid rgba(255, 255, 255, .03);
-    backdrop-filter: blur(8px);
+    border: $dark-border;
+    backdrop-filter: blur(20px);
     overflow: hidden;
     background-color: #FFF;
     position: fixed;
-    top: -50rem;
-    right: 1rem;
+    top: 3.5rem;
+    right: .25rem;
     width: 15rem;
-    display: block;
-    z-index: 99999;
+    display: none;
+    z-index: 1;
     border-radius: .5rem;
-    transition: 150ms ease-in-out;
 
     box-shadow: 0 3px 6px rgba(140, 149, 159, 0.15);
 
@@ -109,12 +108,6 @@
         }
     }
 
-    &.user-nav-opened {
-        top: 5rem;
-
-
-    }
-
     .user-nav-separator{
         height: 1px;
         margin: 0;
@@ -128,16 +121,11 @@
     }
 
     #userNav {
-        left: 1rem;
+        left: .5rem;
         top: auto;
-        left: 1rem;
-        bottom: -200vh;
+        right: .5rem;
+        bottom: 6rem;
         width: calc(100vw - 2rem);
-
-        &.user-nav-opened {
-            top: auto;
-            bottom: 5rem;
-        }
     }
 }
 

@@ -2,14 +2,14 @@ nav#navbar {
     overflow: hidden;
 
     background-color: $bg-emphasis-85;
-    backdrop-filter: blur(4px);
-    border: 1px solid rgba(255, 255, 255, .03);
+    backdrop-filter: blur(20px);
+    border: $dark-border;
     border-radius: .5rem;
 
     position: fixed;
-    left: 1rem;
-    top: 5rem;
-    bottom: 1rem;
+    left: .25rem;
+    top: 3.5rem;
+    bottom: .25rem;
     width: 3rem;
 
     display: flex;
@@ -90,8 +90,8 @@ nav#navbar {
 
 @media screen and (max-width: 992px) {
     nav#navbar {
-        left: 1rem;
-        right: 1rem;
+        left: .5rem;
+        right: .5rem;
         width: calc(100vw - 2rem);
         height: 5rem;
         padding: 0 1rem;
@@ -127,7 +127,6 @@ nav#navbar {
 body.dark-mode {
     nav#navbar {
         background-color: $dark-bg-default-65;
-        z-index: 1;
 
         ul {
             li {

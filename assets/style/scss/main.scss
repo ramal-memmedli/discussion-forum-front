@@ -8,16 +8,26 @@
 
 //Components
 
-@import "./components/header";
-@import "./components/darkModeSwitch";
-@import "./components/searchBar";
-@import "./components/topic";
-@import "./components/footer";
-@import "./components/sidebar";
-@import "./components/hamburgerBtn";
-@import "./components/header_user";
-@import "./components/navbar";
+//layout-header
+@import "./components/layout/header/header";
+@import "./components/layout/header/header_user";
+@import "./components/layout/header/searchBar";
+@import "./components/layout/header/hamburgerBtn";
 
+//layout-navbar
+@import "./components/layout/navbar/navbar";
+@import "./components/layout/navbar/darkModeSwitch";
+
+//layout-footer
+@import "./components/layout/footer/footer";
+
+//other-components
+@import "./components/sidebar";
+@import "./components/topic";
+
+//userpage
+@import "./components/userpage/userProfileBanner";
+@import "./components/userpage/userProfileHeader";
 
 //Pages
 
