@@ -1,25 +1,22 @@
-var userProfileHeaderResponsive = $("#userProfileHeaderResponsive");
-var userProfileHeader = $("#userProfileHeader")
+$(document).ready(function () {
 
-userProfileHeaderResponsive.css("display", "flex")
-.hide();
+    var profileCard = $(".profile-card");
+    var userProfileHeader = $("#userProfileHeader")
 
-window.addEventListener("scroll", function(){
+    profileCard.css("display", "flex")
+        .hide();
 
-        if(this.document.documentElement.scrollTop <= 360){
-            
-            userProfileHeaderResponsive.slideUp('fast');
-            userProfileHeader.css({
-                visibility: 'visible'
-            });
+    $(window).scroll(function () {
+        if ($(this).scrollTop() <= 360) {
+            profileCard.slideUp('fast');
+            userProfileHeader.fadeTo(0, 1)
         }
 
-        if(this.document.documentElement.scrollTop > 360){
-            userProfileHeader.css({
-                visibility: 'hidden'
-            });
-            userProfileHeaderResponsive.slideDown('fast');
-        } 
+        if ($(this).scrollTop() > 360) {
+            profileCard.slideDown('fast');
+            userProfileHeader.fadeTo(0, 0)
+        }
 
-});
+    });
+})
 

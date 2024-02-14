@@ -7,7 +7,6 @@
 
     &:hover {
         box-shadow: $default-shadow;
-
     }
 
     .topic-header {
@@ -128,11 +127,6 @@ body.dark-mode {
     .topic {
         background-color: $dark-bg-default;
         box-shadow: none;
-
-
-        &:hover {
-            background-color: $dark-bg-default-65;
-        }
 
         .topic-header {
             .topic-author {

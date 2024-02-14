@@ -1,6 +1,6 @@
     .search-form {
         flex: 1;
-        margin-right: .25rem;
+        margin-right: 1rem;
         position: relative;
 
         .search-bar {
@@ -57,6 +57,20 @@
     @media screen and (max-width: 992px) {
         .search-form {
             margin-right: 0;
+
+            .search-bar {
+                height: 5rem;
+                padding-left: 5rem;
+            }
+
+            .search-bar-icon {
+                position: absolute;
+                color: $fg-default;
+                left: 2rem;
+                top: 2rem;
+                width: 1rem;
+                height: 1rem;
+            }
         }
     }
 

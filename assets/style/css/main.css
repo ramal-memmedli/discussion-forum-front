@@ -15,9 +15,9 @@ header {
   justify-content: space-between;
   align-items: center;
   position: fixed;
-  top: 0.25rem;
-  left: 0.25rem;
-  right: 0.25rem;
+  top: 1rem;
+  left: 1rem;
+  right: 1rem;
   z-index: 1;
 }
 
@@ -161,7 +161,7 @@ body.dark-mode .user-nav ul li a:hover {
 
 .search-form {
   flex: 1;
-  margin-right: 0.25rem;
+  margin-right: 1rem;
   position: relative;
 }
 .search-form .search-bar {
@@ -213,6 +213,18 @@ body.dark-mode .user-nav ul li a:hover {
   .search-form {
     margin-right: 0;
   }
+  .search-form .search-bar {
+    height: 5rem;
+    padding-left: 5rem;
+  }
+  .search-form .search-bar-icon {
+    position: absolute;
+    color: rgb(31, 31, 31);
+    left: 2rem;
+    top: 2rem;
+    width: 1rem;
+    height: 1rem;
+  }
 }
 body.dark-mode .search-form .search-bar {
   background-color: rgba(18, 18, 18, 0.65);
@@ -242,7 +254,7 @@ body.dark-mode .search-area {
   justify-content: center;
   width: 3rem;
   height: 3rem;
-  margin-right: 0.25rem;
+  margin-right: 1rem;
   cursor: pointer;
   transition: all 150ms ease-in-out;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -314,9 +326,9 @@ nav#navbar {
   border: 1px solid rgba(255, 255, 255, 0.11);
   border-radius: 0.5rem;
   position: fixed;
-  left: 0.25rem;
-  top: 3.5rem;
-  bottom: 0.25rem;
+  left: 1rem;
+  top: 5rem;
+  bottom: 1rem;
   width: 3rem;
   display: flex;
   flex-direction: column;
@@ -423,7 +435,7 @@ body.dark-mode nav#navbar .mobile-user i {
   display: inline-block;
   width: 5.5rem;
   height: 3rem;
-  margin-right: 0.25rem;
+  margin-right: 1rem;
 }
 .switch i {
   color: #FFF;
@@ -506,6 +518,7 @@ footer {
   box-shadow: 0 3px 6px rgba(140, 149, 159, 0.15);
   padding: 2rem;
   border-radius: 0.5rem;
+  margin-left: 1rem;
 }
 footer p {
   color: rgb(61, 61, 61);
@@ -545,6 +558,7 @@ body.dark-mode footer ul li a i {
 
 .sidebar {
   top: 5rem;
+  margin-left: 1rem;
 }
 .sidebar .sidebar-item {
   margin-bottom: 2rem;
@@ -764,9 +778,6 @@ body.dark-mode .topic {
   background-color: rgb(18, 18, 18);
   box-shadow: none;
 }
-body.dark-mode .topic:hover {
-  background-color: rgba(18, 18, 18, 0.65);
-}
 body.dark-mode .topic .topic-header .topic-author {
   color: #c9d1d9;
 }
@@ -811,6 +822,66 @@ body.dark-mode .topic .topic-footer .topic-footer-right a:hover {
     margin-bottom: 1rem;
   }
 }
+nav.flow-navbar {
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 5rem;
+  padding: 1rem;
+  background-color: rgba(253, 247, 246, 0.85);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.11);
+}
+nav.flow-navbar ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+nav.flow-navbar ul .flex-separator {
+  flex: 1;
+}
+nav.flow-navbar ul li:not(:last-child) {
+  margin-right: 0.5rem;
+}
+nav.flow-navbar ul li a {
+  display: flex;
+  align-items: center;
+  border-radius: 3rem;
+  padding: 0.5rem 1rem;
+  color: rgb(31, 31, 31);
+  background-color: rgb(253, 247, 246);
+  transition: 300ms;
+}
+nav.flow-navbar ul li a.active {
+  background-color: rgb(215, 46, 39);
+  color: rgb(251, 234, 233);
+}
+nav.flow-navbar ul li a:hover {
+  color: rgb(251, 234, 233);
+  background-color: rgb(215, 46, 39);
+}
+nav.flow-navbar ul li a i {
+  margin-right: 0.5rem;
+}
+
+body.dark-mode nav.flow-navbar {
+  background-color: rgba(18, 18, 18, 0.65);
+}
+body.dark-mode nav.flow-navbar ul li a {
+  background-color: rgb(18, 18, 18);
+  color: rgb(251, 234, 233);
+}
+body.dark-mode nav.flow-navbar ul li a.active {
+  background-color: rgb(215, 46, 39);
+}
+body.dark-mode nav.flow-navbar ul li a:hover {
+  background-color: rgb(215, 46, 39);
+}
+
 main .user-profile-banner {
   display: flex;
   flex-direction: column;
@@ -847,23 +918,23 @@ body.dark-mode main .user-profile-banner .profile-banner-image-color-layer {
   background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 35%, rgba(0, 0, 0, 0.45) 100%);
 }
 
-main .user-profile .user-profile-header .profile-details, main .user-profile .resposive-user-profile-header .profile-details {
+main .user-profile .user-profile-header .profile-details, main .user-profile .profile-card .profile-details {
   display: flex;
   align-items: center;
   transition: 300ms;
 }
-main .user-profile .user-profile-header .profile-details .profile-image, main .user-profile .resposive-user-profile-header .profile-details .profile-image {
+main .user-profile .user-profile-header .profile-details .profile-image, main .user-profile .profile-card .profile-details .profile-image {
   border-radius: 50%;
   object-fit: cover;
 }
-main .user-profile .user-profile-header .profile-details .profile-name-section, main .user-profile .resposive-user-profile-header .profile-details .profile-name-section {
+main .user-profile .user-profile-header .profile-details .profile-name-section, main .user-profile .profile-card .profile-details .profile-name-section {
   display: flex;
   align-items: center;
 }
-main .user-profile .user-profile-header .profile-details .profile-name-section .profile-fullname, main .user-profile .resposive-user-profile-header .profile-details .profile-name-section .profile-fullname {
+main .user-profile .user-profile-header .profile-details .profile-name-section .profile-fullname, main .user-profile .profile-card .profile-details .profile-name-section .profile-fullname {
   color: rgb(31, 31, 31);
 }
-main .user-profile .user-profile-header .profile-details .profile-name-section .verified-profile, main .user-profile .resposive-user-profile-header .profile-details .profile-name-section .verified-profile {
+main .user-profile .user-profile-header .profile-details .profile-name-section .verified-profile, main .user-profile .profile-card .profile-details .profile-name-section .verified-profile {
   background-color: rgb(215, 46, 39);
   border-radius: 50%;
   display: flex;
@@ -871,91 +942,20 @@ main .user-profile .user-profile-header .profile-details .profile-name-section .
   align-items: center;
   margin-left: 0.5rem;
 }
-main .user-profile .user-profile-header .profile-details .profile-name-section .verified-profile i, main .user-profile .resposive-user-profile-header .profile-details .profile-name-section .verified-profile i {
+main .user-profile .user-profile-header .profile-details .profile-name-section .verified-profile i, main .user-profile .profile-card .profile-details .profile-name-section .verified-profile i {
   color: rgb(31, 31, 31);
 }
-main .user-profile .user-profile-header .profile-details .follow-user-button, main .user-profile .resposive-user-profile-header .profile-details .follow-user-button {
+main .user-profile .user-profile-header .profile-details .follow-user-button, main .user-profile .profile-card .profile-details .follow-user-button {
   background-color: rgb(215, 46, 39);
   border-radius: 2rem;
   color: rgb(31, 31, 31);
   transition: 300ms;
 }
-main .user-profile .user-profile-header .profile-details .follow-user-button:hover, main .user-profile .resposive-user-profile-header .profile-details .follow-user-button:hover {
+main .user-profile .user-profile-header .profile-details .follow-user-button:hover, main .user-profile .profile-card .profile-details .follow-user-button:hover {
   background-color: rgb(215, 46, 39);
 }
-main .user-profile .user-profile-header .profile-details .follow-user-button i, main .user-profile .resposive-user-profile-header .profile-details .follow-user-button i {
+main .user-profile .user-profile-header .profile-details .follow-user-button i, main .user-profile .profile-card .profile-details .follow-user-button i {
   margin-right: 0.5rem;
-}
-main .user-profile .user-profile-header .profile-actions, main .user-profile .resposive-user-profile-header .profile-actions {
-  display: flex;
-  align-items: center;
-}
-main .user-profile .user-profile-header .profile-actions nav ul, main .user-profile .resposive-user-profile-header .profile-actions nav ul {
-  display: flex;
-  align-items: center;
-}
-main .user-profile .user-profile-header .profile-actions nav ul li a, main .user-profile .resposive-user-profile-header .profile-actions nav ul li a {
-  display: flex;
-  align-items: center;
-  color: rgb(31, 31, 31);
-  margin-right: 1rem;
-  transition: 300ms;
-  position: relative;
-}
-main .user-profile .user-profile-header .profile-actions nav ul li a:before, main .user-profile .resposive-user-profile-header .profile-actions nav ul li a:before {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 100%;
-  bottom: -0.2rem;
-  height: 0.15rem;
-  background-color: rgb(31, 31, 31);
-  transition: 300ms;
-}
-main .user-profile .user-profile-header .profile-actions nav ul li a:hover:before, main .user-profile .resposive-user-profile-header .profile-actions nav ul li a:hover:before {
-  right: 0;
-}
-main .user-profile .resposive-user-profile-header {
-  background-color: rgba(253, 247, 246, 0.85);
-  backdrop-filter: blur(20px);
-  border-radius: 0.5rem;
-  border: 1px solid rgba(255, 255, 255, 0.11);
-  padding: 1rem;
-  margin-top: 0;
-  justify-content: space-between;
-  height: auto;
-  position: fixed;
-  top: 3.5rem;
-  left: 3.5rem;
-  right: 0.25rem;
-}
-main .user-profile .resposive-user-profile-header .profile-details {
-  flex-direction: row;
-  justify-content: left;
-}
-main .user-profile .resposive-user-profile-header .profile-details .profile-image {
-  width: 2rem;
-  height: 2rem;
-}
-main .user-profile .resposive-user-profile-header .profile-details .profile-name-section {
-  margin-top: 0;
-}
-main .user-profile .resposive-user-profile-header .profile-details .profile-name-section .profile-fullname {
-  font-size: 0.875rem;
-  margin-left: 1rem;
-}
-main .user-profile .resposive-user-profile-header .profile-details .follow-user-button {
-  font-size: 0.875rem;
-  padding: 0.3rem 0.6rem;
-  margin-left: 1rem;
-  margin-top: 0;
-}
-main .user-profile .resposive-user-profile-header .profile-actions {
-  width: auto;
-  height: 2rem;
-}
-main .user-profile .resposive-user-profile-header + .content-responsive {
-  margin-top: 14rem !important;
 }
 main .user-profile .user-profile-header {
   margin-top: 5rem;
@@ -983,46 +983,76 @@ main .user-profile .user-profile-header .profile-details .follow-user-button {
   margin-top: 1rem;
   padding: 0.6rem 1.2rem;
 }
-main .user-profile .user-profile-header .profile-actions {
-  height: 4rem;
-  width: 100%;
-  border-radius: 0.5rem;
-  justify-content: center;
-}
-main .user-profile .user-profile-header .profile-actions nav ul li a {
-  font-size: 1.5rem;
-}
-main .user-profile .user-profile-header .profile-actions nav ul li a i {
-  font-size: 1rem;
-  margin-right: 0.5rem;
-}
 
 @media screen and (max-width: 992px) {
   main .user-profile {
     left: 0.25rem;
   }
-  main .user-profile .user-profile-header.resposive-user-profile-header {
+  main .user-profile .resposive-user-profile-header {
     left: 0.25rem;
+    top: 5.5rem;
   }
 }
-body.dark-mode main .user-profile .resposive-user-profile-header {
+body.dark-mode main .user-profile .profile-card .profile-details .profile-name-section .profile-fullname, body.dark-mode main .user-profile .user-profile-header .profile-details .profile-name-section .profile-fullname {
+  color: rgb(251, 234, 233);
+}
+body.dark-mode main .user-profile .profile-card .profile-details .profile-name-section .verified-profile i, body.dark-mode main .user-profile .user-profile-header .profile-details .profile-name-section .verified-profile i {
+  color: rgb(251, 234, 233);
+}
+body.dark-mode main .user-profile .profile-card .profile-details .follow-user-button, body.dark-mode main .user-profile .user-profile-header .profile-details .follow-user-button {
+  color: rgb(251, 234, 233);
+}
+
+.profile-card {
+  background-color: rgba(253, 247, 246, 0.85);
+  backdrop-filter: blur(20px);
+  border-radius: 0.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.11);
+  padding: 1rem;
+  justify-content: space-between;
+  position: sticky;
+  top: 5rem;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+.profile-card .profile-details {
+  flex-direction: row;
+  justify-content: space-between;
+}
+.profile-card .profile-details .flex-separator {
+  flex: 1;
+}
+.profile-card .profile-details .profile-image {
+  width: 2rem;
+  height: 2rem;
+}
+.profile-card .profile-details .profile-name-section {
+  margin-top: 0;
+}
+.profile-card .profile-details .profile-name-section .profile-fullname {
+  font-size: 0.875rem;
+  margin-left: 1rem;
+}
+.profile-card .profile-details .profile-name-section .verified-profile {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+.profile-card .profile-details .profile-name-section .verified-profile i {
+  font-size: 0.875rem;
+}
+.profile-card .profile-details .follow-user-button {
+  font-size: 0.875rem;
+  padding: 0.3rem 0.6rem;
+  margin-left: 1rem;
+  margin-top: 0;
+}
+.profile-card + .content-responsive {
+  margin-top: 14rem !important;
+}
+
+body.dark-mode main .user-profile .profile-card {
   background-color: rgba(18, 18, 18, 0.65);
   border: 1px solid rgba(255, 255, 255, 0.11);
-}
-body.dark-mode main .user-profile .resposive-user-profile-header .profile-details .profile-name-section .profile-fullname {
-  color: rgb(251, 234, 233);
-}
-body.dark-mode main .user-profile .resposive-user-profile-header .profile-details .follow-user-button {
-  color: rgb(251, 234, 233);
-}
-body.dark-mode main .user-profile .resposive-user-profile-header .profile-actions nav ul li a {
-  color: rgb(251, 234, 233);
-}
-body.dark-mode main .user-profile .resposive-user-profile-header .profile-actions nav ul li a i {
-  color: rgb(251, 234, 233);
-}
-body.dark-mode main .user-profile .resposive-user-profile-header .profile-actions nav ul li a:before {
-  background-color: rgb(251, 234, 233);
 }
 
 main .index-page {
@@ -1031,9 +1061,6 @@ main .index-page {
   top: 5rem;
   bottom: 1rem;
   right: 1rem;
-}
-main .main-flow {
-  margin-bottom: 2rem;
 }
 
 @media screen and (max-width: 992px) {
@@ -1683,4 +1710,11 @@ body.dark-mode {
   html {
     font-size: 32px;
   }
+}
+.nomargin {
+  margin: 0 !important;
+}
+
+.nopadding {
+  padding: 0 !important;
 }/*# sourceMappingURL=main.css.map */
