@@ -1,119 +1,135 @@
 .topic {
     background-color: $bg-emphasis;
-    padding: 1.25rem;
+    
     border-radius: .5rem;
     transition: $t-normal;
-    margin-bottom: 1rem;
+    margin-bottom: .25rem;
     backdrop-filter: blur(20px);
+    overflow: hidden;
+    display: flex;
 
     &:hover {
         box-shadow: $default-shadow;
     }
 
-    .topic-header {
+    .topic-left {
+        background-color: $dark-bg-default-45;
+        border-right: $dark-border;
         display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 1rem;
-
-        .topic-author {
-            color: #6e7781;
-            transition: 150ms ease-in-out;
-
-            .author-image {
-                width: 2rem;
-                height: 2rem;
-                margin-right: .5rem;
-                border-radius: 50%;
-            }
-
-            .author-level {
-                padding: .1rem .4rem;
-                color: #ffffff;
-                background-color: $brand;
-                margin-left: .5rem;
-                border-radius: 3rem;
-            }
-
-            &:hover {
-                color: #24292f;
-            }
-        }
-
-        .topic-create-date {
-            color: #6e7781;
-        }
-    }
-
-    .topic-body {
-        margin-bottom: 1rem;
+        flex-direction: column;
 
         a {
-            font-size: 1.25rem;
+            color: $fg-muted;
+            transition: 150ms ease-in-out;
             display: flex;
-            margin-bottom: .5rem;
-            color: $fg-special;
-        }
-
-        p {
-            color: $fg-default;
-            cursor: default;
-            margin-bottom: .5rem;
-        }
-
-
-        ul {
-            display: flex;
+            justify-content: center;
             align-items: center;
-            flex-wrap: wrap;
+            padding: 1rem;
 
-            li {
-                a {
-                    color: #FFF;
-                    background-color: $brand;
-                    border-radius: 3rem;
-                    font-size: .875rem;
-                    padding: .3rem .6rem;
-                    margin-right: .5rem;
-                }
+            &:hover {
+                color: $dark-fg-default;
+                background-color: $dark-bg-default-65;
             }
         }
     }
 
-    .topic-footer {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-        .topic-footer-left {
+    .topic-right {
+        padding: 1.25rem;
+        flex: 1;
+        .topic-header {
             display: flex;
+            justify-content: space-between;
             align-items: center;
-
-            .topic-view-count {
-                margin-right: 1rem;
-                color: $fg-muted;
-
-                i {
-                    margin-right: .3rem;
+            margin-bottom: 1rem;
+    
+            .topic-author {
+                color: #6e7781;
+                transition: 150ms ease-in-out;
+    
+                .author-image {
+                    width: 2rem;
+                    height: 2rem;
+                    margin-right: .5rem;
+                    border-radius: 50%;
+                }
+    
+                .author-level {
+                    padding: .1rem .4rem;
+                    color: #ffffff;
+                    background-color: $brand;
+                    margin-left: .5rem;
+                    border-radius: 3rem;
+                }
+    
+                &:hover {
+                    color: #24292f;
                 }
             }
-
-            .topic-answer-count {
-                color: $fg-muted;
-
-                i {
-                    margin-right: .3rem;
+    
+            .topic-create-date {
+                color: #6e7781;
+            }
+        }
+    
+        .topic-body {
+            margin-bottom: 1rem;
+    
+            a {
+                font-size: 1.25rem;
+                display: flex;
+                margin-bottom: .5rem;
+                color: $fg-special;
+            }
+    
+            p {
+                color: $fg-default;
+                cursor: default;
+                margin-bottom: .5rem;
+            }
+    
+    
+            ul {
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+    
+                li {
+                    a {
+                        color: #FFF;
+                        background-color: $brand;
+                        border-radius: 3rem;
+                        font-size: .875rem;
+                        padding: .3rem .6rem;
+                        margin-right: .5rem;
+                    }
                 }
             }
         }
-
-        .topic-footer-right {
-            a {
-                color: $fg-muted;
-                transition: 150ms ease-in-out;
-
-                &:hover {
-                    color: #24292f;
+    
+        .topic-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+    
+            .topic-footer-left {
+                display: flex;
+                align-items: center;
+    
+                .topic-view-count {
+                    margin-right: 1rem;
+                    color: $fg-muted;
+    
+                    i {
+                        margin-right: .3rem;
+                    }
+                }
+    
+                .topic-answer-count {
+                    color: $fg-muted;
+    
+                    i {
+                        margin-right: .3rem;
+                    }
                 }
             }
         }
