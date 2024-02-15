@@ -6,6 +6,15 @@
     border-radius: .5rem;
     backdrop-filter: blur(20px);
 
+    .categories-header {
+        font-size: 1.5rem;
+        color: $dark-fg-default;
+        margin-bottom: 1rem;
+        font-family: $special-font;
+        font-weight: 300;
+        letter-spacing: 5px;
+    }
+
     ul {
         display: flex;
         justify-content: left;
@@ -21,7 +30,7 @@
                 border-radius: 2rem;
                 background-color: $dark-bg-default;
                 color: $dark-fg-default;
-                transition: $t-normal;
+                transition: $t-fast;
 
                 &:hover {
                     background-color: $brand;

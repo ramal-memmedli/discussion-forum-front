@@ -1,4 +1,5 @@
 @import "../../vendors/bootstrap-5.0.2-dist/css/bootstrap.min.css";
+@import url("https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 /*Brand color*/
 /*Transition*/
 /*light theme*/
@@ -9,7 +10,6 @@
 /*Border*/
 /*Foregrounds*/
 /*Backgrounds*/
-@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap");
 header {
   display: flex;
   justify-content: space-between;
@@ -782,6 +782,14 @@ body.dark-mode nav.flow-navbar ul li a:hover {
   border-radius: 0.5rem;
   backdrop-filter: blur(20px);
 }
+.categories .categories-header {
+  font-size: 1.5rem;
+  color: rgb(251, 234, 233);
+  margin-bottom: 1rem;
+  font-family: "Exo", sans-serif;
+  font-weight: 300;
+  letter-spacing: 5px;
+}
 .categories ul {
   display: flex;
   justify-content: left;
@@ -796,7 +804,7 @@ body.dark-mode nav.flow-navbar ul li a:hover {
   border-radius: 2rem;
   background-color: rgb(18, 18, 18);
   color: rgb(251, 234, 233);
-  transition: 300ms;
+  transition: 150ms;
 }
 .categories ul li a:hover {
   background-color: rgb(215, 46, 39);
@@ -830,7 +838,6 @@ main .user-profile-banner .profile-banner-image-color-layer {
   right: 0;
   background: rgb(251, 234, 233);
   background: linear-gradient(0deg, rgb(251, 234, 233) 0%, rgba(251, 234, 233, 0.45) 35%, rgba(251, 234, 233, 0.25) 100%);
-  backdrop-filter: blur(4px);
 }
 
 body.dark-mode main .user-profile-banner .profile-banner-image-color-layer {
@@ -1617,7 +1624,7 @@ button {
 
 html {
   font-size: 16px;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 body {

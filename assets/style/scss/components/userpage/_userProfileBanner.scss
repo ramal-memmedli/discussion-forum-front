@@ -28,7 +28,7 @@ main {
             right: 0;
             background: $bg-default;
             background: linear-gradient(0deg, $bg-default 0%, $bg-default-65 35%, $bg-default-45 100%);
-            backdrop-filter: blur(4px);
+            // backdrop-filter: blur(1px);
         }
     }
 }
