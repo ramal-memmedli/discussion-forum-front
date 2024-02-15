@@ -1,10 +1,12 @@
-var searchBtn = document.getElementById('searchBar');
-var searchArea = document.getElementById('searchResult');
+$(document).ready(function () {
+    var searchBtn = $('#searchBar');
+    var searchArea = $('#searchResult');
 
-searchBtn.addEventListener("focusin", function(){
-    searchArea.classList.add("search-area-opened");
-});
+    searchBtn.addEventListener("focusin", function () {
+        searchArea.classList.add("search-area-opened");
+    });
 
-searchBtn.addEventListener("focusout", function (){
-    searchArea.classList.remove("search-area-opened");
+    searchBtn.addEventListener("focusout", function () {
+        searchArea.classList.remove("search-area-opened");
+    })
 })

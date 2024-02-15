@@ -10,6 +10,7 @@ nav.flow-navbar {
     background-color: $bg-emphasis-85;
     backdrop-filter: blur(20px);
     border: $dark-border;
+    z-index: 1;
     ul {
         display: flex;
         justify-content: space-between;

@@ -1,0 +1,32 @@
+.categories {
+    background-color: $dark-bg-default-65;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border: $dark-border;
+    border-radius: .5rem;
+    backdrop-filter: blur(20px);
+
+    ul {
+        display: flex;
+        justify-content: left;
+        flex-wrap: wrap;
+        gap: .5rem;
+
+        li {
+            a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: .5rem 1rem;
+                border-radius: 2rem;
+                background-color: $dark-bg-default;
+                color: $dark-fg-default;
+                transition: $t-normal;
+
+                &:hover {
+                    background-color: $brand;
+                }
+            }
+        }
+    }
+}
