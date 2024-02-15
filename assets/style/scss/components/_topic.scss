@@ -1,6 +1,6 @@
 .topic {
     background-color: $bg-emphasis;
-    padding: 2rem;
+    padding: 1.25rem;
     border-radius: .5rem;
     transition: $t-normal;
     margin-bottom: 1rem;
@@ -23,7 +23,7 @@
             .author-image {
                 width: 2rem;
                 height: 2rem;
-                margin-right: 1rem;
+                margin-right: .5rem;
                 border-radius: 50%;
             }
 
@@ -31,8 +31,8 @@
                 padding: .1rem .4rem;
                 color: #ffffff;
                 background-color: $brand;
-                margin-left: 1rem;
-                border-radius: .375rem;
+                margin-left: .5rem;
+                border-radius: 3rem;
             }
 
             &:hover {
@@ -49,16 +49,16 @@
         margin-bottom: 1rem;
 
         a {
-            font-size: 1.5rem;
+            font-size: 1.25rem;
             display: flex;
-            margin-bottom: 1rem;
+            margin-bottom: .5rem;
             color: $fg-special;
         }
 
         p {
             color: $fg-default;
             cursor: default;
-            margin-bottom: 1rem;
+            margin-bottom: .5rem;
         }
 
 
@@ -71,7 +71,7 @@
                 a {
                     color: #FFF;
                     background-color: $brand;
-                    border-radius: .375rem;
+                    border-radius: 3rem;
                     font-size: .875rem;
                     padding: .3rem .6rem;
                     margin-right: .5rem;
@@ -90,8 +90,6 @@
             align-items: center;
 
             .topic-view-count {
-                padding: .3rem .6rem;
-                border-radius: .375rem;
                 margin-right: 1rem;
                 color: $fg-muted;
 
@@ -101,8 +99,6 @@
             }
 
             .topic-answer-count {
-                border-radius: .375rem;
-                padding: .3rem .6rem;
                 color: $fg-muted;
 
                 i {
