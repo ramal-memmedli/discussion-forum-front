@@ -1,9 +1,9 @@
 footer {
     background-color: $bg-emphasis;
-    box-shadow: 0 3px 6px rgba(140, 149, 159, 0.15);
     padding: 1rem;
     border-radius: .5rem;
     backdrop-filter: blur(20px);
+    border: $border;
 
     .copyright {
         color: $fg-default;

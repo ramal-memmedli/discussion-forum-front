@@ -7,14 +7,15 @@
     backdrop-filter: blur(20px);
     overflow: hidden;
     display: flex;
+    border: $border;
 
     &:hover {
         box-shadow: $default-shadow;
     }
 
     .topic-left {
-        background-color: $dark-bg-default-45;
-        border-right: $dark-border;
+        background-color: $bg-default-45;
+        border-right: $border;
         display: flex;
         flex-direction: column;
 
@@ -27,8 +28,8 @@
             padding: 1rem;
 
             &:hover {
-                color: $dark-fg-default;
-                background-color: $dark-bg-default-65;
+                color: $fg-default;
+                background-color: $bg-default-45;
             }
         }
     }
@@ -142,63 +143,77 @@ body.dark-mode {
         border: $dark-border;
         box-shadow: none;
 
-        .topic-header {
-            .topic-author {
-                color: #c9d1d9;
-
-                .author-level {
-                    color: #ffffff;
-                    background-color: $brand;
-                }
-
+        .topic-left {
+            background-color: $dark-bg-default-25;
+            border-right: $dark-border;
+    
+            a {
                 &:hover {
-                    color: #FFF;
+                    color: $fg-default;
+                    background-color: $bg-default-45;
                 }
-            }
-
-            .topic-create-date {
-                color: #c9d1d9;
             }
         }
 
-        .topic-body {
-
-            a {
-                color: #FFF;
-            }
-
-            p {
-                color: #c9d1d9;
-            }
-
-
-            ul {
-                li {
-                    a {
-                        color: #FFF;
+        .topic-right {
+            .topic-header {
+                .topic-author {
+                    color: #c9d1d9;
+    
+                    .author-level {
+                        color: #ffffff;
                         background-color: $brand;
+                    }
+    
+                    &:hover {
+                        color: #FFF;
+                    }
+                }
+    
+                .topic-create-date {
+                    color: #c9d1d9;
+                }
+            }
+    
+            .topic-body {
+    
+                a {
+                    color: #FFF;
+                }
+    
+                p {
+                    color: #c9d1d9;
+                }
+    
+    
+                ul {
+                    li {
+                        a {
+                            color: #FFF;
+                            background-color: $brand;
+                        }
                     }
                 }
             }
-        }
-
-        .topic-footer {
-            .topic-footer-left {
-                .topic-view-count {
-                    color: #c9d1d9;
+    
+            .topic-footer {
+                .topic-footer-left {
+                    .topic-view-count {
+                        color: #c9d1d9;
+                    }
+    
+                    .topic-answer-count {
+                        color: #c9d1d9;
+                    }
                 }
-
-                .topic-answer-count {
-                    color: #c9d1d9;
-                }
-            }
-
-            .topic-footer-right {
-                a {
-                    color: #c9d1d9;
-
-                    &:hover {
-                        color: #FFF;
+    
+                .topic-footer-right {
+                    a {
+                        color: #c9d1d9;
+    
+                        &:hover {
+                            color: #FFF;
+                        }
                     }
                 }
             }

@@ -1,18 +1,16 @@
 .categories {
-    background-color: $dark-bg-default-65;
+    background-color: $bg-emphasis-85;
     margin-bottom: .25rem;
     padding: 1rem;
-    border: $dark-border;
+    border: $border;
     border-radius: .5rem;
     backdrop-filter: blur(20px);
 
     .categories-header {
         font-size: 1.5rem;
-        color: $dark-fg-default;
+        color: $fg-default;
         margin-bottom: 1rem;
-        font-family: $special-font;
         font-weight: 300;
-        letter-spacing: 5px;
     }
 
     ul {
@@ -26,14 +24,39 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                padding: .5rem 1rem;
-                border-radius: 2rem;
-                background-color: $dark-bg-default;
-                color: $dark-fg-default;
+                padding: .3rem .6rem;
+                border-radius: .3rem;
+                background-color: $bg-default;
+                color: $fg-default;
                 transition: $t-fast;
 
                 &:hover {
                     background-color: $brand;
+                }
+            }
+        }
+    }
+}
+
+
+body.dark-mode {
+    .categories {
+        background-color: $dark-bg-default-65;
+        border: $dark-border;
+    
+        .categories-header {
+            color: $dark-fg-default;
+        }
+    
+        ul {
+            li {
+                a {
+                    background-color: $dark-bg-default;
+                    color: $dark-fg-default;
+
+                    &:hover {
+                        background-color: $brand;
+                    }
                 }
             }
         }

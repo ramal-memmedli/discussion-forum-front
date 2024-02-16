@@ -9,7 +9,7 @@ nav.flow-navbar {
     padding: .25rem;
     background-color: $bg-emphasis-85;
     backdrop-filter: blur(20px);
-    border: $dark-border;
+    border: $border;
     z-index: 1;
     ul {
         display: flex;
@@ -37,7 +37,7 @@ nav.flow-navbar {
                 }
                 display: flex;
                 align-items: center;
-                border-radius: .25rem;
+                border-radius: .35rem;
                 font-size: .875rem;
                 padding: .3rem .6rem;
                 color: $fg-default;
@@ -55,6 +55,7 @@ nav.flow-navbar {
 body.dark-mode {
     nav.flow-navbar {
         background-color: $dark-bg-default-65;
+        border: $dark-border;
         ul {
             li {
                 

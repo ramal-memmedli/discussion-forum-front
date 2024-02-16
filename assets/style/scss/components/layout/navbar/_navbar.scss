@@ -3,7 +3,7 @@ nav#navbar {
 
     background-color: $bg-emphasis-85;
     backdrop-filter: blur(20px);
-    border: $dark-border;
+    border: $border;
     border-radius: .5rem;
 
     position: fixed;
@@ -90,16 +90,15 @@ nav#navbar {
 
 @media screen and (max-width: 992px) {
     nav#navbar {
-        left: .5rem;
-        right: .5rem;
-        width: calc(100vw - 2rem);
+        left: .25rem;
+        right: .25rem;
+        width: auto;
         height: 5rem;
         padding: 0 1rem;
         top: auto;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        box-shadow: $default-shadow;
 
         ul {
             width: 100%;
@@ -127,6 +126,7 @@ nav#navbar {
 body.dark-mode {
     nav#navbar {
         background-color: $dark-bg-default-65;
+        border: $dark-border;
 
         ul {
             li {

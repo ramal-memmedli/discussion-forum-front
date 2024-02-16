@@ -12,7 +12,7 @@
             font-size: .875rem;
             border-radius: .5rem;
             backdrop-filter: blur(20px);
-            border: $dark-border;
+            border: $border;
             transition: $t-normal;
 
             &:focus {
@@ -37,7 +37,7 @@
     .search-area {
         display: none;
         background-color: $bg-emphasis-85;
-        border: 1px solid rgba(255, 255, 255, .11);
+        border: $border;
         backdrop-filter: blur(4px);
         border-radius: .5rem;
         padding: 1rem;
@@ -57,20 +57,6 @@
     @media screen and (max-width: 992px) {
         .search-form {
             margin-right: 0;
-
-            .search-bar {
-                height: 5rem;
-                padding-left: 5rem;
-            }
-
-            .search-bar-icon {
-                position: absolute;
-                color: $fg-default;
-                left: 2rem;
-                top: 2rem;
-                width: 1rem;
-                height: 1rem;
-            }
         }
     }
 
@@ -79,7 +65,7 @@
         .search-form {
             .search-bar {
                 background-color: $dark-bg-default-65;
-
+                border: $dark-border;
                 color: $dark-fg-default;
 
                 &:focus {
@@ -101,6 +87,7 @@
 
         .search-area {
             background-color: $dark-bg-default;
+            border: $dark-border;
             box-shadow: none;
         }
     }

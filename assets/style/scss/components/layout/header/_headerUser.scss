@@ -4,7 +4,7 @@
         background-color: $bg-emphasis;
         padding: .75rem 1rem;
         border-radius: .5rem;
-        border: $dark-border;
+        border: $border;
         cursor: pointer;
         user-select: none;
         display: flex;
@@ -61,19 +61,17 @@
 
 .user-nav {
     
-    border: $dark-border;
+    border: $border;
     backdrop-filter: blur(20px);
     overflow: hidden;
     background-color: #FFF;
     position: fixed;
     top: 3.5rem;
     right: .25rem;
-    width: 15rem;
+    width: 13rem;
     display: none;
     z-index: 1;
     border-radius: .5rem;
-
-    box-shadow: 0 3px 6px rgba(140, 149, 159, 0.15);
 
     ul {
         li {
@@ -85,7 +83,7 @@
 
             a {
                 color: $fg-default;
-                padding: 1rem;
+                padding: .8rem;
                 display: flex;
                 align-items: center;
                 transition: 150ms ease-in-out;
@@ -133,6 +131,7 @@ body.dark-mode {
     .header-user-box {
         .header-user {
             background-color: $dark-bg-default-65;
+            border: $dark-border;
             span {
                 color: $dark-fg-default;
             }
@@ -163,6 +162,7 @@ body.dark-mode {
 
     .user-nav {
         background-color: $dark-bg-default-65;
+        border: $dark-border;
         box-shadow: none;
 
         ul {
