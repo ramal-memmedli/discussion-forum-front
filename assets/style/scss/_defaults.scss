@@ -31,13 +31,67 @@ button {
 html {
     font-size: 16px;
     font-family: 'Open Sans', sans-serif;
+
+    /* width */
+    ::-webkit-scrollbar {
+        width: 6px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+        background: $bg-emphasis;
+        border-radius: 3px;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: $dark-bg-default-65;
+        border-radius: 3px;
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: $dark-bg-default;
+    }
+
+    &.dark-mode {
+        /* width */
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+            background: $dark-bg-default-65;
+            border-radius: 3px;
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: $bg-default;
+            border-radius: 3px;
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+            background: $bg-emphasis;
+        }
+    }
 }
 
 body {
     background-color: $bg-default;
+
+
+    
+
     &.dark-mode {
         background-color: $dark-bg-emphasis;
+
+
+        
     }
+
 }
 
 @media screen and (min-width: 1920px) {

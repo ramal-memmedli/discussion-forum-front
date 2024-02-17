@@ -1,10 +1,6 @@
 .categories {
-    background-color: $bg-emphasis-85;
-    margin-bottom: .25rem;
-    padding: 1rem;
-    border: $border;
+    margin-bottom: 1rem;
     border-radius: .5rem;
-    backdrop-filter: blur(20px);
 
     .categories-header {
         font-size: 1.5rem;
@@ -41,8 +37,6 @@
 
 body.dark-mode {
     .categories {
-        background-color: $dark-bg-default-65;
-        border: $dark-border;
     
         .categories-header {
             color: $dark-fg-default;

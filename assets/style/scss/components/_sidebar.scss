@@ -3,8 +3,11 @@
 }
 
 .sidebar-container {
-    height: 100%;
-    margin-left: .25rem;
+    height: calc(100vh - 10rem);
+    overflow-y: scroll;
+    scrollbar-gutter: stable;
+
+    margin-bottom: 1rem;
 }
 
 body.dark-mode {

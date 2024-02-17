@@ -1,31 +1,22 @@
 nav#navbar {
     overflow: hidden;
 
-    background-color: $bg-emphasis-85;
-    backdrop-filter: blur(20px);
-    border: $border;
-    border-radius: .5rem;
-
-    position: fixed;
-    left: .25rem;
-    top: 3.5rem;
-    bottom: .25rem;
-    width: 3rem;
+    // background-color: $bg-emphasis-85;
+    // backdrop-filter: blur(20px);
+    // border: $border;
+    // border-radius: .5rem;
+    width: 100%;
+    height: calc(100vh - 2rem);
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    align-items: left;
 
     transition: $t-normal;
     z-index: 1;
 
-    .navbar-logo {
-        img {
-            width: 1.5rem;
-            height: 1.5rem;
-        }
-    }
+    
 
     ul {
         display: flex;
@@ -34,13 +25,31 @@ nav#navbar {
         li {
             a {
                 display: flex;
-                justify-content: center;
                 align-items: center;
                 color: $fg-default;
                 transition: 150ms ease-in-out;
-                width: 3rem;
+                width: 100%;
                 height: 3rem;
+                padding: 0 1rem;
                 overflow: hidden;
+                border-radius: .5rem;
+
+                &.navbar-logo {
+                    img {
+                        width: 2rem;
+                        height: 2rem;
+                    }
+                }
+
+                i {
+                    width: 2rem;
+                    height: 2rem;
+                    font-size: 1.25rem;
+                    margin-right: .5rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
 
                 &:hover {
 
@@ -84,7 +93,7 @@ nav#navbar {
     }
 
     &.mobile-navbar-open {
-        width: 18rem;
+        width: calc(100% - 1rem);
     }
 }
 
@@ -125,8 +134,8 @@ nav#navbar {
 
 body.dark-mode {
     nav#navbar {
-        background-color: $dark-bg-default-65;
-        border: $dark-border;
+        // background-color: $dark-bg-default-65;
+        // border: $dark-border;
 
         ul {
             li {

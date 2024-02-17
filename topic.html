@@ -12,140 +12,51 @@
 </head>
 
 <body>
-
-  <div class="dark-layer" id="darkLayer">
-
-  </div>
-  <header class="">
-    <a class="hamburgerMenuBtn" id="hamburgerMenuBtn">
-      <span class="hamburgerSpan"> </span>
-      <span class="hamburgerSpan"> </span>
-      <span class="hamburgerSpan"> </span>
-    </a>
-
-    <form class="search-form" action="/search">
-      <input type="text" placeholder="Search now" class="search-bar" id="searchBar">
-      <i class="search-bar-icon fa-solid fa-magnifying-glass"></i>
-    </form>
-    <div class="search-area" id="searchResult">
-      <div class="topic">
-        <div class="topic-header">
-          <a href="#" class="topic-author">
-            <img class="author-image" src="./assets/images/logo.svg" alt="">
-            Ramal Memmedli
-            <span class="author-level">10</span>
-          </a>
-          <p class="topic-create-date">
-            Asked: <span class="date">8/4/2022</span>
-          </p>
-        </div>
-        <div class="topic-body">
-          <a href="./topic.html">Ekran Kartıma göre en iyi DirectX sürümü hangisidir ?</a>
-          <p>Ekran kartım NVIDIA GeForce GT 620M buna en uyumlu DirectX sürümünü nasıl bulabilirim yardımcı olur
-            musunuz ?</p>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 nopadding main-left">
+        <nav id="navbar">
           <ul>
-            <li><a href="#">Technology</a></li>
-            <li><a href="#">GPU</a></li>
-            <li><a href="#">Software</a></li>
-            <li><a href="#">Technology</a></li>
-            <li><a href="#">GPU</a></li>
-            <li><a href="#">Software</a></li>
+            <li><a href="#" class="navbar-logo">
+                <img src="./assets/images/logo.svg" alt="">
+              </a></li>
+            <li><a href="#"><i class="fa-solid fa-hashtag"></i></a></li>
+            <li><a href="#"><i class="fa-solid fa-users"></i></a></li>
+            <li><a href="#"><i class="fa-solid fa-rss"></i></a></li>
+            <li><a class="mobile-user header-user">
+                <img src="https://picsum.photos/300/600" alt="">
+              </a></li>
           </ul>
-        </div>
-        <div class="topic-footer">
-          <div class="topic-footer-left">
-            <div class="topic-view-count">
-              <i class="fa-solid fa-eye"></i> <span class="view-count"> 43 Views</span>
-            </div>
-
-            <div class="topic-answer-count">
-              <i class="fa-solid fa-message"></i> <span class="answer-count"> 7 Answers</span>
-            </div>
-          </div>
-          <div class="topic-footer-right">
-            <a href="#"><i class="fa-solid fa-bookmark"></i></a>
-          </div>
-        </div>
+        </nav>
       </div>
-    </div>
+      <div class="col-lg-6 nopadding main-center">
+        <header class="">
+          <a class="hamburgerMenuBtn" id="hamburgerMenuBtn">
+            <span class="hamburgerSpan"> </span>
+            <span class="hamburgerSpan"> </span>
+            <span class="hamburgerSpan"> </span>
+          </a>
 
-    <div class="dark-mode-switch">
-      <label class="switch" id="switch">
-        <input type="checkbox">
-        <span class="slider round"></span>
-        <i class="fa-solid fa-sun"></i>
-        <i class="fa-solid fa-moon"></i>
-      </label>
-    </div>
-
-    <div class="header-user-box">
-      <a class="header-user" id="headerUser">
-        <img src="https://picsum.photos/300/600" alt="">
-        <span>Ramal Memmedli</span>
-        <i class="fa-solid fa-chevron-down"></i>
-      </a>
-    </div>
-
-    
-
-</header>
-
-<div class="user-nav" id="userNav">
-  <ul>
-    <li><a href="#"><i class="fa-solid fa-user"></i> Your profile</a></li>
-    <li><a href="#"><i class="fa-solid fa-users"></i> Your communities</a></li>
-    <li><a href="#"><i class="fa-solid fa-bookmark"></i> Your bookmarks</a></li>
-    <li><a href="#"><i class="fa-solid fa-message"></i> Your topics</a></li>
-    <li><a href="#"><i class="fa-solid fa-comment-dots"></i> Your answers</a></li>
-    <li><a href="#"><i class="fa-solid fa-comments"></i> Your comments</a></li>
-    <li><a href="#"><i class="fa-solid fa-square-check"></i> Your votes</a></li>
-    <hr class="user-nav-separator">
-    <li><a class="sign-out-btn" href="#"><i class="fa-solid fa-right-from-bracket"></i> Sign out</a></li>
-  </ul>
-</div>
-
-<nav id="navbar">
-    <ul>
-      <li><a href="#" class="navbar-logo">
-        <img src="./assets/images/logo.svg" alt="">
-      </a></li>
-      <li><a href="#"><i class="fa-solid fa-hashtag"></i></a></li>
-      <li><a href="#"><i class="fa-solid fa-users"></i></a></li>
-      <li><a href="#"><i class="fa-solid fa-rss"></i></a></li>
-      <li><a class="mobile-user header-user">
-        <img src="https://picsum.photos/300/600" alt="">
-      </a></li>
-    </ul>
-</nav>
-
-  <main>
-
-    <div class="topic-page">
-      <div class="row nomargin">
-        <div class="col-lg-8 nopadding">
-          <div class="topic-content">
-            <div class="topic-header">
-              <div class="topic-author">
-                <a href="#">
-                  <img src="https://picsum.photos/200/200" alt="">
+          <form class="search-form" action="/search">
+            <input type="text" placeholder="Search now" class="search-bar" id="searchBar">
+            <i class="search-bar-icon fa-solid fa-magnifying-glass"></i>
+          </form>
+          <div class="search-area" id="searchResult">
+            <div class="topic">
+              <div class="topic-header">
+                <a href="#" class="topic-author">
+                  <img class="author-image" src="./assets/images/logo.svg" alt="">
                   Ramal Memmedli
+                  <span class="author-level">10</span>
                 </a>
-                <span class="author-level">10</span>
+                <p class="topic-create-date">
+                  Asked: <span class="date">8/4/2022</span>
+                </p>
               </div>
-              <div class="topic-create-date">
-                Asked: <span class="date">8/4/2022</span>
-              </div>
-            </div>
-
-            <div class="topic-body">
-              <div class="topic-title">
-                <a>Ekran Kartıma göre en iyi DirectX sürümü hangisidir ?</a>
-              </div>
-              <div class="topic-context">
+              <div class="topic-body">
+                <a href="./topic.html">Ekran Kartıma göre en iyi DirectX sürümü hangisidir ?</a>
                 <p>Ekran kartım NVIDIA GeForce GT 620M buna en uyumlu DirectX sürümünü nasıl bulabilirim yardımcı olur
                   musunuz ?</p>
-              </div>
-              <div class="topic-categories">
                 <ul>
                   <li><a href="#">Technology</a></li>
                   <li><a href="#">GPU</a></li>
@@ -155,341 +66,441 @@
                   <li><a href="#">Software</a></li>
                 </ul>
               </div>
-            </div>
+              <div class="topic-footer">
+                <div class="topic-footer-left">
+                  <div class="topic-view-count">
+                    <i class="fa-solid fa-eye"></i> <span class="view-count"> 43 Views</span>
+                  </div>
 
-            <div class="topic-statistics">
-              <div class="statistics-left">
-                <p><i class="fa-solid fa-eye"></i> 43 Views</p>
-                <p><i class="fa-solid fa-message"></i> 7 Answers</p>
-              </div>
-              <div class="statistics-right">
-                <a href="#"><i class="fa-solid fa-bookmark"></i></a>
+                  <div class="topic-answer-count">
+                    <i class="fa-solid fa-message"></i> <span class="answer-count"> 7 Answers</span>
+                  </div>
+                </div>
+                <div class="topic-footer-right">
+                  <a href="#"><i class="fa-solid fa-bookmark"></i></a>
+                </div>
               </div>
             </div>
           </div>
-          <div class="topic-answers">
-            <h4>3 Answers</h4>
-            <div class="topic-answer">
-              <div class="row">
-                <div class="col-1">
-                  <div class="vote-actions">
-                    <a href="#" class="upvote"><i class="fa-solid fa-caret-up"></i></a>
-                    <span class="votecount">18</span>
-                    <a href="#" class="downvote"><i class="fa-solid fa-caret-down"></i></a>
-                  </div>
-                </div>
-                <div class="col-11">
-                  <div class="answer-header">
-                    <div class="answer-author">
+
+          <div class="dark-mode-switch">
+            <label class="switch" id="switch">
+              <input type="checkbox">
+              <span class="slider round"></span>
+              <i class="fa-solid fa-sun"></i>
+              <i class="fa-solid fa-moon"></i>
+            </label>
+          </div>
+
+
+
+
+
+        </header>
+
+        <main>
+
+          <div class="topic-page">
+            <div class="row nomargin">
+              <div class="col-lg-12 nopadding">
+                <div class="topic-content">
+                  <div class="topic-header">
+                    <div class="topic-author">
                       <a href="#">
-                        <img src="./assets/images/logo.svg" alt="">
-                        Ilkin Qurbanli
+                        <img src="https://picsum.photos/200/200" alt="">
+                        Ramal Memmedli
                       </a>
-                      <span class="author-level">
-                        24
-                      </span>
+                      <span class="author-level">10</span>
                     </div>
-                    <div class="answer-date">
-                      Answered: <span>8/4/2022</span>
+                    <div class="topic-create-date">
+                      Asked: <span class="date">8/4/2022</span>
                     </div>
-                    
                   </div>
-                  <div class="answer-body">
-                    <p class="answer-context">Lorem ipsum dolor sit amet <strong>consectetur adipisicing</strong> elit. Illo, molestias magni nostrum repudiandae saepe excepturi incidunt laborum ratione cupiditate, distinctio cumque ipsum voluptatibus explicabo fugiat!</p>
+
+                  <div class="topic-body">
+                    <div class="topic-title">
+                      <a>Ekran Kartıma göre en iyi DirectX sürümü hangisidir ?</a>
+                    </div>
+                    <div class="topic-context">
+                      <p>Ekran kartım NVIDIA GeForce GT 620M buna en uyumlu DirectX sürümünü nasıl bulabilirim yardımcı
+                        olur
+                        musunuz ?</p>
+                    </div>
+                    <div class="topic-categories">
+                      <ul>
+                        <li><a href="#">Technology</a></li>
+                        <li><a href="#">GPU</a></li>
+                        <li><a href="#">Software</a></li>
+                        <li><a href="#">Technology</a></li>
+                        <li><a href="#">GPU</a></li>
+                        <li><a href="#">Software</a></li>
+                      </ul>
+                    </div>
                   </div>
-                  <div class="answer-actions">
-                    <a><i class="fa-solid fa-check"></i> Select as best answer</a>
-                    <a id="addComment"><i class="fa-solid fa-comment"></i> Add comment</a>
+
+                  <div class="topic-statistics">
+                    <div class="statistics-left">
+                      <p><i class="fa-solid fa-eye"></i> 43 Views</p>
+                      <p><i class="fa-solid fa-message"></i> 7 Answers</p>
+                    </div>
+                    <div class="statistics-right">
+                      <a href="#"><i class="fa-solid fa-bookmark"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="topic-answers">
+                  <h4>3 Answers</h4>
+                  <div class="topic-answer">
+                    <div class="row">
+                      <div class="col-1">
+                        <div class="vote-actions">
+                          <a href="#" class="upvote"><i class="fa-solid fa-caret-up"></i></a>
+                          <span class="votecount">18</span>
+                          <a href="#" class="downvote"><i class="fa-solid fa-caret-down"></i></a>
+                        </div>
+                      </div>
+                      <div class="col-11">
+                        <div class="answer-header">
+                          <div class="answer-author">
+                            <a href="#">
+                              <img src="./assets/images/logo.svg" alt="">
+                              Ilkin Qurbanli
+                            </a>
+                            <span class="author-level">
+                              24
+                            </span>
+                          </div>
+                          <div class="answer-date">
+                            Answered: <span>8/4/2022</span>
+                          </div>
+
+                        </div>
+                        <div class="answer-body">
+                          <p class="answer-context">Lorem ipsum dolor sit amet <strong>consectetur adipisicing</strong>
+                            elit. Illo, molestias magni nostrum repudiandae saepe excepturi incidunt laborum ratione
+                            cupiditate, distinctio cumque ipsum voluptatibus explicabo fugiat!</p>
+                        </div>
+                        <div class="answer-actions">
+                          <a><i class="fa-solid fa-check"></i> Select as best answer</a>
+                          <a id="addComment"><i class="fa-solid fa-comment"></i> Add comment</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="answer-comments">
+                      <h6>Comments - <span>3</span></h6>
+                      <div class="comment">
+                        <a class="comment-author-image" href="#"><img src="./assets/images/logo.svg" alt=""></a>
+                        <div>
+                          <div class="comment-header">
+                            <div class="comment-author">
+                              <a href="#">Ramal Memmedli</a>
+                            </div>
+                            <div class="comment-date">8/4/2022</div>
+                          </div>
+
+                          <div class="comment-body">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At, iure.</p>
+                          </div>
+                        </div>
+
+                      </div>
+                      <div class="comment">
+                        <a class="comment-author-image" href="#"><img src="./assets/images/logo.svg" alt=""></a>
+                        <div>
+                          <div class="comment-header">
+                            <div class="comment-author">
+                              <a href="#">Ramal Memmedli</a>
+                            </div>
+                            <div class="comment-date">8/4/2022</div>
+                          </div>
+
+                          <div class="comment-body">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At, iure.</p>
+                          </div>
+                        </div>
+
+                      </div>
+                      <div class="comment">
+                        <a class="comment-author-image" href="#"><img src="./assets/images/logo.svg" alt=""></a>
+                        <div>
+                          <div class="comment-header">
+                            <div class="comment-author">
+                              <a href="#">Ramal Memmedli</a>
+                            </div>
+                            <div class="comment-date">8/4/2022</div>
+                          </div>
+
+                          <div class="comment-body">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At, iure.</p>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                  <div class="topic-answer">
+                    <div class="row">
+                      <div class="col-1">
+                        <div class="vote-actions">
+                          <a href="#" class="upvote"><i class="fa-solid fa-caret-up"></i></a>
+                          <span class="votecount">18</span>
+                          <a href="#" class="downvote"><i class="fa-solid fa-caret-down"></i></a>
+                        </div>
+                        <div class="selected-answer">
+                          <i class="fa-solid fa-check"></i>
+                        </div>
+                      </div>
+                      <div class="col-11">
+                        <div class="answer-header">
+                          <div class="answer-author">
+                            <a href="#">
+                              <img src="./assets/images/logo.svg" alt="">
+                              Ilkin Qurbanli
+                            </a>
+                            <span class="author-level">
+                              24
+                            </span>
+                          </div>
+                          <div class="answer-date">
+                            Answered: <span>8/4/2022</span>
+                          </div>
+
+                        </div>
+                        <div class="answer-body">
+                          <p class="answer-context">Lorem ipsum dolor sit amet <strong>consectetur adipisicing</strong>
+                            elit. Illo, molestias magni nostrum repudiandae saepe excepturi incidunt laborum ratione
+                            cupiditate, distinctio cumque ipsum voluptatibus explicabo fugiat!</p>
+                        </div>
+                        <div class="answer-actions">
+                          <a><i class="fa-solid fa-check"></i> Select as best answer</a>
+                          <a id="addComment"><i class="fa-solid fa-comment"></i> Add comment</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="answer-comments">
+                      <h6>Comments - <span>3</span></h6>
+                      <div class="comment">
+                        <a class="comment-author-image" href="#"><img src="./assets/images/logo.svg" alt=""></a>
+                        <div>
+                          <div class="comment-header">
+                            <div class="comment-author">
+                              <a href="#">Ramal Memmedli</a>
+                            </div>
+                            <div class="comment-date">8/4/2022</div>
+                          </div>
+
+                          <div class="comment-body">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At, iure.</p>
+                          </div>
+                        </div>
+
+                      </div>
+                      <div class="comment">
+                        <a class="comment-author-image" href="#"><img src="./assets/images/logo.svg" alt=""></a>
+                        <div>
+                          <div class="comment-header">
+                            <div class="comment-author">
+                              <a href="#">Ramal Memmedli</a>
+                            </div>
+                            <div class="comment-date">8/4/2022</div>
+                          </div>
+
+                          <div class="comment-body">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At, iure.</p>
+                          </div>
+                        </div>
+
+                      </div>
+                      <div class="comment">
+                        <a class="comment-author-image" href="#"><img src="./assets/images/logo.svg" alt=""></a>
+                        <div>
+                          <div class="comment-header">
+                            <div class="comment-author">
+                              <a href="#">Ramal Memmedli</a>
+                            </div>
+                            <div class="comment-date">8/4/2022</div>
+                          </div>
+
+                          <div class="comment-body">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At, iure.</p>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                  <div class="topic-answer">
+                    <div class="row">
+                      <div class="col-1">
+                        <div class="vote-actions">
+                          <a href="#" class="upvote"><i class="fa-solid fa-caret-up"></i></a>
+                          <span class="votecount">18</span>
+                          <a href="#" class="downvote"><i class="fa-solid fa-caret-down"></i></a>
+                        </div>
+                        <div class="selected-answer">
+                          <i class="fa-solid fa-check"></i>
+                        </div>
+                      </div>
+                      <div class="col-11">
+                        <div class="answer-header">
+                          <div class="answer-author">
+                            <a href="#">
+                              <img src="./assets/images/logo.svg" alt="">
+                              Ilkin Qurbanli
+                            </a>
+                            <span class="author-level">
+                              24
+                            </span>
+                          </div>
+                          <div class="answer-date">
+                            Answered: <span>8/4/2022</span>
+                          </div>
+
+                        </div>
+                        <div class="answer-body">
+                          <p class="answer-context">Lorem ipsum dolor sit amet <strong>consectetur adipisicing</strong>
+                            elit. Illo, molestias magni nostrum repudiandae saepe excepturi incidunt laborum ratione
+                            cupiditate, distinctio cumque ipsum voluptatibus explicabo fugiat!</p>
+                        </div>
+                        <div class="answer-actions">
+                          <a href="#"><i class="fa-solid fa-check"></i> Select as best answer</a>
+                          <a href="#"><i class="fa-solid fa-comment"></i> Add comment</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="answer-comments">
+                      <h6>Comments - <span>3</span></h6>
+                      <div class="comment">
+                        <a class="comment-author-image" href="#"><img src="./assets/images/logo.svg" alt=""></a>
+                        <div>
+                          <div class="comment-header">
+                            <div class="comment-author">
+                              <a href="#">Ramal Memmedli</a>
+                            </div>
+                            <div class="comment-date">8/4/2022</div>
+                          </div>
+
+                          <div class="comment-body">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At, iure.</p>
+                          </div>
+                        </div>
+
+                      </div>
+                      <div class="comment">
+                        <a class="comment-author-image" href="#"><img src="./assets/images/logo.svg" alt=""></a>
+                        <div>
+                          <div class="comment-header">
+                            <div class="comment-author">
+                              <a href="#">Ramal Memmedli</a>
+                            </div>
+                            <div class="comment-date">8/4/2022</div>
+                          </div>
+
+                          <div class="comment-body">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At, iure.</p>
+                          </div>
+                        </div>
+
+                      </div>
+                      <div class="comment">
+                        <a class="comment-author-image" href="#"><img src="./assets/images/logo.svg" alt=""></a>
+                        <div>
+                          <div class="comment-header">
+                            <div class="comment-author">
+                              <a href="#">Ramal Memmedli</a>
+                            </div>
+                            <div class="comment-date">8/4/2022</div>
+                          </div>
+
+                          <div class="comment-body">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At, iure.</p>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="answer-comments">
-                <h6>Comments - <span>3</span></h6>
-                <div class="comment">
-                  <a class="comment-author-image" href="#"><img src="./assets/images/logo.svg" alt=""></a>
-                  <div>
-                    <div class="comment-header">
-                      <div class="comment-author">
-                        <a href="#">Ramal Memmedli</a>
-                      </div>
-                      <div class="comment-date">8/4/2022</div>
-                    </div>
-                    
-                    <div class="comment-body">
-                      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At, iure.</p>
-                    </div>
-                  </div>
-                  
-                </div>
-                <div class="comment">
-                  <a class="comment-author-image" href="#"><img src="./assets/images/logo.svg" alt=""></a>
-                  <div>
-                    <div class="comment-header">
-                      <div class="comment-author">
-                        <a href="#">Ramal Memmedli</a>
-                      </div>
-                      <div class="comment-date">8/4/2022</div>
-                    </div>
-                    
-                    <div class="comment-body">
-                      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At, iure.</p>
-                    </div>
-                  </div>
-                  
-                </div>
-                <div class="comment">
-                  <a class="comment-author-image" href="#"><img src="./assets/images/logo.svg" alt=""></a>
-                  <div>
-                    <div class="comment-header">
-                      <div class="comment-author">
-                        <a href="#">Ramal Memmedli</a>
-                      </div>
-                      <div class="comment-date">8/4/2022</div>
-                    </div>
-                    
-                    <div class="comment-body">
-                      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At, iure.</p>
-                    </div>
-                  </div>
-                  
-                </div>
-              </div>
+
+
             </div>
-            <div class="topic-answer">
-              <div class="row">
-                <div class="col-1">
-                  <div class="vote-actions">
-                    <a href="#" class="upvote"><i class="fa-solid fa-caret-up"></i></a>
-                    <span class="votecount">18</span>
-                    <a href="#" class="downvote"><i class="fa-solid fa-caret-down"></i></a>
-                  </div>
-                  <div class="selected-answer">
-                    <i class="fa-solid fa-check"></i>
-                  </div>
-                </div>
-                <div class="col-11">
-                  <div class="answer-header">
-                    <div class="answer-author">
-                      <a href="#">
-                        <img src="./assets/images/logo.svg" alt="">
-                        Ilkin Qurbanli
-                      </a>
-                      <span class="author-level">
-                        24
-                      </span>
-                    </div>
-                    <div class="answer-date">
-                      Answered: <span>8/4/2022</span>
-                    </div>
-                    
-                  </div>
-                  <div class="answer-body">
-                    <p class="answer-context">Lorem ipsum dolor sit amet <strong>consectetur adipisicing</strong> elit. Illo, molestias magni nostrum repudiandae saepe excepturi incidunt laborum ratione cupiditate, distinctio cumque ipsum voluptatibus explicabo fugiat!</p>
-                  </div>
-                  <div class="answer-actions">
-                    <a><i class="fa-solid fa-check"></i> Select as best answer</a>
-                    <a id="addComment"><i class="fa-solid fa-comment"></i> Add comment</a>
-                  </div>
-                </div>
-              </div>
-              <div class="answer-comments">
-                <h6>Comments - <span>3</span></h6>
-                <div class="comment">
-                  <a class="comment-author-image" href="#"><img src="./assets/images/logo.svg" alt=""></a>
-                  <div>
-                    <div class="comment-header">
-                      <div class="comment-author">
-                        <a href="#">Ramal Memmedli</a>
-                      </div>
-                      <div class="comment-date">8/4/2022</div>
-                    </div>
-                    
-                    <div class="comment-body">
-                      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At, iure.</p>
-                    </div>
-                  </div>
-                  
-                </div>
-                <div class="comment">
-                  <a class="comment-author-image" href="#"><img src="./assets/images/logo.svg" alt=""></a>
-                  <div>
-                    <div class="comment-header">
-                      <div class="comment-author">
-                        <a href="#">Ramal Memmedli</a>
-                      </div>
-                      <div class="comment-date">8/4/2022</div>
-                    </div>
-                    
-                    <div class="comment-body">
-                      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At, iure.</p>
-                    </div>
-                  </div>
-                  
-                </div>
-                <div class="comment">
-                  <a class="comment-author-image" href="#"><img src="./assets/images/logo.svg" alt=""></a>
-                  <div>
-                    <div class="comment-header">
-                      <div class="comment-author">
-                        <a href="#">Ramal Memmedli</a>
-                      </div>
-                      <div class="comment-date">8/4/2022</div>
-                    </div>
-                    
-                    <div class="comment-body">
-                      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At, iure.</p>
-                    </div>
-                  </div>
-                  
-                </div>
-              </div>
-            </div>
-            <div class="topic-answer">
-              <div class="row">
-                <div class="col-1">
-                  <div class="vote-actions">
-                    <a href="#" class="upvote"><i class="fa-solid fa-caret-up"></i></a>
-                    <span class="votecount">18</span>
-                    <a href="#" class="downvote"><i class="fa-solid fa-caret-down"></i></a>
-                  </div>
-                  <div class="selected-answer">
-                    <i class="fa-solid fa-check"></i>
-                  </div>
-                </div>
-                <div class="col-11">
-                  <div class="answer-header">
-                    <div class="answer-author">
-                      <a href="#">
-                        <img src="./assets/images/logo.svg" alt="">
-                        Ilkin Qurbanli
-                      </a>
-                      <span class="author-level">
-                        24
-                      </span>
-                    </div>
-                    <div class="answer-date">
-                      Answered: <span>8/4/2022</span>
-                    </div>
-                    
-                  </div>
-                  <div class="answer-body">
-                    <p class="answer-context">Lorem ipsum dolor sit amet <strong>consectetur adipisicing</strong> elit. Illo, molestias magni nostrum repudiandae saepe excepturi incidunt laborum ratione cupiditate, distinctio cumque ipsum voluptatibus explicabo fugiat!</p>
-                  </div>
-                  <div class="answer-actions">
-                    <a href="#"><i class="fa-solid fa-check"></i> Select as best answer</a>
-                    <a href="#"><i class="fa-solid fa-comment"></i> Add comment</a>
-                  </div>
-                </div>
-              </div>
-              <div class="answer-comments">
-                <h6>Comments - <span>3</span></h6>
-                <div class="comment">
-                  <a class="comment-author-image" href="#"><img src="./assets/images/logo.svg" alt=""></a>
-                  <div>
-                    <div class="comment-header">
-                      <div class="comment-author">
-                        <a href="#">Ramal Memmedli</a>
-                      </div>
-                      <div class="comment-date">8/4/2022</div>
-                    </div>
-                    
-                    <div class="comment-body">
-                      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At, iure.</p>
-                    </div>
-                  </div>
-                  
-                </div>
-                <div class="comment">
-                  <a class="comment-author-image" href="#"><img src="./assets/images/logo.svg" alt=""></a>
-                  <div>
-                    <div class="comment-header">
-                      <div class="comment-author">
-                        <a href="#">Ramal Memmedli</a>
-                      </div>
-                      <div class="comment-date">8/4/2022</div>
-                    </div>
-                    
-                    <div class="comment-body">
-                      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At, iure.</p>
-                    </div>
-                  </div>
-                  
-                </div>
-                <div class="comment">
-                  <a class="comment-author-image" href="#"><img src="./assets/images/logo.svg" alt=""></a>
-                  <div>
-                    <div class="comment-header">
-                      <div class="comment-author">
-                        <a href="#">Ramal Memmedli</a>
-                      </div>
-                      <div class="comment-date">8/4/2022</div>
-                    </div>
-                    
-                    <div class="comment-body">
-                      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At, iure.</p>
-                    </div>
-                  </div>
-                  
-                </div>
-              </div>
-            </div>
+
           </div>
-          <div class="add-answer">
-            <form action="">
-              burda plugin olacaq 
-              <button type="submit">Submit</button>
-            </form>
+          <div class="add-comment-box" id="addCommentBox">
+            <input type="text" placeholder="Comment input">
+            <a class="text-white">Post</a>
+            <a id="closeCommentBox"><i class="fa-solid fa-x"></i></a>
           </div>
-        </div>
-
-        <div class="col-lg-4 nopadding">
-          <div class="sidebar-container">
-            <div class="sidebar">
-
-              <div class="categories">
-                <h3 class="categories-header">Categories</h3>
-
-                <ul>
-                  <li><a href="">Technology</a></li>
-                  <li><a href="">Coding</a></li>
-                  <li><a href="">C#</a></li>
-                  <li><a href="">.NET</a></li>
-                  <li><a href="">Front end development</a></li>
-                  <li><a href="">Oracle</a></li>
-                  <li><a href="">CSS3</a></li>
-                  <li><a href="">SQL</a></li>
-                  <li><a href="">MVC</a></li>
-                  <li><a href="">Java</a></li>
-                  <li><a href="">HTML5</a></li>
-                  <li><a href="">Spring</a></li>
-                  <li><a href="">Back end development</a></li>
-                  <li><a href="">Monolith</a></li>
-
-                </ul>
-              </div>
-
-            </div>
-            <footer>
-              <p class="copyright">
-                Forum Inc © 2022. All rights reserved
-              </p>
-            </footer>
-          </div>
-
-        </div>  
-
-
+        </main>
       </div>
+      <div class="col-lg-3 nopadding main-right">
+        <div class="header-user-box">
+          <a class="header-user" id="headerUser">
+            <img src="https://picsum.photos/300/600" alt="">
+            <span>Ramal Memmedli</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </a>
+        </div>
+        <div class="sidebar-container">
+          <div class="sidebar">
 
+            <div class="categories">
+              <div class="categories-header">
+                <h5 href="">Categories</h5>
+              </div>
+
+              <ul>
+                <li><a href="">Technology</a></li>
+                <li><a href="">Coding</a></li>
+                <li><a href="">C#</a></li>
+                <li><a href="">.NET</a></li>
+                <li><a href="">Front end development</a></li>
+                <li><a href="">Oracle</a></li>
+                <li><a href="">CSS3</a></li>
+                <li><a href="">SQL</a></li>
+                <li><a href="">MVC</a></li>
+                <li><a href="">Java</a></li>
+                <li><a href="">HTML5</a></li>
+                <li><a href="">Spring</a></li>
+                <li><a href="">Back end development</a></li>
+                <li><a href="">Monolith</a></li>
+
+              </ul>
+            </div>
+
+          </div>
+          <footer>
+            <p class="copyright">
+              Forum Inc © 2022. All rights reserved
+            </p>
+          </footer>
+        </div>
+      </div>
     </div>
+  </div>
 
-    <div class="add-comment-box" id="addCommentBox">
-          <input type="text" placeholder="Comment input">
-          <a class="text-white">Post</a>
-          <a id="closeCommentBox"><i class="fa-solid fa-x"></i></a>       
-    </div>
+  <div class="user-nav" id="userNav">
+    <ul>
+      <li><a href="#"><i class="fa-solid fa-user"></i> Your profile</a></li>
+      <li><a href="#"><i class="fa-solid fa-users"></i> Your communities</a></li>
+      <li><a href="#"><i class="fa-solid fa-bookmark"></i> Your bookmarks</a></li>
+      <li><a href="#"><i class="fa-solid fa-message"></i> Your topics</a></li>
+      <li><a href="#"><i class="fa-solid fa-comment-dots"></i> Your answers</a></li>
+      <li><a href="#"><i class="fa-solid fa-comments"></i> Your comments</a></li>
+      <li><a href="#"><i class="fa-solid fa-square-check"></i> Your votes</a></li>
+      <hr class="user-nav-separator">
+      <li><a class="sign-out-btn" href="#"><i class="fa-solid fa-right-from-bracket"></i> Sign out</a></li>
+    </ul>
+  </div>
 
-  </main>
+
+
+
+
+
+
+
 
   <script src="./assets/script/hamburger.js"></script>
   <script src="./assets/script/search.js"></script>

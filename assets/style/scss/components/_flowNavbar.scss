@@ -1,11 +1,11 @@
 nav.flow-navbar {
-    margin-bottom: .25rem;
+    margin-bottom: 1rem;
     border-radius: .5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: sticky;
-    top: 3.5rem;
+    top: 9rem;
     padding: .25rem;
     background-color: $bg-emphasis-85;
     backdrop-filter: blur(20px);
@@ -49,6 +49,12 @@ nav.flow-navbar {
                 }
             }
         }
+    }
+}
+
+.index-page {
+    nav.flow-navbar {
+        top: 5rem;
     }
 }
 

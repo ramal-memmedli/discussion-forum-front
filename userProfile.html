@@ -14,436 +14,658 @@
 </head>
 
 <body>
-
-  <div class="dark-layer" id="darkLayer">
-
-  </div>
-  <header class="">
-    <a class="hamburgerMenuBtn" id="hamburgerMenuBtn">
-      <span class="hamburgerSpan"> </span>
-      <span class="hamburgerSpan"> </span>
-      <span class="hamburgerSpan"> </span>
-    </a>
-
-    <form class="search-form" action="/search">
-      <input type="text" placeholder="Search now" class="search-bar" id="searchBar">
-      <i class="search-bar-icon fa-solid fa-magnifying-glass"></i>
-    </form>
-    <div class="search-area" id="searchResult">
-      <div class="topic">
-        <div class="topic-header">
-          <a href="#" class="topic-author">
-            <img class="author-image" src="./assets/images/logo.svg" alt="">
-            Ramal Memmedli
-            <span class="author-level">10</span>
-          </a>
-          <p class="topic-create-date">
-            Asked: <span class="date">8/4/2022</span>
-          </p>
-        </div>
-        <div class="topic-body">
-          <a href="./topic.html">Ekran Kartıma göre en iyi DirectX sürümü hangisidir ?</a>
-          <p>Ekran kartım NVIDIA GeForce GT 620M buna en uyumlu DirectX sürümünü nasıl bulabilirim yardımcı olur
-            musunuz ?</p>
-          <ul>
-            <li><a href="#">Technology</a></li>
-            <li><a href="#">GPU</a></li>
-            <li><a href="#">Software</a></li>
-            <li><a href="#">Technology</a></li>
-            <li><a href="#">GPU</a></li>
-            <li><a href="#">Software</a></li>
-          </ul>
-        </div>
-        <div class="topic-footer">
-          <div class="topic-footer-left">
-            <div class="topic-view-count">
-              <i class="fa-solid fa-eye"></i> <span class="view-count"> 43 Views</span>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 nopadding">
+        <div class="main-left">
+          <nav id="navbar">
+            <ul>
+              <li><a href="#" class="navbar-logo">
+                  <img src="./assets/images/logo.svg" alt="">
+                </a></li>
+              <li><a href="#"><i class="fa-solid fa-hashtag"></i> Flow</a></li>
+              <li><a href="#"><i class="fa-solid fa-users"></i> Communities</a></li>
+              <li><a href="#"><i class="fa-solid fa-rss"></i>Blog</a></li>
+              <li><a class="mobile-user header-user">
+                  <img src="https://picsum.photos/300/600" alt="">
+                </a></li>
+            </ul>
+            <div class="dark-mode-switch">
+              <label class="switch" id="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+                <i class="fa-solid fa-sun"></i>
+                <i class="fa-solid fa-moon"></i>
+              </label>
             </div>
-
-            <div class="topic-answer-count">
-              <i class="fa-solid fa-message"></i> <span class="answer-count"> 7 Answers</span>
-            </div>
-          </div>
-          <div class="topic-footer-right">
-            <a href="#"><i class="fa-solid fa-bookmark"></i></a>
-          </div>
+          </nav>
         </div>
       </div>
-    </div>
-
-    <div class="dark-mode-switch">
-      <label class="switch" id="switch">
-        <input type="checkbox">
-        <span class="slider round"></span>
-        <i class="fa-solid fa-sun"></i>
-        <i class="fa-solid fa-moon"></i>
-      </label>
-    </div>
-
-    <div class="header-user-box">
-      <a class="header-user" id="headerUser">
-        <img src="https://picsum.photos/300/600" alt="">
-        <span>Ramal Memmedli</span>
-        <i class="fa-solid fa-chevron-down"></i>
-      </a>
-    </div>
-
-
-
-  </header>
-
-  <div class="user-nav" id="userNav">
-    <ul>
-      <li><a href="#"><i class="fa-solid fa-user"></i> Your profile</a></li>
-      <li><a href="#"><i class="fa-solid fa-users"></i> Your communities</a></li>
-      <li><a href="#"><i class="fa-solid fa-bookmark"></i> Your bookmarks</a></li>
-      <li><a href="#"><i class="fa-solid fa-message"></i> Your topics</a></li>
-      <li><a href="#"><i class="fa-solid fa-comment-dots"></i> Your answers</a></li>
-      <li><a href="#"><i class="fa-solid fa-comments"></i> Your comments</a></li>
-      <li><a href="#"><i class="fa-solid fa-square-check"></i> Your votes</a></li>
-      <hr class="user-nav-separator">
-      <li><a class="sign-out-btn" href="#"><i class="fa-solid fa-right-from-bracket"></i> Sign out</a></li>
-    </ul>
-  </div>
-
-  <nav id="navbar">
-    <ul>
-      <li><a href="#" class="navbar-logo">
-          <img src="./assets/images/logo.svg" alt="">
-        </a></li>
-      <li><a href="#"><i class="fa-solid fa-hashtag"></i></a></li>
-      <li><a href="#"><i class="fa-solid fa-users"></i></a></li>
-      <li><a href="#"><i class="fa-solid fa-rss"></i></a></li>
-      <li><a class="mobile-user header-user">
-          <img src="https://picsum.photos/300/600" alt="">
-        </a></li>
-    </ul>
-  </nav>
-
-  <main>
-
-    <div class="user-profile-banner">
-      <img class="profile-banner-image" src="https://picsum.photos/1920/1080" alt="">
-      <div class="profile-banner-image-color-layer"></div>
-    </div>
-
-    <div class="user-profile">
-
-
-      <section class="user-profile-header" id="userProfileHeader">
-        <div class="profile-details">
-          <img src="https://picsum.photos/400/400" alt="" class="profile-image">
-          <div class="profile-name-section">
-            <a class="profile-fullname" href="#">Ramal Memmedli</a>
-            <a href="#" class="verified-profile"><i class="fa-solid fa-check"></i></a>
-          </div>
-          <a class="follow-user-button" href="#"><i class="fa-solid fa-plus"></i>Follow</a>
-
+      <div class="col-lg-6 nopadding">
+        <div class="main-center">
+          <header class="">
+            <!-- <a class="hamburgerMenuBtn" id="hamburgerMenuBtn">
+              <span class="hamburgerSpan"> </span>
+              <span class="hamburgerSpan"> </span>
+              <span class="hamburgerSpan"> </span>
+            </a> -->
+        
+            <form class="search-form" action="/search">
+              <input type="text" placeholder="Search now" class="search-bar" id="searchBar">
+              <i class="search-bar-icon fa-solid fa-magnifying-glass"></i>
+            </form>
+            <div class="search-area" id="searchResult">
+              <div class="topic">
+                <div class="topic-header">
+                  <a href="#" class="topic-author">
+                    <img class="author-image" src="./assets/images/logo.svg" alt="">
+                    Ramal Memmedli
+                    <span class="author-level">10</span>
+                  </a>
+                  <p class="topic-create-date">
+                    Asked: <span class="date">8/4/2022</span>
+                  </p>
+                </div>
+                <div class="topic-body">
+                  <a href="./topic.html">Ekran Kartıma göre en iyi DirectX sürümü hangisidir ?</a>
+                  <p>Ekran kartım NVIDIA GeForce GT 620M buna en uyumlu DirectX sürümünü nasıl bulabilirim yardımcı olur
+                    musunuz ?</p>
+                  <ul>
+                    <li><a href="#">Technology</a></li>
+                    <li><a href="#">GPU</a></li>
+                    <li><a href="#">Software</a></li>
+                    <li><a href="#">Technology</a></li>
+                    <li><a href="#">GPU</a></li>
+                    <li><a href="#">Software</a></li>
+                  </ul>
+                </div>
+                <div class="topic-footer">
+                  <div class="topic-footer-left">
+                    <div class="topic-view-count">
+                      <i class="fa-solid fa-eye"></i> <span class="view-count"> 43 Views</span>
+                    </div>
+        
+                    <div class="topic-answer-count">
+                      <i class="fa-solid fa-message"></i> <span class="answer-count"> 7 Answers</span>
+                    </div>
+                  </div>
+                  <div class="topic-footer-right">
+                    <a href="#"><i class="fa-solid fa-bookmark"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+        
+            
+        
+            
+        
+        
+        
+          </header>
+    
+          <main>
+            
+            <div class="user-profile">
+              <div class="user-profile-banner">
+                <img class="profile-banner-image" src="https://picsum.photos/1920/1080" alt="">
+                <div class="profile-banner-image-color-layer"></div>
+              </div>
+              <section class="user-profile-header" id="userProfileHeader">
+                <div class="profile-details">
+                  <img src="https://picsum.photos/400/400" alt="" class="profile-image">
+                  <div class="profile-name-section">
+                    <a class="profile-fullname" href="#">Ramal Memmedli</a>
+                    <a href="#" class="verified-profile"><i class="fa-solid fa-check"></i></a>
+                  </div>
+                  <a class="follow-user-button" href="#"><i class="fa-solid fa-plus"></i>Follow</a>
+        
+                </div>
+              </section>
+              <div class="profile-card">
+                <div class="profile-details">
+                  <img src="https://picsum.photos/400/400" alt="" class="profile-image">
+                  <div class="profile-name-section">
+                    <a class="profile-fullname" href="#">Ramal Memmedli</a>
+                    <a href="#" class="verified-profile"><i class="fa-solid fa-check"></i></a>
+                  </div>
+                  <a class="follow-user-button" href="#"><i class="fa-solid fa-plus"></i>Follow</a>
+  
+                </div>
+              </div>
+              <div class="row nomargin">
+                <div class="col-lg-12 nopadding">
+                  <div class="main-flow">
+                    <nav class="flow-navbar">
+                      <ul>
+                        <li><a class="active" href="#"><i class="fa-solid fa-hashtag"></i> Flow</a></li>
+                        <li><a href="#"><i class="fa-solid fa-rss"></i> Blog</a></li>
+                        <li><a href="#"><i class="fa-solid fa-bookmark"></i> Bookmarks</a></li>
+                        <li><a href="#"><i class="fa-solid fa-message"></i> Answers</a></li>
+                        <div class="flex-separator"> </div>
+                        <li><a class="flow-post-topic" href=""><i class="fa-solid fa-plus"></i> Post topic</a></li>
+                      </ul>
+        
+                    </nav>
+                    <div class="topic">
+                      <div class="topic-left">
+                        <a href="#"><i class="fa-solid fa-bookmark"></i></a>
+                        <a href="#"><i class="fa-solid fa-share"></i></a>
+                      </div>
+                      <div class="topic-right">
+                        <div class="topic-header">
+                          <a href="#" class="topic-author">
+                            <img class="author-image" src="./assets/images/logo.svg" alt="">
+                            Ramal Memmedli
+                            <span class="author-level">10</span>
+                          </a>
+                          <p class="topic-create-date">
+                            Asked: <span class="date">8/4/2022</span>
+                          </p>
+                        </div>
+                        <div class="topic-body">
+                          <a href="./topic.html">Ekran Kartıma göre en iyi DirectX sürümü hangisidir ?</a>
+                          <ul>
+                            <li><a href="#">Technology</a></li>
+                            <li><a href="#">GPU</a></li>
+                            <li><a href="#">Software</a></li>
+                            <li><a href="#">Technology</a></li>
+                            <li><a href="#">GPU</a></li>
+                            <li><a href="#">Software</a></li>
+                          </ul>
+                        </div>
+                        <div class="topic-footer">
+                          <div class="topic-footer-left">
+                            <div class="topic-view-count">
+                              <i class="fa-solid fa-eye"></i> <span class="view-count"> 43 Views</span>
+                            </div>
+          
+                            <div class="topic-answer-count">
+                              <i class="fa-solid fa-message"></i> <span class="answer-count"> 7 Answers</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="topic">
+                      <div class="topic-left">
+                        <a href="#"><i class="fa-solid fa-bookmark"></i></a>
+                        <a href="#"><i class="fa-solid fa-share"></i></a>
+                      </div>
+                      <div class="topic-right">
+                        <div class="topic-header">
+                          <a href="#" class="topic-author">
+                            <img class="author-image" src="./assets/images/logo.svg" alt="">
+                            Ramal Memmedli
+                            <span class="author-level">10</span>
+                          </a>
+                          <p class="topic-create-date">
+                            Asked: <span class="date">8/4/2022</span>
+                          </p>
+                        </div>
+                        <div class="topic-body">
+                          <a href="./topic.html">Ekran Kartıma göre en iyi DirectX sürümü hangisidir ?</a>
+                          <ul>
+                            <li><a href="#">Technology</a></li>
+                            <li><a href="#">GPU</a></li>
+                            <li><a href="#">Software</a></li>
+                            <li><a href="#">Technology</a></li>
+                            <li><a href="#">GPU</a></li>
+                            <li><a href="#">Software</a></li>
+                          </ul>
+                        </div>
+                        <div class="topic-footer">
+                          <div class="topic-footer-left">
+                            <div class="topic-view-count">
+                              <i class="fa-solid fa-eye"></i> <span class="view-count"> 43 Views</span>
+                            </div>
+          
+                            <div class="topic-answer-count">
+                              <i class="fa-solid fa-message"></i> <span class="answer-count"> 7 Answers</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="topic">
+                      <div class="topic-left">
+                        <a href="#"><i class="fa-solid fa-bookmark"></i></a>
+                        <a href="#"><i class="fa-solid fa-share"></i></a>
+                      </div>
+                      <div class="topic-right">
+                        <div class="topic-header">
+                          <a href="#" class="topic-author">
+                            <img class="author-image" src="./assets/images/logo.svg" alt="">
+                            Ramal Memmedli
+                            <span class="author-level">10</span>
+                          </a>
+                          <p class="topic-create-date">
+                            Asked: <span class="date">8/4/2022</span>
+                          </p>
+                        </div>
+                        <div class="topic-body">
+                          <a href="./topic.html">Ekran Kartıma göre en iyi DirectX sürümü hangisidir ?</a>
+                          <ul>
+                            <li><a href="#">Technology</a></li>
+                            <li><a href="#">GPU</a></li>
+                            <li><a href="#">Software</a></li>
+                            <li><a href="#">Technology</a></li>
+                            <li><a href="#">GPU</a></li>
+                            <li><a href="#">Software</a></li>
+                          </ul>
+                        </div>
+                        <div class="topic-footer">
+                          <div class="topic-footer-left">
+                            <div class="topic-view-count">
+                              <i class="fa-solid fa-eye"></i> <span class="view-count"> 43 Views</span>
+                            </div>
+          
+                            <div class="topic-answer-count">
+                              <i class="fa-solid fa-message"></i> <span class="answer-count"> 7 Answers</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="topic">
+                      <div class="topic-left">
+                        <a href="#"><i class="fa-solid fa-bookmark"></i></a>
+                        <a href="#"><i class="fa-solid fa-share"></i></a>
+                      </div>
+                      <div class="topic-right">
+                        <div class="topic-header">
+                          <a href="#" class="topic-author">
+                            <img class="author-image" src="./assets/images/logo.svg" alt="">
+                            Ramal Memmedli
+                            <span class="author-level">10</span>
+                          </a>
+                          <p class="topic-create-date">
+                            Asked: <span class="date">8/4/2022</span>
+                          </p>
+                        </div>
+                        <div class="topic-body">
+                          <a href="./topic.html">Ekran Kartıma göre en iyi DirectX sürümü hangisidir ?</a>
+                          <ul>
+                            <li><a href="#">Technology</a></li>
+                            <li><a href="#">GPU</a></li>
+                            <li><a href="#">Software</a></li>
+                            <li><a href="#">Technology</a></li>
+                            <li><a href="#">GPU</a></li>
+                            <li><a href="#">Software</a></li>
+                          </ul>
+                        </div>
+                        <div class="topic-footer">
+                          <div class="topic-footer-left">
+                            <div class="topic-view-count">
+                              <i class="fa-solid fa-eye"></i> <span class="view-count"> 43 Views</span>
+                            </div>
+          
+                            <div class="topic-answer-count">
+                              <i class="fa-solid fa-message"></i> <span class="answer-count"> 7 Answers</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="topic">
+                      <div class="topic-left">
+                        <a href="#"><i class="fa-solid fa-bookmark"></i></a>
+                        <a href="#"><i class="fa-solid fa-share"></i></a>
+                      </div>
+                      <div class="topic-right">
+                        <div class="topic-header">
+                          <a href="#" class="topic-author">
+                            <img class="author-image" src="./assets/images/logo.svg" alt="">
+                            Ramal Memmedli
+                            <span class="author-level">10</span>
+                          </a>
+                          <p class="topic-create-date">
+                            Asked: <span class="date">8/4/2022</span>
+                          </p>
+                        </div>
+                        <div class="topic-body">
+                          <a href="./topic.html">Ekran Kartıma göre en iyi DirectX sürümü hangisidir ?</a>
+                          <ul>
+                            <li><a href="#">Technology</a></li>
+                            <li><a href="#">GPU</a></li>
+                            <li><a href="#">Software</a></li>
+                            <li><a href="#">Technology</a></li>
+                            <li><a href="#">GPU</a></li>
+                            <li><a href="#">Software</a></li>
+                          </ul>
+                        </div>
+                        <div class="topic-footer">
+                          <div class="topic-footer-left">
+                            <div class="topic-view-count">
+                              <i class="fa-solid fa-eye"></i> <span class="view-count"> 43 Views</span>
+                            </div>
+          
+                            <div class="topic-answer-count">
+                              <i class="fa-solid fa-message"></i> <span class="answer-count"> 7 Answers</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="topic">
+                      <div class="topic-left">
+                        <a href="#"><i class="fa-solid fa-bookmark"></i></a>
+                        <a href="#"><i class="fa-solid fa-share"></i></a>
+                      </div>
+                      <div class="topic-right">
+                        <div class="topic-header">
+                          <a href="#" class="topic-author">
+                            <img class="author-image" src="./assets/images/logo.svg" alt="">
+                            Ramal Memmedli
+                            <span class="author-level">10</span>
+                          </a>
+                          <p class="topic-create-date">
+                            Asked: <span class="date">8/4/2022</span>
+                          </p>
+                        </div>
+                        <div class="topic-body">
+                          <a href="./topic.html">Ekran Kartıma göre en iyi DirectX sürümü hangisidir ?</a>
+                          <ul>
+                            <li><a href="#">Technology</a></li>
+                            <li><a href="#">GPU</a></li>
+                            <li><a href="#">Software</a></li>
+                            <li><a href="#">Technology</a></li>
+                            <li><a href="#">GPU</a></li>
+                            <li><a href="#">Software</a></li>
+                          </ul>
+                        </div>
+                        <div class="topic-footer">
+                          <div class="topic-footer-left">
+                            <div class="topic-view-count">
+                              <i class="fa-solid fa-eye"></i> <span class="view-count"> 43 Views</span>
+                            </div>
+          
+                            <div class="topic-answer-count">
+                              <i class="fa-solid fa-message"></i> <span class="answer-count"> 7 Answers</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="topic">
+                      <div class="topic-left">
+                        <a href="#"><i class="fa-solid fa-bookmark"></i></a>
+                        <a href="#"><i class="fa-solid fa-share"></i></a>
+                      </div>
+                      <div class="topic-right">
+                        <div class="topic-header">
+                          <a href="#" class="topic-author">
+                            <img class="author-image" src="./assets/images/logo.svg" alt="">
+                            Ramal Memmedli
+                            <span class="author-level">10</span>
+                          </a>
+                          <p class="topic-create-date">
+                            Asked: <span class="date">8/4/2022</span>
+                          </p>
+                        </div>
+                        <div class="topic-body">
+                          <a href="./topic.html">Ekran Kartıma göre en iyi DirectX sürümü hangisidir ?</a>
+                          <ul>
+                            <li><a href="#">Technology</a></li>
+                            <li><a href="#">GPU</a></li>
+                            <li><a href="#">Software</a></li>
+                            <li><a href="#">Technology</a></li>
+                            <li><a href="#">GPU</a></li>
+                            <li><a href="#">Software</a></li>
+                          </ul>
+                        </div>
+                        <div class="topic-footer">
+                          <div class="topic-footer-left">
+                            <div class="topic-view-count">
+                              <i class="fa-solid fa-eye"></i> <span class="view-count"> 43 Views</span>
+                            </div>
+          
+                            <div class="topic-answer-count">
+                              <i class="fa-solid fa-message"></i> <span class="answer-count"> 7 Answers</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="topic">
+                      <div class="topic-left">
+                        <a href="#"><i class="fa-solid fa-bookmark"></i></a>
+                        <a href="#"><i class="fa-solid fa-share"></i></a>
+                      </div>
+                      <div class="topic-right">
+                        <div class="topic-header">
+                          <a href="#" class="topic-author">
+                            <img class="author-image" src="./assets/images/logo.svg" alt="">
+                            Ramal Memmedli
+                            <span class="author-level">10</span>
+                          </a>
+                          <p class="topic-create-date">
+                            Asked: <span class="date">8/4/2022</span>
+                          </p>
+                        </div>
+                        <div class="topic-body">
+                          <a href="./topic.html">Ekran Kartıma göre en iyi DirectX sürümü hangisidir ?</a>
+                          <ul>
+                            <li><a href="#">Technology</a></li>
+                            <li><a href="#">GPU</a></li>
+                            <li><a href="#">Software</a></li>
+                            <li><a href="#">Technology</a></li>
+                            <li><a href="#">GPU</a></li>
+                            <li><a href="#">Software</a></li>
+                          </ul>
+                        </div>
+                        <div class="topic-footer">
+                          <div class="topic-footer-left">
+                            <div class="topic-view-count">
+                              <i class="fa-solid fa-eye"></i> <span class="view-count"> 43 Views</span>
+                            </div>
+          
+                            <div class="topic-answer-count">
+                              <i class="fa-solid fa-message"></i> <span class="answer-count"> 7 Answers</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="topic">
+                      <div class="topic-left">
+                        <a href="#"><i class="fa-solid fa-bookmark"></i></a>
+                        <a href="#"><i class="fa-solid fa-share"></i></a>
+                      </div>
+                      <div class="topic-right">
+                        <div class="topic-header">
+                          <a href="#" class="topic-author">
+                            <img class="author-image" src="./assets/images/logo.svg" alt="">
+                            Ramal Memmedli
+                            <span class="author-level">10</span>
+                          </a>
+                          <p class="topic-create-date">
+                            Asked: <span class="date">8/4/2022</span>
+                          </p>
+                        </div>
+                        <div class="topic-body">
+                          <a href="./topic.html">Ekran Kartıma göre en iyi DirectX sürümü hangisidir ?</a>
+                          <ul>
+                            <li><a href="#">Technology</a></li>
+                            <li><a href="#">GPU</a></li>
+                            <li><a href="#">Software</a></li>
+                            <li><a href="#">Technology</a></li>
+                            <li><a href="#">GPU</a></li>
+                            <li><a href="#">Software</a></li>
+                          </ul>
+                        </div>
+                        <div class="topic-footer">
+                          <div class="topic-footer-left">
+                            <div class="topic-view-count">
+                              <i class="fa-solid fa-eye"></i> <span class="view-count"> 43 Views</span>
+                            </div>
+          
+                            <div class="topic-answer-count">
+                              <i class="fa-solid fa-message"></i> <span class="answer-count"> 7 Answers</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="topic">
+                      <div class="topic-left">
+                        <a href="#"><i class="fa-solid fa-bookmark"></i></a>
+                        <a href="#"><i class="fa-solid fa-share"></i></a>
+                      </div>
+                      <div class="topic-right">
+                        <div class="topic-header">
+                          <a href="#" class="topic-author">
+                            <img class="author-image" src="./assets/images/logo.svg" alt="">
+                            Ramal Memmedli
+                            <span class="author-level">10</span>
+                          </a>
+                          <p class="topic-create-date">
+                            Asked: <span class="date">8/4/2022</span>
+                          </p>
+                        </div>
+                        <div class="topic-body">
+                          <a href="./topic.html">Ekran Kartıma göre en iyi DirectX sürümü hangisidir ?</a>
+                          <ul>
+                            <li><a href="#">Technology</a></li>
+                            <li><a href="#">GPU</a></li>
+                            <li><a href="#">Software</a></li>
+                            <li><a href="#">Technology</a></li>
+                            <li><a href="#">GPU</a></li>
+                            <li><a href="#">Software</a></li>
+                          </ul>
+                        </div>
+                        <div class="topic-footer">
+                          <div class="topic-footer-left">
+                            <div class="topic-view-count">
+                              <i class="fa-solid fa-eye"></i> <span class="view-count"> 43 Views</span>
+                            </div>
+          
+                            <div class="topic-answer-count">
+                              <i class="fa-solid fa-message"></i> <span class="answer-count"> 7 Answers</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="topic">
+                      <div class="topic-left">
+                        <a href="#"><i class="fa-solid fa-bookmark"></i></a>
+                        <a href="#"><i class="fa-solid fa-share"></i></a>
+                      </div>
+                      <div class="topic-right">
+                        <div class="topic-header">
+                          <a href="#" class="topic-author">
+                            <img class="author-image" src="./assets/images/logo.svg" alt="">
+                            Ramal Memmedli
+                            <span class="author-level">10</span>
+                          </a>
+                          <p class="topic-create-date">
+                            Asked: <span class="date">8/4/2022</span>
+                          </p>
+                        </div>
+                        <div class="topic-body">
+                          <a href="./topic.html">Ekran Kartıma göre en iyi DirectX sürümü hangisidir ?</a>
+                          <ul>
+                            <li><a href="#">Technology</a></li>
+                            <li><a href="#">GPU</a></li>
+                            <li><a href="#">Software</a></li>
+                            <li><a href="#">Technology</a></li>
+                            <li><a href="#">GPU</a></li>
+                            <li><a href="#">Software</a></li>
+                          </ul>
+                        </div>
+                        <div class="topic-footer">
+                          <div class="topic-footer-left">
+                            <div class="topic-view-count">
+                              <i class="fa-solid fa-eye"></i> <span class="view-count"> 43 Views</span>
+                            </div>
+          
+                            <div class="topic-answer-count">
+                              <i class="fa-solid fa-message"></i> <span class="answer-count"> 7 Answers</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+  
+        
+              </div>
+        
+            </div>
+        
+          </main>
         </div>
-      </section>
-
-      <div class="row nomargin">
-        <div class="col-lg-8 nopadding">
-          <div class="main-flow">
-            <nav class="flow-navbar">
+      </div>
+      <div class="col-lg-3 nopadding">
+        <div class="main-right">
+          <div class="header-user-box">
+            <a class="header-user" id="headerUser">
+              <img src="https://picsum.photos/300/600" alt="">
+              <span>Ramal Memmedli</span>
+              <div class="flex-separator"> </div>
+              <i class="fa-solid fa-chevron-down"></i>
+            </a>
+            <div class="user-nav" id="userNav">
               <ul>
-                <li><a class="active" href="#"><i class="fa-solid fa-hashtag"></i> Flow</a></li>
-                <li><a href="#"><i class="fa-solid fa-rss"></i> Blog</a></li>
-                <li><a href="#"><i class="fa-solid fa-bookmark"></i> Bookmarks</a></li>
-                <li><a href="#"><i class="fa-solid fa-message"></i> Answers</a></li>
-                <div class="flex-separator"> </div>
-                <li><a class="flow-post-topic" href=""><i class="fa-solid fa-plus"></i> Post topic</a></li>
+                <li><a href="#"><i class="fa-solid fa-user"></i> Your profile</a></li>
+                <li><a href="#"><i class="fa-solid fa-users"></i> Your communities</a></li>
+                <li><a href="#"><i class="fa-solid fa-bookmark"></i> Your bookmarks</a></li>
+                <li><a href="#"><i class="fa-solid fa-message"></i> Your topics</a></li>
+                <li><a href="#"><i class="fa-solid fa-comment-dots"></i> Your answers</a></li>
+                <li><a href="#"><i class="fa-solid fa-comments"></i> Your comments</a></li>
+                <li><a href="#"><i class="fa-solid fa-square-check"></i> Your votes</a></li>
+                <hr class="user-nav-separator">
+                <li><a class="sign-out-btn" href="#"><i class="fa-solid fa-right-from-bracket"></i> Sign out</a></li>
               </ul>
-
-            </nav>
-            <div class="topic">
-              <div class="topic-left">
-                <a href="#"><i class="fa-solid fa-bookmark"></i></a>
-                <a href="#"><i class="fa-solid fa-share"></i></a>
-              </div>
-              <div class="topic-right">
-                <div class="topic-header">
-                  <a href="#" class="topic-author">
-                    <img class="author-image" src="./assets/images/logo.svg" alt="">
-                    Ramal Memmedli
-                    <span class="author-level">10</span>
-                  </a>
-                  <p class="topic-create-date">
-                    Asked: <span class="date">8/4/2022</span>
-                  </p>
-                </div>
-                <div class="topic-body">
-                  <a href="./topic.html">Ekran Kartıma göre en iyi DirectX sürümü hangisidir ?</a>
-                  <ul>
-                    <li><a href="#">Technology</a></li>
-                    <li><a href="#">GPU</a></li>
-                    <li><a href="#">Software</a></li>
-                    <li><a href="#">Technology</a></li>
-                    <li><a href="#">GPU</a></li>
-                    <li><a href="#">Software</a></li>
-                  </ul>
-                </div>
-                <div class="topic-footer">
-                  <div class="topic-footer-left">
-                    <div class="topic-view-count">
-                      <i class="fa-solid fa-eye"></i> <span class="view-count"> 43 Views</span>
-                    </div>
-  
-                    <div class="topic-answer-count">
-                      <i class="fa-solid fa-message"></i> <span class="answer-count"> 7 Answers</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
-
-            <div class="topic">
-              <div class="topic-left">
-                <a href="#"><i class="fa-solid fa-bookmark"></i></a>
-                <a href="#"><i class="fa-solid fa-share"></i></a>
-              </div>
-              <div class="topic-right">
-                <div class="topic-header">
-                  <a href="#" class="topic-author">
-                    <img class="author-image" src="./assets/images/logo.svg" alt="">
-                    Ramal Memmedli
-                    <span class="author-level">10</span>
-                  </a>
-                  <p class="topic-create-date">
-                    Asked: <span class="date">8/4/2022</span>
-                  </p>
-                </div>
-                <div class="topic-body">
-                  <a href="./topic.html">Ekran Kartıma göre en iyi DirectX sürümü hangisidir ?</a>
-                  <ul>
-                    <li><a href="#">Technology</a></li>
-                    <li><a href="#">GPU</a></li>
-                    <li><a href="#">Software</a></li>
-                    <li><a href="#">Technology</a></li>
-                    <li><a href="#">GPU</a></li>
-                    <li><a href="#">Software</a></li>
-                  </ul>
-                </div>
-                <div class="topic-footer">
-                  <div class="topic-footer-left">
-                    <div class="topic-view-count">
-                      <i class="fa-solid fa-eye"></i> <span class="view-count"> 43 Views</span>
-                    </div>
-  
-                    <div class="topic-answer-count">
-                      <i class="fa-solid fa-message"></i> <span class="answer-count"> 7 Answers</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="topic">
-              <div class="topic-left">
-                <a href="#"><i class="fa-solid fa-bookmark"></i></a>
-                <a href="#"><i class="fa-solid fa-share"></i></a>
-              </div>
-              <div class="topic-right">
-                <div class="topic-header">
-                  <a href="#" class="topic-author">
-                    <img class="author-image" src="./assets/images/logo.svg" alt="">
-                    Ramal Memmedli
-                    <span class="author-level">10</span>
-                  </a>
-                  <p class="topic-create-date">
-                    Asked: <span class="date">8/4/2022</span>
-                  </p>
-                </div>
-                <div class="topic-body">
-                  <a href="./topic.html">Ekran Kartıma göre en iyi DirectX sürümü hangisidir ?</a>
-                  <ul>
-                    <li><a href="#">Technology</a></li>
-                    <li><a href="#">GPU</a></li>
-                    <li><a href="#">Software</a></li>
-                    <li><a href="#">Technology</a></li>
-                    <li><a href="#">GPU</a></li>
-                    <li><a href="#">Software</a></li>
-                  </ul>
-                </div>
-                <div class="topic-footer">
-                  <div class="topic-footer-left">
-                    <div class="topic-view-count">
-                      <i class="fa-solid fa-eye"></i> <span class="view-count"> 43 Views</span>
-                    </div>
-  
-                    <div class="topic-answer-count">
-                      <i class="fa-solid fa-message"></i> <span class="answer-count"> 7 Answers</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="topic">
-              <div class="topic-left">
-                <a href="#"><i class="fa-solid fa-bookmark"></i></a>
-                <a href="#"><i class="fa-solid fa-share"></i></a>
-              </div>
-              <div class="topic-right">
-                <div class="topic-header">
-                  <a href="#" class="topic-author">
-                    <img class="author-image" src="./assets/images/logo.svg" alt="">
-                    Ramal Memmedli
-                    <span class="author-level">10</span>
-                  </a>
-                  <p class="topic-create-date">
-                    Asked: <span class="date">8/4/2022</span>
-                  </p>
-                </div>
-                <div class="topic-body">
-                  <a href="./topic.html">Ekran Kartıma göre en iyi DirectX sürümü hangisidir ?</a>
-                  <ul>
-                    <li><a href="#">Technology</a></li>
-                    <li><a href="#">GPU</a></li>
-                    <li><a href="#">Software</a></li>
-                    <li><a href="#">Technology</a></li>
-                    <li><a href="#">GPU</a></li>
-                    <li><a href="#">Software</a></li>
-                  </ul>
-                </div>
-                <div class="topic-footer">
-                  <div class="topic-footer-left">
-                    <div class="topic-view-count">
-                      <i class="fa-solid fa-eye"></i> <span class="view-count"> 43 Views</span>
-                    </div>
-  
-                    <div class="topic-answer-count">
-                      <i class="fa-solid fa-message"></i> <span class="answer-count"> 7 Answers</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="topic">
-              <div class="topic-left">
-                <a href="#"><i class="fa-solid fa-bookmark"></i></a>
-                <a href="#"><i class="fa-solid fa-share"></i></a>
-              </div>
-              <div class="topic-right">
-                <div class="topic-header">
-                  <a href="#" class="topic-author">
-                    <img class="author-image" src="./assets/images/logo.svg" alt="">
-                    Ramal Memmedli
-                    <span class="author-level">10</span>
-                  </a>
-                  <p class="topic-create-date">
-                    Asked: <span class="date">8/4/2022</span>
-                  </p>
-                </div>
-                <div class="topic-body">
-                  <a href="./topic.html">Ekran Kartıma göre en iyi DirectX sürümü hangisidir ?</a>
-                  <ul>
-                    <li><a href="#">Technology</a></li>
-                    <li><a href="#">GPU</a></li>
-                    <li><a href="#">Software</a></li>
-                    <li><a href="#">Technology</a></li>
-                    <li><a href="#">GPU</a></li>
-                    <li><a href="#">Software</a></li>
-                  </ul>
-                </div>
-                <div class="topic-footer">
-                  <div class="topic-footer-left">
-                    <div class="topic-view-count">
-                      <i class="fa-solid fa-eye"></i> <span class="view-count"> 43 Views</span>
-                    </div>
-  
-                    <div class="topic-answer-count">
-                      <i class="fa-solid fa-message"></i> <span class="answer-count"> 7 Answers</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="topic">
-              <div class="topic-left">
-                <a href="#"><i class="fa-solid fa-bookmark"></i></a>
-                <a href="#"><i class="fa-solid fa-share"></i></a>
-              </div>
-              <div class="topic-right">
-                <div class="topic-header">
-                  <a href="#" class="topic-author">
-                    <img class="author-image" src="./assets/images/logo.svg" alt="">
-                    Ramal Memmedli
-                    <span class="author-level">10</span>
-                  </a>
-                  <p class="topic-create-date">
-                    Asked: <span class="date">8/4/2022</span>
-                  </p>
-                </div>
-                <div class="topic-body">
-                  <a href="./topic.html">Ekran Kartıma göre en iyi DirectX sürümü hangisidir ?</a>
-                  <ul>
-                    <li><a href="#">Technology</a></li>
-                    <li><a href="#">GPU</a></li>
-                    <li><a href="#">Software</a></li>
-                    <li><a href="#">Technology</a></li>
-                    <li><a href="#">GPU</a></li>
-                    <li><a href="#">Software</a></li>
-                  </ul>
-                </div>
-                <div class="topic-footer">
-                  <div class="topic-footer-left">
-                    <div class="topic-view-count">
-                      <i class="fa-solid fa-eye"></i> <span class="view-count"> 43 Views</span>
-                    </div>
-  
-                    <div class="topic-answer-count">
-                      <i class="fa-solid fa-message"></i> <span class="answer-count"> 7 Answers</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
           </div>
-        </div>
-
-        <div class="col-lg-4 nopadding">
           <div class="sidebar-container">
-            <div class="profile-card">
-              <div class="profile-details">
-                <img src="https://picsum.photos/400/400" alt="" class="profile-image">
-                <div class="profile-name-section">
-                  <a class="profile-fullname" href="#">Ramal Memmedli</a>
-                  <a href="#" class="verified-profile"><i class="fa-solid fa-check"></i></a>
-                </div>
-                <a class="follow-user-button" href="#"><i class="fa-solid fa-plus"></i>Follow</a>
-
-              </div>
-            </div>
-
             <div class="sidebar">
-
-
+  
+              <div class="categories">
+                <div class="categories-header">
+                  <h5 href="">Categories</h5>
+                </div>
+  
+                <ul>
+                  <li><a href="">Technology</a></li>
+                  <li><a href="">Coding</a></li>
+                  <li><a href="">C#</a></li>
+                  <li><a href="">.NET</a></li>
+                  <li><a href="">Front end development</a></li>
+                  <li><a href="">Oracle</a></li>
+                  <li><a href="">CSS3</a></li>
+                  <li><a href="">SQL</a></li>
+                  <li><a href="">MVC</a></li>
+                  <li><a href="">Java</a></li>
+                  <li><a href="">HTML5</a></li>
+                  <li><a href="">Spring</a></li>
+                  <li><a href="">Back end development</a></li>
+                  <li><a href="">Monolith</a></li>
+  
+                </ul>
+              </div>
+  
             </div>
-            <footer>
-              <p class="copyright">
-                Forum Inc © 2022. All rights reserved
-              </p>
-            </footer>
+            
           </div>
-
+          <footer>
+            <p class="copyright">
+              Forum Inc © 2022. All rights reserved
+            </p>
+          </footer>
         </div>
       </div>
     </div>
-
-  </main>
-
-
-
-
+  </div>
 
   <script src="./assets/script/hamburger.js"></script>
   <script src="./assets/script/search.js"></script>
   <script src="./assets/script/userNav.js"></script>
   <script src="./assets/script/darkMode.js"></script>
+  <script src="./assets/script/userProfilePage.js"></script>
 
 </body>
 

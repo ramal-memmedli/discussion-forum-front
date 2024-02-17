@@ -3,10 +3,13 @@ header {
     justify-content: space-between;
     align-items: center;
 
-    position: fixed;
-    top: .25rem;
-    left: .25rem;
-    right: .25rem;
+    position: sticky;
+    top: 1rem;
+    // top: 1rem;
+    // left: 1rem;
+    // right: 1rem;
+
+    margin: 1rem 0;
     
     z-index: 1;
 }
