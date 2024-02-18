@@ -67,17 +67,17 @@
                 // border: $dark-border;
                 color: $dark-fg-default;
 
-                // &:focus {
-                //     background-color: $dark-bg-default-25;
-                //     box-shadow: none;
-                //     border-color: rgba(255, 255, 255, .08);
+                &:focus {
+                    background-color: $dark-bg-default-25;
+                    box-shadow: none;
+                    // border-color: rgba(255, 255, 255, .08);
 
-                // }
+                }
 
-                // &:hover {
-                //     background-color: $dark-bg-default-45;
-                //     box-shadow: none;
-                // }
+                &:hover {
+                    background-color: $dark-bg-default-25;
+                    box-shadow: none;
+                }
             }
             .search-bar-icon{
                 color: $dark-fg-default;

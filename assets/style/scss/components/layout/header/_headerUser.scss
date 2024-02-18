@@ -1,7 +1,7 @@
 .header-user-box {
     position: relative;
     .header-user {
-        // background-color: $bg-emphasis;
+        background-color: $bg-emphasis-85;
         padding: .75rem 1rem;
         border-radius: .5rem;
         // border: $border;
@@ -47,7 +47,7 @@
         }
 
         &:hover {
-            background-color: rgba(255, 255, 255, .11);
+            background-color: $bg-emphasis;
             span {
                 color: #24292f;
             }
@@ -134,7 +134,7 @@
 body.dark-mode {
     .header-user-box {
         .header-user {
-            // background-color: $dark-bg-default-65;
+            background-color: $dark-bg-default-45;
             // border: $dark-border;
             span {
                 color: $dark-fg-default;
@@ -146,8 +146,8 @@ body.dark-mode {
 
             &:hover {
 
-                border-color: rgba(255, 255, 255, .11);
-                background-color: $dark-bg-default-45;
+                // border-color: rgba(255, 255, 255, .11);
+                background-color: $dark-bg-default-25;
 
                 span {
                     color: #FFF;

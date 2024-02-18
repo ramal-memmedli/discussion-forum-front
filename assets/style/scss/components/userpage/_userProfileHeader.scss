@@ -18,19 +18,6 @@ main {
                     .profile-fullname {
                         color: $fg-default;
                     }
-            
-                    .verified-profile{
-                        background-color: $brand;
-                        border-radius: 50%;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        margin-left: .5rem;
-
-                        i{
-                            color: $fg-default;
-                        }
-                    }
                 }
         
                 .follow-user-button{

@@ -1,54 +1,47 @@
 .profile-card {
     // background-color: $bg-emphasis-85;
     background-color: $dark-bg-default-45;
-            backdrop-filter: blur(8px);
-            border-radius: .5rem;
-            // border: $border;
-            padding: .5rem;
-            justify-content: space-between;
-            position: sticky;
-            top: 4rem;
-            margin-bottom: .5rem;
-            z-index: 1;
-            .profile-details {
-                flex-direction: row;
-                justify-content: space-between;
-                width: 100%;
-                .profile-image {
-                    width: 2rem;
-                    height: 2rem;
-                }
+    backdrop-filter: blur(8px);
+    border-radius: .5rem;
+    // border: $border;
+    padding: .5rem;
+    justify-content: space-between;
+    position: sticky;
+    top: 4rem;
+    margin-bottom: .5rem;
+    z-index: 1;
 
-                .profile-name-section {
-                    margin-top: 0;
+    .profile-details {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
 
-                    .profile-fullname {
-                        font-size: .875rem;
-                        margin-left: .5rem;
-                    }
+        .profile-image {
+            width: 2rem;
+            height: 2rem;
+        }
 
-                    .verified-profile{
-                        width: 1.25rem;
-                        height: 1.25rem;
+        .profile-name-section {
+            margin-top: 0;
 
-                        i{
-                            font-size: .875rem;
-                        }
-                    }
-                }
-
-                .follow-user-button {
-                    font-size: .875rem;
-                    padding: .3rem .6rem;
-                    margin-left: auto;
-                    margin-top: 0;
-                    border-radius: .35rem;
-                }
+            .profile-fullname {
+                font-size: .875rem;
+                margin-left: .5rem;
             }
+        }
 
-            & + .content-responsive{
-                margin-top: 14rem !important;
-            }
+        .follow-user-button {
+            font-size: .875rem;
+            padding: .3rem .6rem;
+            margin-left: auto;
+            margin-top: 0;
+            border-radius: .35rem;
+        }
+    }
+
+    &+.content-responsive {
+        margin-top: 14rem !important;
+    }
 }
 
 

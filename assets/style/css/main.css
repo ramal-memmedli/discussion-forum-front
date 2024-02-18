@@ -40,6 +40,7 @@ header {
   position: relative;
 }
 .header-user-box .header-user {
+  background-color: rgba(253, 247, 246, 0.85);
   padding: 0.75rem 1rem;
   border-radius: 0.5rem;
   cursor: pointer;
@@ -78,7 +79,7 @@ header {
   transition: 150ms ease-in-out;
 }
 .header-user-box .header-user:hover {
-  background-color: rgba(255, 255, 255, 0.11);
+  background-color: rgb(253, 247, 246);
 }
 .header-user-box .header-user:hover span {
   color: #24292f;
@@ -139,6 +140,9 @@ header {
     width: calc(100vw - 2rem);
   }
 }
+body.dark-mode .header-user-box .header-user {
+  background-color: rgba(18, 18, 18, 0.45);
+}
 body.dark-mode .header-user-box .header-user span {
   color: rgb(251, 234, 233);
 }
@@ -146,8 +150,7 @@ body.dark-mode .header-user-box .header-user i {
   color: rgb(251, 234, 233);
 }
 body.dark-mode .header-user-box .header-user:hover {
-  border-color: rgba(255, 255, 255, 0.11);
-  background-color: rgba(18, 18, 18, 0.45);
+  background-color: rgba(18, 18, 18, 0.25);
 }
 body.dark-mode .header-user-box .header-user:hover span {
   color: #FFF;
@@ -223,6 +226,14 @@ body.dark-mode .user-nav ul li a:hover {
 body.dark-mode .search-form .search-bar {
   background-color: rgba(18, 18, 18, 0.45);
   color: rgb(251, 234, 233);
+}
+body.dark-mode .search-form .search-bar:focus {
+  background-color: rgba(18, 18, 18, 0.25);
+  box-shadow: none;
+}
+body.dark-mode .search-form .search-bar:hover {
+  background-color: rgba(18, 18, 18, 0.25);
+  box-shadow: none;
 }
 body.dark-mode .search-form .search-bar-icon {
   color: rgb(251, 234, 233);
@@ -530,64 +541,73 @@ body.dark-mode .copyright {
   display: flex;
   flex-direction: column;
   background-color: rgba(18, 18, 18, 0.45);
-  padding: 1.25rem;
+  padding: 1rem;
   flex: 1;
+}
+.topic:hover {
+  background-color: rgba(18, 18, 18, 0.25);
 }
 .topic .topic-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
-.topic .topic-header .topic-author {
+.topic .topic-header .topic-header-left {
+  display: flex;
+  align-items: center;
+}
+.topic .topic-header .topic-header-left .topic-author {
   color: #6e7781;
   transition: 150ms ease-in-out;
 }
-.topic .topic-header .topic-author .author-image {
+.topic .topic-header .topic-header-left .topic-author .author-image {
   width: 2rem;
   height: 2rem;
   margin-right: 0.5rem;
   border-radius: 50%;
 }
-.topic .topic-header .topic-author .author-level {
-  padding: 0.1rem 0.4rem;
-  color: #ffffff;
-  background-color: rgb(215, 46, 39);
-  margin-left: 0.5rem;
-  border-radius: 3rem;
-}
-.topic .topic-header .topic-author:hover {
+.topic .topic-header .topic-header-left .topic-author:hover {
   color: #24292f;
 }
-.topic .topic-header .topic-create-date {
-  color: #6e7781;
+.topic .topic-header .topic-header-left .circle-separator {
+  margin: 0 0.5rem;
+  font-size: 0.25rem;
+  color: rgb(251, 234, 233);
+}
+.topic .topic-header .topic-header-left .topic-create-date {
+  color: rgb(251, 234, 233);
+  font-size: 0.875rem;
+}
+.topic .topic-header .topic-header-right .topic-actions {
+  color: rgb(251, 234, 233);
+  width: 1.5rem;
+  height: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .topic .topic-body {
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 .topic .topic-body a {
-  font-size: 1.25rem;
+  font-size: 1rem;
   display: flex;
   margin-bottom: 0.5rem;
   color: rgb(61, 61, 61);
-}
-.topic .topic-body p {
-  color: rgb(31, 31, 31);
-  cursor: default;
-  margin-bottom: 0.5rem;
 }
 .topic .topic-body ul {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  gap: 0.25rem;
 }
 .topic .topic-body ul li a {
   color: #FFF;
   background-color: rgb(215, 46, 39);
-  border-radius: 3rem;
+  border-radius: 0.3rem;
   font-size: 0.875rem;
-  padding: 0.3rem 0.6rem;
-  margin-right: 0.5rem;
+  padding: 0.25rem 0.6rem;
 }
 .topic .topic-footer {
   display: flex;
@@ -601,15 +621,37 @@ body.dark-mode .copyright {
 .topic .topic-footer .topic-footer-left .topic-view-count {
   margin-right: 1rem;
   color: rgb(194, 194, 194);
+  font-size: 0.875rem;
+  display: flex;
+  align-items: center;
 }
 .topic .topic-footer .topic-footer-left .topic-view-count i {
   margin-right: 0.3rem;
 }
 .topic .topic-footer .topic-footer-left .topic-answer-count {
+  margin-right: 1rem;
   color: rgb(194, 194, 194);
+  font-size: 0.875rem;
+  display: flex;
+  align-items: center;
 }
 .topic .topic-footer .topic-footer-left .topic-answer-count i {
   margin-right: 0.3rem;
+}
+.topic .topic-footer .topic-footer-right {
+  display: flex;
+  align-items: center;
+}
+.topic .topic-footer .topic-footer-right a {
+  font-size: 0.875rem;
+  width: 1rem;
+  height: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.topic .topic-footer .topic-footer-right a:not(:last-child) {
+  margin-right: 0.5rem;
 }
 
 body.dark-mode .topic .topic-header .topic-author {
@@ -772,6 +814,41 @@ body.dark-mode .categories ul li a:hover {
   background-color: rgb(215, 46, 39);
 }
 
+.verified-profile, .verified-profile-small, .verified-profile-large {
+  background-color: rgb(215, 46, 39);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0.5rem;
+  width: 1.25rem;
+  height: 1.25rem;
+}
+.verified-profile i, .verified-profile-small i, .verified-profile-large i {
+  font-size: 0.75rem;
+  color: rgb(31, 31, 31);
+}
+
+.verified-profile-small {
+  width: 1rem;
+  height: 1rem;
+}
+.verified-profile-small i {
+  font-size: 0.5rem;
+}
+
+.verified-profile-large {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.verified-profile-large i {
+  font-size: 1rem;
+}
+
+body.dark-mode .verified-profile i, body.dark-mode .verified-profile-small i, body.dark-mode .verified-profile-large i {
+  color: rgb(251, 234, 233);
+}
+
 body {
   position: relative;
 }
@@ -829,17 +906,6 @@ main .user-profile .user-profile-header .profile-details .profile-name-section, 
   align-items: center;
 }
 main .user-profile .user-profile-header .profile-details .profile-name-section .profile-fullname, main .user-profile .profile-card .profile-details .profile-name-section .profile-fullname {
-  color: rgb(31, 31, 31);
-}
-main .user-profile .user-profile-header .profile-details .profile-name-section .verified-profile, main .user-profile .profile-card .profile-details .profile-name-section .verified-profile {
-  background-color: rgb(215, 46, 39);
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 0.5rem;
-}
-main .user-profile .user-profile-header .profile-details .profile-name-section .verified-profile i, main .user-profile .profile-card .profile-details .profile-name-section .verified-profile i {
   color: rgb(31, 31, 31);
 }
 main .user-profile .user-profile-header .profile-details .follow-user-button, main .user-profile .profile-card .profile-details .follow-user-button {
@@ -926,13 +992,6 @@ body.dark-mode main .user-profile .profile-card .profile-details .follow-user-bu
 .profile-card .profile-details .profile-name-section .profile-fullname {
   font-size: 0.875rem;
   margin-left: 0.5rem;
-}
-.profile-card .profile-details .profile-name-section .verified-profile {
-  width: 1.25rem;
-  height: 1.25rem;
-}
-.profile-card .profile-details .profile-name-section .verified-profile i {
-  font-size: 0.875rem;
 }
 .profile-card .profile-details .follow-user-button {
   font-size: 0.875rem;
