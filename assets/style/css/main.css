@@ -342,10 +342,20 @@ nav#navbar ul li a {
   padding: 0 1rem;
   overflow: hidden;
   border-radius: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+nav#navbar ul li a.navbar-logo {
+  display: flex;
+  align-items: center;
+  background-color: rgba(18, 18, 18, 0.45);
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: "Exo", sans-serif;
 }
 nav#navbar ul li a.navbar-logo img {
   width: 2rem;
   height: 2rem;
+  margin-right: 0.5rem;
 }
 nav#navbar ul li a i {
   width: 2rem;
@@ -706,7 +716,7 @@ nav.flow-navbar {
   align-items: center;
   position: sticky;
   top: 7.5rem;
-  padding: 1rem;
+  padding: 0.25rem;
   backdrop-filter: blur(8px);
   z-index: 1;
 }
@@ -748,6 +758,9 @@ nav.flow-navbar ul li a i {
   top: 4rem;
 }
 
+body.dark-mode nav.flow-navbar {
+  background-color: rgba(18, 18, 18, 0.45);
+}
 body.dark-mode nav.flow-navbar ul li a {
   background-color: rgb(18, 18, 18);
   color: rgb(251, 234, 233);

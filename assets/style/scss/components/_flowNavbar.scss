@@ -6,7 +6,7 @@ nav.flow-navbar {
     align-items: center;
     position: sticky;
     top: 7.5rem;
-    padding: 1rem;
+    padding: .25rem;
     // background-color: $bg-emphasis-85;
     backdrop-filter: blur(8px);
     // border: $border;
@@ -60,7 +60,7 @@ nav.flow-navbar {
 
 body.dark-mode {
     nav.flow-navbar {
-        // background-color: $dark-bg-default-65;
+        background-color: $dark-bg-default-45;
         // border: $dark-border;
         ul {
             li {
