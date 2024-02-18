@@ -1,13 +1,14 @@
 .profile-card {
-    background-color: $bg-emphasis-85;
-            backdrop-filter: blur(20px);
+    // background-color: $bg-emphasis-85;
+    background-color: $dark-bg-default-45;
+            backdrop-filter: blur(8px);
             border-radius: .5rem;
-            border: $border;
+            // border: $border;
             padding: .5rem;
             justify-content: space-between;
             position: sticky;
-            top: 5rem;
-            margin-bottom: 1rem;
+            top: 4rem;
+            margin-bottom: .5rem;
             z-index: 1;
             .profile-details {
                 flex-direction: row;
@@ -56,9 +57,9 @@ body.dark-mode {
         .user-profile {
 
             .profile-card {
-                background-color: $dark-bg-default-65;
+                // background-color: $dark-bg-default-65;
 
-                border: $dark-border;
+                // border: $dark-border;
             }
 
         }

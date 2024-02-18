@@ -3,7 +3,7 @@
     display: inline-block;
     width: 5.5rem;
     height: 3rem;
-    // margin-right: 1rem;
+    margin-right: 1rem;
 
     i {
         color: #FFF;
@@ -39,9 +39,10 @@
         left: 0;
         right: 0;
         bottom: 0;
-        background-color: $bg-emphasis-85;
-        border: $border;
-        backdrop-filter: blur(20px);
+        background-color: $dark-bg-default-45;
+        // background-color: $bg-emphasis-85;
+        // border: $border;
+        backdrop-filter: blur(8px);
 
 
         transition: $t-normal;
@@ -83,9 +84,9 @@ body.dark-mode {
 
     .switch {
         .slider {
-            background-color: $dark-bg-default-65;
-            box-shadow: none;
-            border: $dark-border;
+            // background-color: $dark-bg-default-65;
+            // box-shadow: none;
+            // border: $dark-border;
             &::before {
                 background-color: rgba(255, 255, 255, .03);
             }

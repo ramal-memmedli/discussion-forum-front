@@ -1,15 +1,15 @@
 nav.flow-navbar {
-    margin-bottom: 1rem;
+    margin-bottom: .5rem;
     border-radius: .5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: sticky;
-    top: 9rem;
-    padding: .25rem;
-    background-color: $bg-emphasis-85;
-    backdrop-filter: blur(20px);
-    border: $border;
+    top: 7.5rem;
+    padding: 1rem;
+    // background-color: $bg-emphasis-85;
+    backdrop-filter: blur(8px);
+    // border: $border;
     z-index: 1;
     ul {
         display: flex;
@@ -54,14 +54,14 @@ nav.flow-navbar {
 
 .index-page {
     nav.flow-navbar {
-        top: 5rem;
+        top: 4rem;
     }
 }
 
 body.dark-mode {
     nav.flow-navbar {
-        background-color: $dark-bg-default-65;
-        border: $dark-border;
+        // background-color: $dark-bg-default-65;
+        // border: $dark-border;
         ul {
             li {
                 

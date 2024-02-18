@@ -1,18 +1,18 @@
 .header-user-box {
     position: relative;
     .header-user {
-        background-color: $bg-emphasis;
+        // background-color: $bg-emphasis;
         padding: .75rem 1rem;
         border-radius: .5rem;
-        border: $border;
+        // border: $border;
         cursor: pointer;
         user-select: none;
         display: flex;
         align-items: center;
         transition: 150ms ease-in-out;
-        backdrop-filter: blur(20px);
+        backdrop-filter: blur(8px);
         height: 3rem;
-        margin-bottom: 1rem;
+        margin-bottom: .5rem;
 
         img {
             width: 1.5rem;
@@ -67,7 +67,7 @@
         overflow: hidden;
         background-color: #FFF;
         position: absolute;
-        top: 4rem;
+        top: 3.5rem;
         width: 100%;
         display: none;
         z-index: 1;
@@ -134,8 +134,8 @@
 body.dark-mode {
     .header-user-box {
         .header-user {
-            background-color: $dark-bg-default-65;
-            border: $dark-border;
+            // background-color: $dark-bg-default-65;
+            // border: $dark-border;
             span {
                 color: $dark-fg-default;
             }
