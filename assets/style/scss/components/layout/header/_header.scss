@@ -1,12 +1,24 @@
 header {
+    height: 4rem;
+    position: sticky;
+    top: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom: .1rem solid rgba(255, 255, 255, .11);
+    backdrop-filter: blur(8px);
+    z-index: 3;
 
-    position: sticky;
-    top: .5rem;
-
-    margin: .5rem 0;
-    
-    z-index: 1;
+    a.navbar-logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 4rem;
+        height: 4rem;
+        img {
+            
+            width: 2.5rem;
+            height: 2.5rem;
+        }
+    }
 }
