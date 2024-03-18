@@ -32,13 +32,13 @@
 
         li {
             a {
-                font-size: 0.875rem;
                 display: flex;
                 justify-content: left;
                 align-items: center;
-                padding: .3rem .6rem;
+                padding: .5rem 1rem;
                 border-radius: .3rem;
                 width: 100%;
+                font-size: .875rem;
                 background-color: $bg-default;
                 color: $fg-default;
                 transition: $t-fast;

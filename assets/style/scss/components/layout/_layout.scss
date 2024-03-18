@@ -1,15 +1,15 @@
-.main-layout-wrapper {
-    display: flex;
-    width: 100%;
+.main-left {
+    padding: .5rem .5rem .5rem 0;
+    position: sticky;
+    top: 0;
 }
 
 .main-center {
     padding: 0 .5rem .5rem 0;
-    width: 100%;
 }
 
-// .main-right {
-//     position: sticky;
-//     top: 0;
-//     padding: .5rem 0;
-// }
+.main-right {
+    position: sticky;
+    top: 0;
+    padding: .5rem 0;
+}
