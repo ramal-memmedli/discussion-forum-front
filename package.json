@@ -1,0 +1,19 @@
+{
+  "name": "debat-front",
+  "version": "0.0.1",
+  "description": "Debat front project",
+  "main": "index.js",
+  "scripts": {
+    "sass:watch": "node-sass src/assets/style/scss/main.scss -wo src/assets/style/css",
+    "golive": "live-server --port=3031 --host=localhost --open=\"/src\"",
+    "start": "npm-run-all --parallel sass:watch golive"
+  },
+  "keywords": [],
+  "author": "ramal-memmedli",
+  "license": "ISC",
+  "devDependencies": {
+    "live-server": "^1.1.0",
+    "node-sass": "^9.0.0",
+    "npm-run-all": "^4.1.5"
+  }
+}
