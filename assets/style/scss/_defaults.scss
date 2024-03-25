@@ -1,3 +1,16 @@
+:root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+
+    color-scheme: light dark;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
 *,
 *::after,
 *::before {
@@ -32,29 +45,10 @@ button {
 
 html {
     font-size: 16px;
-    font-family: 'Open Sans', sans-serif;
-    color-scheme: light dark;
-    
-    
-
-    &.dark-mode {
-        
-    }
 }
 
 body {
-    background-color: $bg-default;
-
-
-    
-
-    &.dark-mode {
-        background-color: $dark-bg-emphasis;
-
-
-        
-    }
-
+    background-color: #000000;
 }
 
 @media screen and (min-width: 1920px) {
