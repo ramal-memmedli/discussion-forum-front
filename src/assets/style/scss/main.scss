@@ -6,7 +6,7 @@
 
 //Variables
 
-// @import "./variables/colors";
+@import "./variables/colors";
 
 //Defaults
 
@@ -14,36 +14,36 @@
 
 //Components
 
-// @import "./components/layout/layout";
+@import "./components/layout/layout";
 
 //layout-header
-@import "./components/layoutv2/header/header";
-@import "./components/layoutv2/header/hero";
-@import "./components/layoutv2/header/heroSearch";
-@import "./components/layoutv2/header/heroCategories";
-@import "./components/layoutv2/header/navbar";
+@import "./components/layout/header/header";
+@import "./components/layout/header/hamburgerBtn";
+@import "./components/layout/header/headerUser";
+@import "./components/layout/header/searchBar";
 
 //layout-navbar
-// @import "./components/layout/navbar/darkModeSwitch";
+@import "./components/layout/navbar/darkModeSwitch";
+@import "./components/layout/navbar/navbar";
 
 //layout-footer
-// @import "./components/layout/footer/footer";
+@import "./components/layout/footer/footer";
 
 //other-components
-// @import "./components/sidebar";
-// @import "./components/topic";
-// @import "./components/flowNavbar";
-// @import "./components/categories";
-// @import "./components/verifiedUserIcon";
+@import "./components/sidebar";
+@import "./components/topic";
+@import "./components/flowNavbar";
+@import "./components/categories";
+@import "./components/verifiedUserIcon";
 
 //userpage
-// @import "./components/userpage/userProfileBanner";
-// @import "./components/userpage/userProfileHeader";
-// @import "./components/userpage/profileCard";
+@import "./components/userpage/userProfileBanner";
+@import "./components/userpage/userProfileHeader";
+@import "./components/userpage/profileCard";
 
 //Pages
 
-// @import "./pages/index";
-// @import "./pages/topic";
-// @import "./pages/loginregister";
-// @import "./pages/userProfile";
+@import "./pages/index";
+@import "./pages/topic";
+@import "./pages/loginregister";
+@import "./pages/userProfile";
