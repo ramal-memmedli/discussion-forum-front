@@ -1,15 +1,12 @@
 nav.flow-navbar {
-    margin-bottom: .5rem;
     border-radius: .5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: sticky;
     top: 7.5rem;
-    padding: .25rem;
-    // background-color: $bg-emphasis-85;
-    backdrop-filter: blur(8px);
-    // border: $border;
+    padding: .75rem;
+    background-color: #000000;
     z-index: 1;
     ul {
         display: flex;
@@ -28,20 +25,20 @@ nav.flow-navbar {
 
             a {
                 &.active {
-                    background-color: $brand;
-                    color: $dark-fg-default;
+                    background-color: $primary-color;
+                    color: $l-normal-text-color;
                 }
                 &:hover {
-                    color: $dark-fg-default;
-                    background-color: $brand;
+                    color: $l-normal-text-color;
+                    background-color: $primary-color;
                 }
                 display: flex;
                 align-items: center;
                 border-radius: .35rem;
                 font-size: .875rem;
-                padding: .3rem .6rem;
-                color: $fg-default;
-                background-color: $bg-emphasis;
+                padding: .15rem .3rem;
+                color: $l-normal-text-color;
+                background-color: $l-background-color-2;
                 transition: $t-normal;
 
                 i {
@@ -58,24 +55,24 @@ nav.flow-navbar {
     }
 }
 
-body.dark-mode {
-    nav.flow-navbar {
-        background-color: $dark-bg-default-45;
-        // border: $dark-border;
-        ul {
-            li {
+// body.dark-mode {
+//     nav.flow-navbar {
+//         background-color: #000000;
+//         // border: $dark-border;
+//         ul {
+//             li {
                 
-                a {
-                    &.active {
-                        background-color: $brand;
-                    }
-                    &:hover {
-                        background-color: $brand;
-                    }
-                    background-color: $dark-bg-default;
-                    color: $dark-fg-default;
-                }
-            }
-        }
-    }
-}
+//                 a {
+//                     &.active {
+//                         background-color: $brand;
+//                     }
+//                     &:hover {
+//                         background-color: $brand;
+//                     }
+//                     background-color: $dark-bg-default;
+//                     color: $dark-fg-default;
+//                 }
+//             }
+//         }
+//     }
+// }

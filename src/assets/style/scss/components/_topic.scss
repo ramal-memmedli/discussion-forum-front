@@ -9,12 +9,12 @@
     display: flex;
     flex-direction: column;
     // border: $border;
-    background-color: $dark-bg-default-45;
+    background-color: $l-background-color-2;
 
 
     &:hover {
         // box-shadow: $default-shadow;
-        background-color: $dark-bg-default-25;
+        background-color: $l-background-color-2;
     }
 
     padding: 1rem;
@@ -48,17 +48,17 @@
             .circle-separator {
                 margin: 0 .5rem;
                 font-size: .25rem;
-                color: $dark-fg-default;
+                color: $l-normal-text-color;
             }
     
             .topic-create-date {
-                color: $dark-fg-default;
+                color: $l-normal-text-color;
                 font-size: .875rem;
             }
         }
         .topic-header-right {
             .topic-actions {
-                color: $dark-fg-default;
+                color: $l-normal-text-color;
                 width: 1.5rem;
                 height: 1.5rem;
                 display: flex;
@@ -75,7 +75,7 @@
             font-size: 1rem;
             display: flex;
             margin-bottom: .5rem;
-            color: $fg-special;
+            color: $l-normal-text-color;
         }
 
         ul {
@@ -87,7 +87,7 @@
             li {
                 a {
                     color: #FFF;
-                    background-color: $brand;
+                    background-color: $primary-color;
                     border-radius: .3rem;
                     font-size: .875rem;
                     padding: .25rem .6rem;
@@ -107,7 +107,7 @@
 
             .topic-view-count {
                 margin-right: 1rem;
-                color: $fg-muted;
+                color: $l-normal-text-color;
                 font-size: .875rem;
                 display: flex;
                 align-items: center;
@@ -119,7 +119,7 @@
 
             .topic-answer-count {
                 margin-right: 1rem;
-                color: $fg-muted;
+                color: $l-normal-text-color;
                 font-size: .875rem;
                 display: flex;
                 align-items: center;
@@ -149,75 +149,75 @@
     }
 }
 
-body.dark-mode {
-    .topic {
-        // background-color: $dark-bg-default-65;
-        // border: $dark-border;
-        // box-shadow: none;
+// body.dark-mode {
+//     .topic {
+//         // background-color: $dark-bg-default-65;
+//         // border: $dark-border;
+//         // box-shadow: none;
 
-        .topic-header {
-            .topic-author {
-                color: #c9d1d9;
+//         .topic-header {
+//             .topic-author {
+//                 color: #c9d1d9;
 
-                .author-level {
-                    color: #ffffff;
-                    background-color: $brand;
-                }
+//                 .author-level {
+//                     color: #ffffff;
+//                     background-color: $brand;
+//                 }
 
-                &:hover {
-                    color: #FFF;
-                }
-            }
+//                 &:hover {
+//                     color: #FFF;
+//                 }
+//             }
 
-            .topic-create-date {
-                color: #c9d1d9;
-            }
-        }
+//             .topic-create-date {
+//                 color: #c9d1d9;
+//             }
+//         }
 
-        .topic-body {
+//         .topic-body {
 
-            a {
-                color: #FFF;
-            }
+//             a {
+//                 color: #FFF;
+//             }
 
-            p {
-                color: #c9d1d9;
-            }
+//             p {
+//                 color: #c9d1d9;
+//             }
 
 
-            ul {
-                li {
-                    a {
-                        color: #FFF;
-                        background-color: $brand;
-                    }
-                }
-            }
-        }
+//             ul {
+//                 li {
+//                     a {
+//                         color: #FFF;
+//                         background-color: $brand;
+//                     }
+//                 }
+//             }
+//         }
 
-        .topic-footer {
-            .topic-footer-left {
-                .topic-view-count {
-                    color: #c9d1d9;
-                }
+//         .topic-footer {
+//             .topic-footer-left {
+//                 .topic-view-count {
+//                     color: #c9d1d9;
+//                 }
 
-                .topic-answer-count {
-                    color: #c9d1d9;
-                }
-            }
+//                 .topic-answer-count {
+//                     color: #c9d1d9;
+//                 }
+//             }
 
-            .topic-footer-right {
-                a {
-                    color: #c9d1d9;
+//             .topic-footer-right {
+//                 a {
+//                     color: #c9d1d9;
 
-                    &:hover {
-                        color: #FFF;
-                    }
-                }
-            }
-        }
-    }
-}
+//                     &:hover {
+//                         color: #FFF;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
 
 @media screen and (max-width: 500px) {
     .topic-header {

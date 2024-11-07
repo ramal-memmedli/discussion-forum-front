@@ -31,20 +31,20 @@ body {
             left: 0;
             bottom: 0;
             right: 0;
-            background: $bg-default;
-            background: linear-gradient(0deg, $bg-default 0%, $bg-default-65 35%, $bg-default-45 100%);
+            background: $l-background-color-2;
+            // background: linear-gradient(0deg, $l-background-color-2 0%, $bg-default-65 35%, $bg-default-45 100%);
             backdrop-filter: blur(2px);
         }
     }
 }
 
-body.dark-mode {
-    main {
-        .user-profile-banner {
-            .profile-banner-image-color-layer {
-                background: $dark-bg-emphasis;
-                background: linear-gradient(0deg, $dark-bg-emphasis 0%, $dark-bg-emphasis-65 35%, $dark-bg-emphasis-45 100%);
-            }
-        }
-    }
-}
+// body.dark-mode {
+//     main {
+//         .user-profile-banner {
+//             .profile-banner-image-color-layer {
+//                 background: $dark-bg-emphasis;
+//                 background: linear-gradient(0deg, $dark-bg-emphasis 0%, $dark-bg-emphasis-65 35%, $dark-bg-emphasis-45 100%);
+//             }
+//         }
+//     }
+// }

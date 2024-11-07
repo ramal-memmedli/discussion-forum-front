@@ -10,18 +10,18 @@ footer {
 
     .copyright {
         font-size: .875rem;
-        color: $fg-default;
+        color: $l-normal-text-color;
     }
 }
 
-body.dark-mode {
-    footer {
-        // background-color: $dark-bg-default-65;
-        // border: $dark-border;
-        // box-shadow: none;
-    }
+// body.dark-mode {
+//     footer {
+//         // background-color: $dark-bg-default-65;
+//         // border: $dark-border;
+//         // box-shadow: none;
+//     }
 
-    .copyright {
-        color: $dark-fg-default;
-    }
-}
+//     .copyright {
+//         color: $dark-fg-default;
+//     }
+// }

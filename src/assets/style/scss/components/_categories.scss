@@ -5,7 +5,7 @@
 
     .categories-header {
         font-size: 1.5rem;
-        color: $fg-default;
+        color: $l-normal-text-color;
         margin-bottom: .5rem;
         font-weight: 600;
         position: sticky;
@@ -20,7 +20,7 @@
         padding: 0 1rem;
 
         a { 
-            color: $dark-fg-default;
+            color: $l-normal-text-color;
             font-size: 1.25rem;
         }
     }
@@ -39,12 +39,12 @@
                 border-radius: .3rem;
                 width: 100%;
                 font-size: .875rem;
-                background-color: $bg-default;
-                color: $fg-default;
+                background-color: $l-background-color-2;
+                color: $l-normal-text-color;
                 transition: $t-fast;
 
                 &:hover {
-                    background-color: $brand;
+                    background-color: $primary-color;
                 }
             }
         }
@@ -52,24 +52,24 @@
 }
 
 
-body.dark-mode {
-    .categories {
+// body.dark-mode {
+//     .categories {
     
-        .categories-header {
-            color: $dark-fg-default;
-        }
+//         .categories-header {
+//             color: $dark-fg-default;
+//         }
     
-        ul {
-            li {
-                a {
-                    background-color: $dark-bg-default-45;
-                    color: $dark-fg-default;
+//         ul {
+//             li {
+//                 a {
+//                     background-color: $dark-bg-default-45;
+//                     color: $dark-fg-default;
 
-                    &:hover {
-                        background-color: $brand;
-                    }
-                }
-            }
-        }
-    }
-}
+//                     &:hover {
+//                         background-color: $brand;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }

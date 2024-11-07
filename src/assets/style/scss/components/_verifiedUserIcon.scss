@@ -1,5 +1,5 @@
 .verified-profile, .verified-profile-small, .verified-profile-large {
-    background-color: $brand;
+    background-color: $primary-color;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -10,7 +10,7 @@
 
     i{
         font-size: .75rem;
-        color: $fg-default;
+        color: $l-normal-text-color;
     }
 }
 
@@ -32,10 +32,10 @@
     }
 }
 
-body.dark-mode {
-    .verified-profile, .verified-profile-small, .verified-profile-large {    
-        i{
-            color: $dark-fg-default;
-        }
-    }
-}
+// body.dark-mode {
+//     .verified-profile, .verified-profile-small, .verified-profile-large {    
+//         i{
+//             color: $dark-fg-default;
+//         }
+//     }
+// }

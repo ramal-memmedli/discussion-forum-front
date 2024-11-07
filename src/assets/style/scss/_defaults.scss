@@ -21,34 +21,12 @@
     scroll-behavior: smooth;
 }
 
-a {
-    text-decoration: none;
-}
-
-ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-p {
-    margin: 0;
-    padding: 0;
-}
-
-input,
-textarea,
-button {
-    border: none;
-    outline: none;
-}
-
 html {
     font-size: 16px;
 }
 
 body {
-    background-color: #000000;
+    background-color: $l-background-color-1;
 }
 
 @media screen and (min-width: 1920px) {

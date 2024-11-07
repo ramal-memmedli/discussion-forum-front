@@ -16,18 +16,18 @@ main {
                     align-items: center;
 
                     .profile-fullname {
-                        color: $fg-default;
+                        color: $l-normal-text-color;
                     }
                 }
         
                 .follow-user-button{
-                    background-color: $brand;
+                    background-color: $primary-color;
                     
-                    color: $fg-default;
+                    color: $l-normal-text-color;
                     transition: $t-normal;
         
                     &:hover{
-                        background-color: $brand;
+                        background-color: $primary-color;
                     }
         
                     i{
@@ -85,32 +85,32 @@ main {
     }
 }
 
-body.dark-mode {
-    main {
-        .user-profile {
-            .profile-card, .user-profile-header{
+// body.dark-mode {
+//     main {
+//         .user-profile {
+//             .profile-card, .user-profile-header{
                 
 
 
-                .profile-details {    
-                    .profile-name-section {
-                        .profile-fullname {
-                            color: $dark-fg-default;
-                        }
+//                 .profile-details {    
+//                     .profile-name-section {
+//                         .profile-fullname {
+//                             color: $dark-fg-default;
+//                         }
 
-                        .verified-profile{
+//                         .verified-profile{
     
-                            i{
-                                color: $dark-fg-default;
-                            }
-                        }
-                    }
+//                             i{
+//                                 color: $dark-fg-default;
+//                             }
+//                         }
+//                     }
     
-                    .follow-user-button {
-                        color: $dark-fg-default;
-                    }
-                }
-            }
-        }
-    }
-}
+//                     .follow-user-button {
+//                         color: $dark-fg-default;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }

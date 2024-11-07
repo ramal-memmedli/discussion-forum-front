@@ -1,26 +1,24 @@
 .topic-page {
     .topic-content {
-        background-color: #FFF;
-        border-radius: .375rem;
-        box-shadow: 0 3px 6px rgba(140, 149, 159, 0.15);
-        padding: 2rem;
-        margin-bottom: 2rem;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        border: 1px solid #ddd;
 
         .topic-header {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-bottom: 2rem;
+            margin-bottom: 1rem;
 
             .topic-author {
                 a {
-                    font-size: 1.2rem;
+                    font-size: 0.875rem;
                     color: #6e7781;
                     transition: 150ms ease-in-out;
 
                     img {
-                        width: 3rem;
-                        height: 3rem;
+                        width: 2rem;
+                        height: 2rem;
                         border-radius: 50%;
                         margin-right: 1rem;
                     }
@@ -51,7 +49,7 @@
                 margin-bottom: 2rem;
 
                 a {
-                    color: #24292f;
+                    color: #fff;
                     font-size: 1.5rem;
                     font-weight: 500;
                 }
@@ -87,32 +85,59 @@
             }
         }
 
-        .topic-statistics {
+        .topic-footer {
+
             display: flex;
             justify-content: space-between;
             align-items: center;
 
-            .statistics-left {
+            .topic-actions {
+
                 display: flex;
+                gap: .5rem;
                 align-items: center;
 
-                p {
-                    margin-right: 2rem;
-                    color: #6e7781;
+                .topic-vote-actions {
+                    border: 2px solid rgba(255, 255, 255, 0.08);
+                    border-radius: .25rem;
+                    overflow: hidden;
 
-                    i {
-                        margin-right: .3rem;
+                    .up-vote-action,
+                    .down-vote-action  {
+                        transition: 150ms ease-in-out;
+                        padding: .5rem .8rem;
+                        color: rgba(140, 149, 159, 0.65);
+
+                        &:hover {
+                            background-color: rgba(140, 149, 159, 0.15);
+                        }
                     }
-                }
-            }
 
-            .statistics-right {
-                a {
-                    color: #6e7781;
+                    .up-vote-action {
+                        &:hover {
+                            color: #2da44e;
+                            background-color: #2da44f6b;
+                        }
+                    }
+
+                    .down-vote-action {
+                        &:hover {
+                            color: #ff4500;
+                            background-color: #cf222d71;
+                        }
+                    }
+
+                    
+                }
+                .bookmark-action {
+                    border: 2px solid rgba(255, 255, 255, 0.08);
+                    border-radius: .25rem;
                     transition: 150ms ease-in-out;
+                    padding: .5rem .8rem;
+                    color: rgba(140, 149, 159, 0.65);
 
                     &:hover {
-                        color: #24292f;
+                        background-color: rgba(140, 149, 159, 0.15);
                     }
                 }
             }
@@ -336,241 +361,238 @@
     }
 }
 
-@media screen and (max-width: 500px) {
-    .answer-header {
-        flex-direction: column;
+// @media screen and (max-width: 500px) {
+//     .answer-header {
+//         flex-direction: column;
 
-        .answer-author {
-            margin-bottom: 1rem;
-        }
-    }
+//         .answer-author {
+//             margin-bottom: 1rem;
+//         }
+//     }
 
-    .topic-answers {
-        .topic-answer {
-            .answer-body {
-                margin-left: 1rem;
-            }
+//     .topic-answers {
+//         .topic-answer {
+//             .answer-body {
+//                 margin-left: 1rem;
+//             }
 
-            .answer-actions {
-                margin-left: 1rem;
+//             .answer-actions {
+//                 margin-left: 1rem;
 
-                a {
-                    margin-bottom: 1rem;
-                }
-            }
-        }
-    }
+//                 a {
+//                     margin-bottom: 1rem;
+//                 }
+//             }
+//         }
+//     }
 
-}
-
-
-@media screen and (max-width: 992px) {
-    .add-comment-box {
-        left: 2rem;
-        right: 2rem;
-        width: calc(100vw - 4rem);
-
-        input {}
-
-        a {}
-    }
-}
+// }
 
 
-body.dark-mode {
-    .topic-content {
-        background-color: $dark-bg-default-65;
-        border: $dark-border;
-        box-shadow: none;
+// @media screen and (max-width: 992px) {
+//     .add-comment-box {
+//         left: 2rem;
+//         right: 2rem;
+//         width: calc(100vw - 4rem);
 
-        .topic-header {
-            .topic-author {
-                a {
-                    color: $dark-fg-default;
+//         input {}
 
-                    &:hover {
-                        color: #FFF;
-                    }
-                }
-
-                .author-level {
-                    background-color: $brand;
-                    color: #FFF;
-                }
-            }
-
-            .topic-create-date {
-                color: $dark-fg-default;
-            }
-        }
-
-        .topic-body {
-            .topic-title {
-                a {
-                    color: $dark-fg-default;
-                }
-            }
-
-            .topic-context {
-                p {
-                    color: $dark-fg-default;
-                }
-            }
-
-            .topic-categories {
-                ul {
-                    li {
-                        a {
-                            color: $dark-fg-default;
-                            background-color: $brand;
-                        }
-                    }
-                }
-            }
-        }
-
-        .topic-statistics {
-            .statistics-left {
-                p {
-                    color: $dark-fg-default;
-                }
-            }
-
-            .statistics-right {
-                a {
-                    color: $dark-fg-default;
-
-                    &:hover {
-                        color: #FFF;
-                    }
-                }
-            }
-        }
-    }
-
-    .topic-answers {
-        h4 {
-            color: $dark-fg-default;
-        }
-
-        .topic-answer {
-            background-color: $dark-bg-default-65;
-            border: $dark-border;
-            box-shadow: none;
-
-            .vote-actions {
-                a {
-                    color: $dark-fg-default;
-
-                    &:hover {
-                        color: #FFF;
-                    }
-                }
-
-                .votecount {
-                    color: $dark-fg-default;
-                }
-            }
-
-            .selected-answer {
-                i {
-                    color: #2da44e;
-                }
-            }
-
-            .answer-header {
-                .answer-author {
-                    a {
-                        color: $dark-fg-default;
-
-                        &:hover {
-                            color: #FFF;
-                        }
-                    }
-
-                    .author-level {
-                        color: $dark-fg-default;
-                        background-color: $brand;
-                    }
-                }
-
-                .answer-date {
-                    color: $dark-fg-default;
-                }
-            }
-
-            .answer-body {
-                .answer-context {
-                    color: $dark-fg-default;
-                }
-            }
-
-            .answer-actions {
-                a {
-                    color: $dark-fg-default;
-
-                    &:hover {
-                        color: #FFF;
-                    }
-                }
-            }
+//         a {}
+//     }
+// }
 
 
-            .answer-comments {
-                background-color: $dark-bg-default-45;
+// body.dark-mode {
+//     .topic-content {
 
-                h6 {
-                    color: $dark-fg-default;
-                }
+//         .topic-header {
+//             .topic-author {
+//                 a {
+//                     color: $dark-fg-default;
 
-                .comment {
-                    border-top: $dark-border;
+//                     &:hover {
+//                         color: #FFF;
+//                     }
+//                 }
 
-                    .comment-header {
-                        .comment-author {
-                            a {
-                                color: $dark-fg-default;
+//                 .author-level {
+//                     background-color: $brand;
+//                     color: #FFF;
+//                 }
+//             }
 
-                                &:hover {
-                                    color: #FFF;
-                                }
-                            }
-                        }
+//             .topic-create-date {
+//                 color: $dark-fg-default;
+//             }
+//         }
 
-                        .comment-date {
-                            color: $dark-fg-default;
-                        }
-                    }
+//         .topic-body {
+//             .topic-title {
+//                 a {
+//                     color: $dark-fg-default;
+//                 }
+//             }
 
-                    .comment-body {
-                        color: $dark-fg-default;
-                    }
+//             .topic-context {
+//                 p {
+//                     color: $dark-fg-default;
+//                 }
+//             }
 
-                }
-            }
-        }
-    }
-    .add-comment-box {
-        background-color: #0d1117;
-        box-shadow: none;
+//             .topic-categories {
+//                 ul {
+//                     li {
+//                         a {
+//                             color: $dark-fg-default;
+//                             background-color: $brand;
+//                         }
+//                     }
+//                 }
+//             }
+//         }
 
-        input {
-            background-color: transparent;
-            color: #FFF;
+//         .topic-statistics {
+//             .statistics-left {
+//                 p {
+//                     color: $dark-fg-default;
+//                 }
+//             }
 
-            &::placeholder {
-                color: #c9d1d9;
-            }
-        }
+//             .statistics-right {
+//                 a {
+//                     color: $dark-fg-default;
 
-        a {
-            background-color: #ff4500;
-            color: #FFF;
+//                     &:hover {
+//                         color: #FFF;
+//                     }
+//                 }
+//             }
+//         }
+//     }
 
-            &#closeCommentBox {
-                background-color: transparent;
-                color: #cf222e;
-            }
-        }
-    }
-}
+//     .topic-answers {
+//         h4 {
+//             color: $dark-fg-default;
+//         }
+
+//         .topic-answer {
+//             background-color: $dark-bg-default-65;
+//             border: $dark-border;
+//             box-shadow: none;
+
+//             .vote-actions {
+//                 a {
+//                     color: $dark-fg-default;
+
+//                     &:hover {
+//                         color: #FFF;
+//                     }
+//                 }
+
+//                 .votecount {
+//                     color: $dark-fg-default;
+//                 }
+//             }
+
+//             .selected-answer {
+//                 i {
+//                     color: #2da44e;
+//                 }
+//             }
+
+//             .answer-header {
+//                 .answer-author {
+//                     a {
+//                         color: $dark-fg-default;
+
+//                         &:hover {
+//                             color: #FFF;
+//                         }
+//                     }
+
+//                     .author-level {
+//                         color: $dark-fg-default;
+//                         background-color: $brand;
+//                     }
+//                 }
+
+//                 .answer-date {
+//                     color: $dark-fg-default;
+//                 }
+//             }
+
+//             .answer-body {
+//                 .answer-context {
+//                     color: $dark-fg-default;
+//                 }
+//             }
+
+//             .answer-actions {
+//                 a {
+//                     color: $dark-fg-default;
+
+//                     &:hover {
+//                         color: #FFF;
+//                     }
+//                 }
+//             }
+
+
+//             .answer-comments {
+//                 background-color: $dark-bg-default-45;
+
+//                 h6 {
+//                     color: $dark-fg-default;
+//                 }
+
+//                 .comment {
+//                     border-top: $dark-border;
+
+//                     .comment-header {
+//                         .comment-author {
+//                             a {
+//                                 color: $dark-fg-default;
+
+//                                 &:hover {
+//                                     color: #FFF;
+//                                 }
+//                             }
+//                         }
+
+//                         .comment-date {
+//                             color: $dark-fg-default;
+//                         }
+//                     }
+
+//                     .comment-body {
+//                         color: $dark-fg-default;
+//                     }
+
+//                 }
+//             }
+//         }
+//     }
+//     .add-comment-box {
+//         background-color: #0d1117;
+//         box-shadow: none;
+
+//         input {
+//             background-color: transparent;
+//             color: #FFF;
+
+//             &::placeholder {
+//                 color: #c9d1d9;
+//             }
+//         }
+
+//         a {
+//             background-color: #ff4500;
+//             color: #FFF;
+
+//             &#closeCommentBox {
+//                 background-color: transparent;
+//                 color: #cf222e;
+//             }
+//         }
+//     }
+// }

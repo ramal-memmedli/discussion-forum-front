@@ -1,0 +1,43 @@
+/*Brand colors*/
+$primary-color: #1DB954;
+$accent-color: #BB86FC;
+
+/*Status colors*/
+$danger-color: #FF5252;
+$success-color: #66BB6A;
+
+/****light theme****/
+
+/*Foregrounds*/
+$l-heading-color: #343A40;
+$l-normal-text-color: #495057;
+$l-link-color: #0056b3;
+
+/*Backgrounds*/
+$l-background-color-1: #E9ECEF;
+$l-background-color-2: #F8F9FA;
+
+/****dark theme****/
+
+/*Foregrounds*/
+$d-heading-color: #E1E1E1;
+$d-normal-text-color: #B3B3B3;
+$d-link-color: #00BFFF;
+
+/*Backgrounds*/
+$d-background-color-1: #121212;
+$d-background-color-2: #1E1E1E;
+
+
+/*Border*/
+
+$dark-border: 1px solid rgba(255,255,255,.11);
+$border: rgba(0, 0, 0, .1) 1px solid;
+
+/*Transition*/
+$t-slow: 500ms;
+$t-normal: 300ms;
+$t-fast: 150ms;
+
+/*Shadows*/
+$default-shadow: rgba(149, 157, 165, 0.2) 0px 0px 24px;

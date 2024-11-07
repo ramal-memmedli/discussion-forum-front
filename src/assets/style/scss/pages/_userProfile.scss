@@ -21,17 +21,17 @@ main {
 
 }
 
-body.dark-mode {
-    main {
-        .user-profile-banner {
-            .profile-banner-image-color-layer {
-                background: $dark-bg-emphasis;
-                background: linear-gradient(0deg, $dark-bg-emphasis 0%, $dark-bg-emphasis-65 35%, $dark-bg-emphasis-45 100%);
-            }
-        }
+// body.dark-mode {
+//     main {
+//         .user-profile-banner {
+//             .profile-banner-image-color-layer {
+//                 background: $dark-bg-emphasis;
+//                 background: linear-gradient(0deg, $dark-bg-emphasis 0%, $dark-bg-emphasis-65 35%, $dark-bg-emphasis-45 100%);
+//             }
+//         }
 
-        .user-profile {
-            //
-        }
-    }
-}
+//         .user-profile {
+//             //
+//         }
+//     }
+// }

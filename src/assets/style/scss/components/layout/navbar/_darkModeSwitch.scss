@@ -39,7 +39,7 @@
         left: 0;
         right: 0;
         bottom: 0;
-        background-color: $dark-bg-default-45;
+        background-color: $l-background-color-2;
         // background-color: $bg-emphasis-85;
         // border: $border;
         backdrop-filter: blur(8px);
@@ -73,26 +73,26 @@
     }
 }
 
-body.dark-mode {
-    .fa-sun {
-        color: $dark-fg-default;
-    }
+// body.dark-mode {
+//     .fa-sun {
+//         color: $dark-fg-default;
+//     }
 
-    .fa-moon {
-        color: $dark-fg-default;
-    }
+//     .fa-moon {
+//         color: $dark-fg-default;
+//     }
 
-    .switch {
-        .slider {
-            // background-color: $dark-bg-default-65;
-            // box-shadow: none;
-            // border: $dark-border;
-            &::before {
-                background-color: rgba(255, 255, 255, .03);
-            }
-        }
-    }
-}
+//     .switch {
+//         .slider {
+//             // background-color: $dark-bg-default-65;
+//             // box-shadow: none;
+//             // border: $dark-border;
+//             &::before {
+//                 background-color: rgba(255, 255, 255, .03);
+//             }
+//         }
+//     }
+// }
 
 
 @media screen and (max-width: 992px) {
