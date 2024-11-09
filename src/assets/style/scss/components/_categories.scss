@@ -1,27 +1,15 @@
 .categories {
     margin-bottom: .5rem;
-    border-radius: .5rem;
     margin-right: .5rem;
 
     .categories-header {
-        font-size: 1.5rem;
-        color: $l-normal-text-color;
         margin-bottom: .5rem;
-        font-weight: 600;
-        position: sticky;
-        top: 0;
-        backdrop-filter: blur(8px);
-        height: 3rem;
-        display: flex;
-        align-items: center;
-        // background-color: $dark-bg-default-65;
-        // border: $dark-border;
-        border-radius: .5rem;
-        padding: 0 1rem;
 
-        a { 
-            color: $l-normal-text-color;
-            font-size: 1.25rem;
+        a {
+            font-size: $font-size-base;
+            font-family: $font-family-secondary;
+            color: $d-normal-text-color;
+            font-weight: $font-weight-bold;
         }
     }
 
@@ -35,12 +23,12 @@
                 display: flex;
                 justify-content: left;
                 align-items: center;
-                padding: .5rem 1rem;
+                padding: .2rem .5rem;
                 border-radius: .3rem;
                 width: 100%;
-                font-size: .875rem;
-                background-color: $l-background-color-2;
-                color: $l-normal-text-color;
+                font-size: $font-size-small;
+                border: 1px solid $d-background-color-2;
+                color: $d-normal-text-color;
                 transition: $t-fast;
 
                 &:hover {
@@ -54,11 +42,11 @@
 
 // body.dark-mode {
 //     .categories {
-    
+
 //         .categories-header {
 //             color: $dark-fg-default;
 //         }
-    
+
 //         ul {
 //             li {
 //                 a {

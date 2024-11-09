@@ -12,14 +12,14 @@
     backdrop-filter: blur(20px);
     border: $border;
 
-    background-color: $l-background-color-2; 
+    background-color: $d-background-color-2; 
     border-radius: .5rem;
 
     .hamburgerSpan {
         width: .75rem;
         height: 0.125rem;
         border-radius: 1px;
-        background-color: $l-normal-text-color;
+        background-color: $d-normal-text-color;
         transition: 150ms all ease-in-out;
 
         &.hamburgerSpanAnimated:first-child {
@@ -50,7 +50,7 @@
     }
 
     &:hover {
-        background-color: $l-background-color-2;
+        background-color: $d-background-color-2;
 
         .hamburgerSpan {
             background-color: #24292f;

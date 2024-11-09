@@ -16,14 +16,14 @@ main {
                     align-items: center;
 
                     .profile-fullname {
-                        color: $l-normal-text-color;
+                        color: $d-normal-text-color;
                     }
                 }
         
                 .follow-user-button{
                     background-color: $primary-color;
                     
-                    color: $l-normal-text-color;
+                    color: $d-normal-text-color;
                     transition: $t-normal;
         
                     &:hover{

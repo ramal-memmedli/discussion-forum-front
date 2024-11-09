@@ -1,8 +1,5 @@
 /*** Typography ***/
 
-// Font imports
-@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-
 // Elements
 h1,
 h2,
@@ -12,7 +9,7 @@ h5,
 h6 {
     font-family: $font-family-secondary;
     font-weight: $font-weight-bold;
-    color: $l-heading-color;
+    color: $d-heading-color;
     margin: 0;
 }
 
@@ -41,29 +38,23 @@ h6 {
 }
 
 p {
-    font-family: $font-family-primary;
     font-size: $font-size-base;
     font-weight: $font-weight-regular;
-    color: $l-normal-text-color;
+    color: $d-normal-text-color;
     margin: 0;
     padding: 0;
 }
 
 a {
-    font-family: $font-family-primary;
-    color: $l-link-color;
+    color: $d-link-color;
     text-decoration: none;
-
-    &:hover {
-        text-decoration: underline;
-    }
 }
 
 ul,
 ol {
     font-family: $font-family-primary;
     font-size: $font-size-base;
-    color: $l-normal-text-color;
+    color: $d-normal-text-color;
     list-style: none;
     padding: 0;
     margin: 0;
@@ -73,7 +64,7 @@ blockquote {
     font-family: $font-family-primary;
     font-size: $font-size-large;
     font-weight: $font-weight-light;
-    color: $l-normal-text-color;
+    color: $d-normal-text-color;
     border-left: 4px solid $accent-color;
     padding-left: 1em;
     margin: 1em 0;

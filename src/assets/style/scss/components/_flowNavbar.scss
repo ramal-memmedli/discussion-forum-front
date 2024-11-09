@@ -26,10 +26,10 @@ nav.flow-navbar {
             a {
                 &.active {
                     background-color: $primary-color;
-                    color: $l-normal-text-color;
+                    color: $d-normal-text-color;
                 }
                 &:hover {
-                    color: $l-normal-text-color;
+                    color: $d-normal-text-color;
                     background-color: $primary-color;
                 }
                 display: flex;
@@ -37,8 +37,8 @@ nav.flow-navbar {
                 border-radius: .35rem;
                 font-size: .875rem;
                 padding: .15rem .3rem;
-                color: $l-normal-text-color;
-                background-color: $l-background-color-2;
+                color: $d-normal-text-color;
+                background-color: $d-background-color-2;
                 transition: $t-normal;
 
                 i {

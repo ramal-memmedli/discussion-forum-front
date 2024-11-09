@@ -9,12 +9,12 @@
     display: flex;
     flex-direction: column;
     // border: $border;
-    background-color: $l-background-color-2;
+    background-color: $d-background-color-2;
 
 
     &:hover {
         // box-shadow: $default-shadow;
-        background-color: $l-background-color-2;
+        background-color: $d-background-color-2;
     }
 
     padding: 1rem;
@@ -48,17 +48,17 @@
             .circle-separator {
                 margin: 0 .5rem;
                 font-size: .25rem;
-                color: $l-normal-text-color;
+                color: $d-normal-text-color;
             }
     
             .topic-create-date {
-                color: $l-normal-text-color;
+                color: $d-normal-text-color;
                 font-size: .875rem;
             }
         }
         .topic-header-right {
             .topic-actions {
-                color: $l-normal-text-color;
+                color: $d-normal-text-color;
                 width: 1.5rem;
                 height: 1.5rem;
                 display: flex;
@@ -75,7 +75,7 @@
             font-size: 1rem;
             display: flex;
             margin-bottom: .5rem;
-            color: $l-normal-text-color;
+            color: $d-normal-text-color;
         }
 
         ul {
@@ -107,7 +107,7 @@
 
             .topic-view-count {
                 margin-right: 1rem;
-                color: $l-normal-text-color;
+                color: $d-normal-text-color;
                 font-size: .875rem;
                 display: flex;
                 align-items: center;
@@ -119,7 +119,7 @@
 
             .topic-answer-count {
                 margin-right: 1rem;
-                color: $l-normal-text-color;
+                color: $d-normal-text-color;
                 font-size: .875rem;
                 display: flex;
                 align-items: center;
